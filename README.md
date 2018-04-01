@@ -6,11 +6,18 @@
   [1]  M. Anton Ertl , David Gregg, The Structure and Performance of Efficient Interpreters.
 
 #  Interpreted Languages to be tested are (possibly):
-  1. JavaScript : https://en.wikipedia.org/wiki/JavaScript
-  2. Java :
-  3. 
-  4. 
-  5. 
+  1. JavaScript : https://www.javascript.com/
+  2. Java       : https://www.java.com/en/
+  3. Python     : https://www.python.org/	
+  4. C#         : https://docs.microsoft.com/en-us/dotnet/csharp/ 
+  5. Ruby	: https://www.ruby-lang.org/en/
 
 
-# Graphs t
+#  Graphs for our evaluation
+
+  1. Prediction Accuracy: Miss Predict rate of different interpreters over branch predictors
+  2. Effect on execution time : Execution time of different interpreters over branch predictors
+
+#  Architectures to be tested 
+  1. Intel (sith)
+  2. ARM   (hydra)
