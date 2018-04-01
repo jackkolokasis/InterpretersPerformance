@@ -21,3 +21,9 @@
 #  Architectures to be tested 
   1. Intel (sith)
   2. ARM   (hydra)
+
+#  HW counters 
+  PAPI :
+  	http://icl.cs.utk.edu/projects/papi/wiki/PAPIC:Low_Level
+  	https://www.cs.uoregon.edu/research/tau/docs/newguide/bk03ch01s04.html
+
