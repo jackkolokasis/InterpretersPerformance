@@ -13,3 +13,13 @@ or for ubuntu
 papi install
 sudo apt-get install papi-tools
 
+Javascript Benchmarks
+https://github.com/chromium/octane
+
+Python Benchs
+https://pybenchmarks.org/
+https://github.com/Dundee/pybenchmarks
+
+
+Processor links 
+https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
