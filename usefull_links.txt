@@ -14,6 +14,19 @@ papi install
 sudo apt-get install papi-tools
 HW counters :
 http://oprofile.sourceforge.net/news/
+How to Install Oprofile:
+    ------------------------
+        - version 1.0.0
+            sudo apt-get install oprofile
+
+        - for newer version download:
+            http://prdownloads.sourceforge.net/oprofile/oprofile-1.2.0.tar.gz
+
+    Oprofile Missing Libraries :
+    ------------------------------
+        1.  sudo apt-get install libiberty-dev
+        2.  sudo apt-get install binutils-dev
+
 
 Javascript Benchmarks
 https://github.com/chromium/octane
@@ -23,5 +36,8 @@ https://pybenchmarks.org/
 https://github.com/Dundee/pybenchmarks
 
 
-Processor links 
+Processor links
 https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
+
+
+
