@@ -1,0 +1,10 @@
+Run profiling 
+	operf ./test
+Display Branch predictions
+	ocount --event BR_MISS_PRED_RETIRED,BR_INST_RETIRED ./test	
+
+important Notes:
+	1. Change "BR_MISS_PRED_RETIRED,BR_INST_RETIRED" with the appropriate 
+		one according to CPU arch. You can find the rlevant commands
+		by ophelp.
+
