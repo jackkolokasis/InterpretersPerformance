@@ -22,7 +22,7 @@ if [ $architecture = "intel" ]; then
 #AMD
 else
 	#miss predicted branches
-	miss_pred=`cat help.out | grep -i -B 1 "Retired Misspredicted Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
+	miss_pred=`cat help.out | grep -i -B 1 "Retired Mispredicted Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
 
 	#all branches
 	total_branches=`cat help.out | grep -i -B 1 "Retired Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
