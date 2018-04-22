@@ -42,7 +42,7 @@ CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitect
    1. JavaScript    : https://github.com/chromium/octane
 		      https://krakenbenchmark.mozilla.org/
    2. Java          : https://www.spec.org/jvm2008/
-		      
+		      https://www.spec.org/download.html (to download) 
    3. Python        : https://github.com/python/performance
    4. CLI (C#)      : https://github.com/dotnet/BenchmarkDotNet 
    
