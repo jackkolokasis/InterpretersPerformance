@@ -10,7 +10,7 @@
   1. JavaScript : https://www.javascript.com/
   2. Java       : https://www.java.com/en/
   3. Python     : https://www.python.org/	
-  4. CLI (Common Language Infrastructure [e.g C#, C++]) : https://en.wikipedia.org/wiki/List_of_CLI_languages 
+  4. CLI (Common Language Infrastructure [e.g C#]) : https://en.wikipedia.org/wiki/List_of_CLI_languages 
 
 
 #  Graphs for our evaluation
@@ -25,6 +25,8 @@
      (jedi8)
   2. AMD    : AMD64 family15h (hydra)
 
+CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
+
 #  HW counters 
 ## OProfile
   OProfile is an open source project that includes a statistical
@@ -38,10 +40,13 @@
 
 # Benchmarks
    1. JavaScript    : https://github.com/chromium/octane
-   2. Java          :
+		      https://krakenbenchmark.mozilla.org/
+   2. Java          : https://www.spec.org/jvm2008/
+		      
    3. Python        : https://github.com/python/performance
-   4. CLI           : 
-   5. Benchmarks of different languages : https://github.com/kostya/benchmarks
+   4. CLI (C#)      : https://github.com/dotnet/BenchmarkDotNet 
+   
+Benchmarks of different languages : https://github.com/kostya/benchmarks
 
         
          
