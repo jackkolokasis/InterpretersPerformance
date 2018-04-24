@@ -48,5 +48,11 @@ CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitect
    
 Benchmarks of different languages : https://github.com/kostya/benchmarks
 
+# TODO
+"Tha prepei sto telos na exei ena readme pou e3igei oti
+xreiazete, ta noumera, kai ta scriptakia pou paragoun ta noumera, wste
+an 8elei kapoios na anaparagei auto pou kanate na einai sxetika eukolo
+an oxi plirws atomatopoiimeno.""
+
         
          
