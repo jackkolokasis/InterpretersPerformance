@@ -42,7 +42,7 @@ CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitect
    1. JavaScript    : https://github.com/chromium/octane
                       https://github.com/mozilla/arewefastyet
                       https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Optimization
-   2. Java          : https://www.spec.org/jvm2008/
+   2. Java*          : https://www.spec.org/jvm2008/
 		      https://www.spec.org/download.html (to download) 
    3. Python        : https://github.com/python/performance
    4. CLI (C#)      : https://github.com/dotnet/BenchmarkDotNet 
@@ -56,7 +56,13 @@ an 8elei kapoios na anaparagei auto pou kanate na einai sxetika eukolo
 an oxi plirws atomatopoiimeno.""
 
 # Experimental Methodolodgy:
-    30 runs every benchmark
-    
+    for (i..30)
+	1.JavaScript (Num_of_bench: 14)
+	2.Java       (Num_of_bench: 18)
+	3.Python     (Num_of_bench: 46)
+
+
+*Disable JIT in Java
+https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/tools/jitpd_disable.html#jitpd_disable     
     
          
