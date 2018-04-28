@@ -40,4 +40,5 @@ Processor links
 https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
 
 
-
+Interpreted Java
+https://stackoverflow.com/questions/1326071/is-java-a-compiled-or-an-interpreted-programming-language
