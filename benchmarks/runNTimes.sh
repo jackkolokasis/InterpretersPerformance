@@ -10,9 +10,12 @@ then
 	exit 
 fi 
 
-for i in {1..${iterationNum}}
+mkdir javascriptRes
+mkdir javaRes
+mkdir pythonRes
+
+for i in `seq 0 1 ${iterationNum}`
 do
-	echo ${i}
+	echo "iteration : "${i}
 	./runAllBench.sh ${architecture} ${i}
-	exit
 done
