@@ -9,25 +9,24 @@ if [ $# -eq 0 ]
       echo "Add add iteration id (0..30)."
       exit
 fi
- 
+
 for f in python/performance/benchmarks/*.py
 do
-    echo ${f}
     filename="${f##*/}"
-    echo ${filename}
+    echo "bench: "${filename}
     { time ./executeOProf.sh python ${f} ${architecture} > \
-	    out_${filename}_${iteration}.txt ; } 2>> out_${filename}_${iteration}.txt 
-		exit
+	    pythonRes/out_${filename}_${iteration}.txt ; } 2>> \
+    		pythonRes/out_${filename}_${iteration}.txt 
 done
+
 cd javascript/octane/     
 for f in run_*.js
 do
-    echo ${f}
     filename="${f##*/}"
-    echo ${filename}
+    echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
-        ../../out_${filename}_${iteration}.txt ; } 2>> \
-   		 ../../out_${filename}_${iteration}.txt 
+        ../../javascriptRes/out_${filename}_${iteration}.txt ; } 2>> \
+   		 ../../javascriptRes/out_${filename}_${iteration}.txt 
 done
 cd -
 
@@ -35,10 +34,10 @@ dacapoArgs=("avrora" "batik" "h2" "sunflow" "tomcat" "tradebeans" \
 "tradesoap" "eclipse" "fop" "jython" "luindex" "lusearch" "pmd" \
 "sunflow" "tomcat" "tradebeans" "tradesoap" "xalan")
 
-
 for i in "${dacapoArgs[@]}"
 do
-    echo ${i}
+    echo "bench: " ${i}
     { time ./executeOProf.sh java ${i} ${architecture} > \
-	    out_${i}_${iteration}.txt ; } 2>> out_${i}_${iteration}.txt 
+	    javaRes/out_${i}_${iteration}.txt ; } 2>> javaRes/out_${i}_${iteration}.txt 
 done
+
