@@ -14,7 +14,7 @@ mkdir javascriptRes
 mkdir javaRes
 mkdir pythonRes
 
-for i in `seq 0 1 ${iterationNum}`
+for ((i=0; i<${iterationNum}; i++))
 do
 	echo "iteration : "${i}
 	./runAllBench.sh ${architecture} ${i}

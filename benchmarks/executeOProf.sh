@@ -5,7 +5,7 @@ architecture=$3
 
 if [ $# -eq 0 ]
   then
-      echo "./ececuteOProf <interpreter> <executable> <arcitecture>"
+      echo "./executeOProf <interpreter> <executable> <arcitecture>"
       echo "Add interpreter (python/java etc)."
       echo "Add executable."
       echo "Add architecyure (intel/amd)."
@@ -31,12 +31,6 @@ else
 	total_branches=`cat help.out | grep -i -B 1 "Retired Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
 fi
 
-
-echo "Architecture : "$architecture
-echo "Event miss predicted branches : "$miss_pred
-echo "Event all branches : "$total_branches
-echo "Cmd :" $cmd
-
 if [ ${cmd} != "java" ]; then
     # Rhino or Python
     ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
@@ -46,4 +40,3 @@ else
     ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
 fi
 
-rm -rf help.out
