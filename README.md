@@ -65,4 +65,12 @@ an oxi plirws atomatopoiimeno.""
 *Disable JIT in Java
 https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/tools/jitpd_disable.html#jitpd_disable     
     
-         
+# Python troubleshouting
+ERROR:
+	Traceback (most recent call last):
+  		File "bm_2to3.py", line 6, in <module>
+    		import perf
+	ImportError: No module named perf         
+SOLUTION:
+	sudo apt-get install python-pip
+	sudo python -m pip install perf 

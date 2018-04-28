@@ -15,8 +15,8 @@ do
     filename="${f##*/}"
     echo "bench: "${filename}
     { time ./executeOProf.sh python ${f} ${architecture} > \
-	    pythonRes/out_${filename}_${iteration}.txt ; } 2>> \
-    		pythonRes/out_${filename}_${iteration}.txt 
+	    pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
+    		pythonRes/out_${filename}:${iteration}.txt
 done
 
 cd javascript/octane/     
@@ -25,8 +25,8 @@ do
     filename="${f##*/}"
     echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
-        ../../javascriptRes/out_${filename}_${iteration}.txt ; } 2>> \
-   		 ../../javascriptRes/out_${filename}_${iteration}.txt 
+        ../../javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
+   		 ../../javascriptRes/out_${filename}:${iteration}.txt 
 done
 cd -
 
@@ -38,6 +38,6 @@ for i in "${dacapoArgs[@]}"
 do
     echo "bench: " ${i}
     { time ./executeOProf.sh java ${i} ${architecture} > \
-	    javaRes/out_${i}_${iteration}.txt ; } 2>> javaRes/out_${i}_${iteration}.txt 
+	    javaRes/out_${i}:${iteration}.txt ; } 2>> javaRes/out_${i}:${iteration}.txt 
 done
 
