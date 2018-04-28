@@ -43,7 +43,7 @@ if [ ${cmd} != "java" ]; then
 else
     # Java
     echo "JAVA"
-    ocount --event ${miss_pred},${total_branches} ${cmd} -jar java/dacapo-9.12-bach.jar ${executable}
+    ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
 fi
 
 rm -rf help.out
