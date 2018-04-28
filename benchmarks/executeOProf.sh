@@ -35,7 +35,15 @@ fi
 echo "Architecture : "$architecture
 echo "Event miss predicted branches : "$miss_pred
 echo "Event all branches : "$total_branches
+echo "Cmd :" $cmd
 
-ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+if [ ${cmd} != "java" ]; then
+    # Rhino or Python
+    ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+else
+    # Java
+    echo "JAVA"
+    ocount --event ${miss_pred},${total_branches} ${cmd} -jar java/dacapo-9.12-bach.jar ${executable}
+fi
 
 rm -rf help.out

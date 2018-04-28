@@ -41,6 +41,7 @@ CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitect
 # Benchmarks
    1. JavaScript    : https://github.com/chromium/octane
                       https://github.com/mozilla/arewefastyet
+                      https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Optimization
    2. Java          : https://www.spec.org/jvm2008/
 		      https://www.spec.org/download.html (to download) 
    3. Python        : https://github.com/python/performance
@@ -54,5 +55,8 @@ xreiazete, ta noumera, kai ta scriptakia pou paragoun ta noumera, wste
 an 8elei kapoios na anaparagei auto pou kanate na einai sxetika eukolo
 an oxi plirws atomatopoiimeno.""
 
-        
+# Experimental Methodolodgy:
+    30 runs every benchmark
+    
+    
          
