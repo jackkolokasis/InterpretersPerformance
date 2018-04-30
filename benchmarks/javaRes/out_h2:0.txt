@@ -1,0 +1,12 @@
+java
+Using scaled threading model. 32 processors detected, 32 threads used to drive the workload, in a possible range of [1,4000]
+
+Events were actively counted for  3 minutes and 18 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        3,740,609,344            100.00
+	BR_INST_RETIRED             101,171,584,078          100.00
+
+real	3m18.242s
+user	0m0.029s
+sys	0m0.028s

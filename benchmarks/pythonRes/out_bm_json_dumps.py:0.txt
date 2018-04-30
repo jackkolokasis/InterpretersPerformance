@@ -1,0 +1,13 @@
+python
+
+Events were actively counted for 76868663 nanoseconds.
+Event counts (actual) for /usr/bin/python:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        389,513                  100.00
+	BR_INST_RETIRED             12,356,987               100.00
+has no attribute 'Runner'
+app process exited with the following status: 1
+
+real	0m0.126s
+user	0m0.059s
+sys	0m0.032s

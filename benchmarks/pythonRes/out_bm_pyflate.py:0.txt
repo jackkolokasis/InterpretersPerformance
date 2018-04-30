@@ -1,0 +1,11 @@
+python
+
+Events were actively counted for 35384555 nanoseconds.
+Event counts (actual) for /usr/bin/python:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        441,914                  100.00
+	BR_INST_RETIRED             16,752,164               100.00
+
+real	0m0.084s
+user	0m0.051s
+sys	0m0.039s

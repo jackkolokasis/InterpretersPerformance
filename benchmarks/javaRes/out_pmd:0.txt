@@ -1,0 +1,11 @@
+java
+
+Events were actively counted for 94039497 nanoseconds.
+Event counts (actual) for /usr/bin/java:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        751,241                  100.00
+	BR_INST_RETIRED             30,215,851               100.00
+
+real	0m0.143s
+user	0m0.032s
+sys	0m0.023s
