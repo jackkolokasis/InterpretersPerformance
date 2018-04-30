@@ -1,8 +1,0 @@
-rhino
-Problem finding app name rhino. Aborting.
-usage: ocount [ options ] [ --system-wide | -p <pids> | -r <tids> | -C <cpus> [ command [ args ] ] ]
-See ocount man page for details.
-
-real	0m0.019s
-user	0m0.008s
-sys	0m0.015s

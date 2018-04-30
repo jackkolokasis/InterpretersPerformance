@@ -14,7 +14,7 @@ for f in python/performance/benchmarks/*.py
 do
     filename="${f##*/}"
     echo "bench: "${filename}
-    { time ./executeOProf.sh python ${f} ${architecture} > \
+    { time ./executeOProf.sh python3 ${f} ${architecture} > \
 	    pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
     		pythonRes/out_${filename}:${iteration}.txt
 done
