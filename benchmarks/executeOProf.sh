@@ -42,7 +42,7 @@ else
 fi
 
 # Python
-if [ ${cmd} == "python" ]
+if [ ${cmd} == "python3" ]
 then
 	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
