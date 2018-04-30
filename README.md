@@ -22,7 +22,7 @@
 #  Architectures to be tested 
   1. Intel  : Haswell(2013) (sith), Skylake(2015) (ManosPC),
      Core 2 (2006) (JackPC), Nehalem(2008) (-), Ivy Bridge(2012)
-     (jedi8)
+     (jedi8), sandy bridge (Nikos)
   2. AMD    : AMD64 family15h (hydra)
 
 CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
