@@ -8,7 +8,7 @@ then
 	echo "./executeOProf <interpreter> <executable> <arcitecture>"
 	echo "Add interpreter (python/java/rhino)."
 	echo "Add executable."
-	echo "Add architecture (Skylake/Haswell/Ivy_bridgeintel/amd)."
+	echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
 	exit
 fi
 

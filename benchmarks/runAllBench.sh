@@ -5,7 +5,7 @@ iteration=$2
 if [ $# -eq 0 ]
   then
       echo "./runAllBench <architecture>"
-      echo "Add architecture (Skylake/Haswell/Ivy_bridgeintel/amd)."
+      echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
       echo "Add add iteration id (0..30)."
       exit
 fi
