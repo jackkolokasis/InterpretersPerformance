@@ -1,7 +1,13 @@
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41: 17923 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+  skylake
+.....................
+regex_compile: Mean +- std dev: 201 ms +- 3 ms
 
-real	0m0.084s
-user	0m0.000s
-sys	0m0.000s
+Events were actively counted for 19.6 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      33,140,038,007           100.00
+	br_misp_retired                      407,814,967              100.00
+
+real	0m19.649s
+user	0m19.284s
+sys	0m0.276s

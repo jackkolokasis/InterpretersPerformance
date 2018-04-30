@@ -1,7 +1,21 @@
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41:  8146 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+  skylake
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (591 ms) is 15% of the mean (4.03 sec)
 
-real	0m0.085s
-user	0m0.000s
-sys	0m0.000s
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+mdp: Mean +- std dev: 4.03 sec +- 0.59 sec
+
+Events were actively counted for  5 minutes and 33 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      576,658,538,875          100.00
+	br_misp_retired                      3,669,441,090            100.00
+
+real	5m33.728s
+user	5m33.016s
+sys	0m0.416s

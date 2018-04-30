@@ -1,7 +1,22 @@
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41: 12526 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+  skylake
 
-real	0m0.087s
-user	0m0.000s
-sys	0m0.000s
+Events were actively counted for 26153184 nanoseconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      0                        Event not counted
+	br_misp_retired                      0                        Event not counted
+calibrate-loops]
+                    [--calibrate-warmups] [--recalibrate-warmups] [-d]
+                    [--metadata] [--hist] [--stats] [--affinity CPU_LIST]
+                    [--inherit-environ VARS] [--no-locale] [--python PYTHON]
+                    [--compare-to REF_PYTHON]
+                    [--python-names REF_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: too few arguments
+app process exited with the following status: 2
+
+real	0m0.042s
+user	0m0.020s
+sys	0m0.004s

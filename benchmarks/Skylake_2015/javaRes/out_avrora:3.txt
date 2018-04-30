@@ -1,8 +1,12 @@
+  skylake
 JAVA
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41: 11946 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
 
-real	0m0.082s
-user	0m0.000s
-sys	0m0.000s
+Events were actively counted for 16.1 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      23,290,041,970           100.00
+	br_misp_retired                      1,117,321,039            100.00
+
+real	0m16.069s
+user	1m0.392s
+sys	0m2.128s

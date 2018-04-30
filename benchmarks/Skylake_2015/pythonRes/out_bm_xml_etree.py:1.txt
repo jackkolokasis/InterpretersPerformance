@@ -1,7 +1,19 @@
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41:  9570 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+  skylake
+.....................
+xml_etree_parse: Mean +- std dev: 117 ms +- 3 ms
+.....................
+xml_etree_iterparse: Mean +- std dev: 104 ms +- 3 ms
+.....................
+xml_etree_generate: Mean +- std dev: 176 ms +- 4 ms
+.....................
+xml_etree_process: Mean +- std dev: 115 ms +- 2 ms
 
-real	0m0.090s
-user	0m0.000s
-sys	0m0.000s
+Events were actively counted for 58.0 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      105,595,838,028          100.00
+	br_misp_retired                      289,386,286              100.00
+
+real	0m58.012s
+user	0m56.228s
+sys	0m1.368s

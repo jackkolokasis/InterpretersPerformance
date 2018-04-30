@@ -1,8 +1,90 @@
+  skylake
 JAVA
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41: 14208 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+-------------------------------------------------------------------------------
+PYBENCH 2.0
+-------------------------------------------------------------------------------
+* using Python 2.5.0+
+* system check interval set to maximum: 2147483647
+* using timer: time.time
 
-real	0m0.084s
-user	0m0.000s
-sys	0m0.000s
+Calibrating tests. Please wait...
+
+Running 1 round(s) of the suite at warp factor 20:
+
+* Round 1 done in 47.777 seconds.
+
+-------------------------------------------------------------------------------
+Benchmark: 2018-04-30 12:58:13
+-------------------------------------------------------------------------------
+
+    Rounds: 1
+    Warp:   20
+    Timer:  time.time
+
+Test                             minimum  average  operation  overhead
+-------------------------------------------------------------------------------
+          BuiltinFunctionCalls:    385ms    385ms    1.51us    0.000ms
+           BuiltinMethodLookup:    757ms    757ms    1.44us    0.000ms
+                 CompareFloats:    607ms    607ms    1.01us    0.000ms
+         CompareFloatsIntegers:    560ms    560ms    1.24us    0.000ms
+               CompareIntegers:    933ms    933ms    1.04us    0.000ms
+        CompareInternedStrings:    835ms    835ms    1.11us    0.000ms
+                  CompareLongs:    592ms    592ms    1.13us    0.000ms
+                CompareStrings:    582ms    582ms    1.16us    0.000ms
+                CompareUnicode:    441ms    441ms    1.18us    0.000ms
+                 ConcatStrings:    397ms    397ms    1.59us    0.000ms
+                 ConcatUnicode:    250ms    250ms    1.67us    0.000ms
+               CreateInstances:    681ms    681ms   12.16us    0.000ms
+            CreateNewInstances:   1142ms   1142ms   27.19us    0.000ms
+       CreateStringsWithConcat:    708ms    708ms    1.42us    0.000ms
+       CreateUnicodeWithConcat:    304ms    304ms    1.52us    0.000ms
+                  DictCreation:    477ms    477ms    2.38us    0.000ms
+             DictWithFloatKeys:    521ms    521ms    1.16us    0.000ms
+           DictWithIntegerKeys:    435ms    435ms    0.72us    0.000ms
+            DictWithStringKeys:    472ms    472ms    0.79us    0.000ms
+                      ForLoops:   1152ms   1152ms   92.16us    0.000ms
+                    IfThenElse:    639ms    639ms    0.95us    0.000ms
+                   ListSlicing:   1298ms   1298ms  185.43us    0.000ms
+                NestedForLoops:   1068ms   1068ms    1.42us    0.000ms
+          NormalClassAttribute:    478ms    478ms    0.80us    0.000ms
+       NormalInstanceAttribute:    454ms    454ms    0.76us    0.000ms
+           PythonFunctionCalls:    517ms    517ms    3.13us    0.000ms
+             PythonMethodCalls:    866ms    866ms    7.70us    0.000ms
+                     Recursion:    999ms    999ms   39.96us    0.000ms
+                  SecondImport:    695ms    695ms   13.90us    0.000ms
+           SecondPackageImport:    678ms    678ms   13.56us    0.000ms
+         SecondSubmoduleImport:    927ms    927ms   18.54us    0.000ms
+       SimpleComplexArithmetic:    383ms    383ms    0.87us    0.000ms
+        SimpleDictManipulation:    532ms    532ms    0.89us    0.000ms
+         SimpleFloatArithmetic:    456ms    456ms    0.69us    0.000ms
+      SimpleIntFloatArithmetic:    378ms    378ms    0.57us    0.000ms
+       SimpleIntegerArithmetic:    383ms    383ms    0.58us    0.000ms
+        SimpleListManipulation:    616ms    616ms    1.05us    0.000ms
+          SimpleLongArithmetic:    442ms    442ms    1.34us    0.000ms
+                    SmallLists:    879ms    879ms    2.59us    0.000ms
+                   SmallTuples:    989ms    989ms    3.66us    0.000ms
+         SpecialClassAttribute:    476ms    476ms    0.79us    0.000ms
+      SpecialInstanceAttribute:    456ms    456ms    0.76us    0.000ms
+                StringMappings:   5623ms   5623ms   44.63us    0.000ms
+              StringPredicates:   1318ms   1318ms    3.77us    0.000ms
+                 StringSlicing:    648ms    648ms    2.31us    0.000ms
+                     TryExcept:     64ms     64ms    0.06us    0.000ms
+                TryRaiseExcept:    553ms    553ms   17.28us    0.000ms
+                  TupleSlicing:    280ms    280ms    2.13us    0.000ms
+               UnicodeMappings:   2162ms   2162ms  120.11us    0.000ms
+             UnicodePredicates:   1149ms   1149ms    4.26us    0.000ms
+             UnicodeProperties:   8540ms   8540ms   42.70us    0.000ms
+                UnicodeSlicing:    600ms    600ms    2.45us    0.000ms
+-------------------------------------------------------------------------------
+Totals:                          47777ms  47777ms
+
+
+Events were actively counted for  1 minute and 13 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      49,358,884,962           100.00
+	br_misp_retired                      1,469,789,129            100.00
+
+real	1m13.682s
+user	1m13.888s
+sys	0m0.224s

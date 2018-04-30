@@ -1,7 +1,14 @@
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-../../executeOProf.sh: line 41: 15119 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+  skylake
+Typescript: 4173
+----
+Score (version 9): 4173
 
-real	0m0.083s
-user	0m0.000s
-sys	0m0.000s
+Events were actively counted for 31.3 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      74,860,551,907           100.00
+	br_misp_retired                      1,200,814,640            100.00
+
+real	0m31.305s
+user	1m14.484s
+sys	0m0.572s

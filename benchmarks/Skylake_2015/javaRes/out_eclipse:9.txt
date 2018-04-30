@@ -1,8 +1,99 @@
+  skylake
 JAVA
-terminate called after throwing an instance of 'std::logic_error'
-  what():  basic_string::_M_construct null not valid
-./executeOProf.sh: line 41: 18441 Aborted                 (core dumped) ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+Unzip workspace 
+Initialize workspace ...................
+Index workspace .....................
+Build workspace Unexpected ERROR marker(s):
+org.eclipse.update.configurator:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+SiteEntry.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.text:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.util.Comparator. Fix the build path then try building this project
+UndoEdit.java:
+	The type java.util.Comparator cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.team.core:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+StringMatcher.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+ValidateEditChecker.java:
+	The import java.util.Arrays cannot be resolved
+ValidateEditChecker.java:
+	Arrays cannot be resolved
+ParticipantExtensionPoint.java:
+	The import java.util.Arrays cannot be resolved
+ParticipantExtensionPoint.java:
+	Arrays cannot be resolved
+TextChange.java:
+	The import java.util.Arrays cannot be resolved
+TextChange.java:
+	Arrays cannot be resolved
+TextChange.java:
+	Arrays cannot be resolved
+TextChange.java:
+	Arrays cannot be resolved
+DocumentChange.java:
+	Cannot reduce the visibility of the inherited method from TextChange
+DocumentChange.java:
+	Cannot reduce the visibility of the inherited method from TextChange
+DocumentChange.java:
+	Cannot reduce the visibility of the inherited method from TextChange
+DocumentChange.java:
+	Cannot reduce the visibility of the inherited method from TextChange
+org.eclipse.jdt.core:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+JDTCompilerAdapter.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.variables:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+StringSubstitutionEngine.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.runtime.compatibility:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+PluginActivator.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.runtime:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+MultiRule.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.resources:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+ElementTreeIterator.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.filebuffers:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.nio.CharBuffer. Fix the build path then try building this project
+ResourceTextFileBuffer.java:
+	The type java.nio.CharBuffer cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.core.expressions:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+TypeExtensionManager.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.eclipse.ant.core:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+AntRunner.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
+org.apache.lucene:
+	The project was not built since its build path is incomplete. Cannot find the class file for java.lang.CharSequence. Fix the build path then try building this project
+TokenMgrError.java:
+	The type java.lang.CharSequence cannot be resolved. It is indirectly referenced from required .class files
 
-real	0m0.083s
-user	0m0.000s
-sys	0m0.000s
+--------------------
+
+Search .. 5,665 references for default constructor in workspace
+       .. 1,957 references for method 'equals' in workspace
+Type hierarchy tests 
+AST tests 
+Completion tests .........
+Format tests ..............
+Model tests ................
+Delete workspace 
+
+Events were actively counted for  1 minute and 56 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      100,975,122,239          100.00
+	br_misp_retired                      4,326,886,980            100.00
+
+real	1m56.682s
+user	2m3.448s
+sys	0m1.268s
