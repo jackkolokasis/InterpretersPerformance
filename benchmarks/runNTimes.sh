@@ -28,3 +28,13 @@ do
 	echo " " >> ${LOGFILE}
 	./runAllBench.sh ${architecture} ${i} >> ${LOGFILE}
 done
+echo "Move results to architecture dir..."
+mkdir ${architecture}
+mv javascriptRes ${architecture}
+mv javaRes ${architecture}
+mv pythonRes ${architecture}
+
+echo "Clear results..."
+rm -rf javascriptRes
+rm -rf javaRes
+rm -rf pythonRes
