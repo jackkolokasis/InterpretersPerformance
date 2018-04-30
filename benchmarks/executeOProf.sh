@@ -6,9 +6,9 @@ architecture=$3
 if [ $# -eq 0 ]
 then
 	echo "./executeOProf <interpreter> <executable> <arcitecture>"
-	echo "Add interpreter (python/java etc)."
+	echo "Add interpreter (python/java/rhino)."
 	echo "Add executable."
-	echo "Add architecyure (intel/amd)."
+	echo "Add architecture (Skylake/Haswell/Ivy_bridgeintel/amd)."
 	exit
 fi
 
@@ -41,13 +41,18 @@ else
 
 fi
 
-#JavaScript or Python
-if [ ${cmd} != "java" ]; then
-	# Rhino or Python cmd
+# Python
+if [ ${cmd} == "python" ]
+then
+	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
-else
-	# Java cmd
-	echo "JAVA"
+# Java
+elif [ ${cmd} == "java" ]
+then
+	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+#JavaScript
+else
+	echo ${cmd}
+	ocount --event ${miss_pred},${total_branches} ${cmd} -1 ${executable}
 fi
-

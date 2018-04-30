@@ -6,7 +6,7 @@ LOGFILE=results.log
 if [ $# -eq 0 ] 
 then 
 	echo "./runNTimes <architecture> <iteration_number>"
-	echo "Add architecture (intel/amd)."
+	echo "Add architecture (Skylake/Haswell/Ivy_bridgeintel/amd)."
 	echo "Add number of iterations."
 	exit 
 fi 
