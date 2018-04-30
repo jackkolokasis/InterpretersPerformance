@@ -10,12 +10,18 @@ then
 	echo "Add number of iterations."
 	exit 
 fi 
-
+echo "Remove previous results"
+rm -rf javascriptRes
+rm -rf javaRes
+rm -rf pythonRes
+rm -rf results.log
+echo "Create new dirs"
 mkdir javascriptRes
 mkdir javaRes
 mkdir pythonRes
 
 
+echo "Start execution"
 echo "-----------------------------" >> ${LOGFILE} 
 echo "Benchmark Testing Started    " >> ${LOGFILE} 
 echo "-----------------------------" >> ${LOGFILE} 
@@ -28,11 +34,13 @@ do
 	echo " " >> ${LOGFILE}
 	./runAllBench.sh ${architecture} ${i} >> ${LOGFILE}
 done
+
 echo "Move results to architecture dir..."
 mkdir ${architecture}
-mv javascriptRes ${architecture}
-mv javaRes ${architecture}
-mv pythonRes ${architecture}
+cp -rf javascriptRes ${architecture}
+cp -rf javaRes ${architecture}
+cp -rf pythonRes ${architecture}
+tar cvf ${architecture}.tar ${architecture} 
 
 echo "Clear results..."
 rm -rf javascriptRes
