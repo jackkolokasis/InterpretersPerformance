@@ -74,3 +74,5 @@ ERROR:
 SOLUTION:
 	sudo apt-get install python-pip
 	sudo python -m pip install perf 
+	wget https://bootstrap.pypa.io/get-pip.py
+	sudo python3.6 get-pip.py
