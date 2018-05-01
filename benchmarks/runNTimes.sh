@@ -1,6 +1,7 @@
 #!/bin/bash
 architecture=$1 
 iterationNum=$2 
+pythonVersion=$3
 LOGFILE=results.log
 
 if [ $# -eq 0 ] 
@@ -8,6 +9,7 @@ then
 	echo "./runNTimes <architecture> <iteration_number>"
 	echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
 	echo "Add number of iterations."
+	echo "Add add python version[python3, python3.6]."
 	exit 
 fi 
 echo "Remove previous results"
@@ -32,7 +34,7 @@ do
 
 	echo "Iteration : "${i} >> ${LOGFILE}
 	echo " " >> ${LOGFILE}
-	./runAllBench.sh ${architecture} ${i} >> ${LOGFILE}
+	./runAllBench.sh ${architecture} ${i} ${pythonVersion}>> ${LOGFILE}
 done
 
 echo "Move results to architecture dir..."

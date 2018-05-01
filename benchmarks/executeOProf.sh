@@ -42,7 +42,11 @@ else
 fi
 
 # Python
-if [ ${cmd} == "python3" ]
+if [ ${cmd} == "python" ]
+then
+	echo ${cmd}
+	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+elif [ ${cmd} == "python3.6" ]
 then
 	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
