@@ -1,0 +1,34 @@
+  haswell
+python3
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (3.77 us) is 12% of the mean (32.6 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+logging_format: Mean +- std dev: 32.6 us +- 3.8 us
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (117 ns) is 11% of the mean (1.05 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+logging_silent: Mean +- std dev: 1.05 us +- 0.12 us
+.....................
+logging_simple: Mean +- std dev: 29.1 us +- 1.7 us
+
+Events were actively counted for 51.3 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        117,251,188              100.00
+	br_inst_retired        27,818,985,899           100.00
+
+real	0m51.311s
+user	0m49.979s
+sys	0m1.317s

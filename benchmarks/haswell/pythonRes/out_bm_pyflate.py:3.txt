@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+pyflate: Mean +- std dev: 1.47 sec +- 0.01 sec
+
+Events were actively counted for  2 minutes and 10 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        438,930,007              100.00
+	br_inst_retired        115,823,465,824          100.00
+
+real	2m10.484s
+user	2m9.195s
+sys	0m1.252s

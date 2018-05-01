@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+regex_compile: Mean +- std dev: 369 ms +- 3 ms
+
+Events were actively counted for 39.9 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        105,693,982              100.00
+	br_inst_retired        28,446,628,698           100.00
+
+real	0m39.972s
+user	0m39.491s
+sys	0m0.460s

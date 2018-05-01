@@ -1,0 +1,19 @@
+  haswell
+java
+Using scaled threading model. 32 processors detected, 32 threads used to drive the workload, in a possible range of [1,64]
+Server thread created
+Loading web application
+Creating client threads
+Waiting for clients to complete
+Client threads complete ... unloading web application
+Server stopped ... iteration complete
+
+Events were actively counted for 21.0 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                  Count                    % time counted
+	br_misp_retired        72,769,383               100.00
+	br_inst_retired        5,057,602,764            100.00
+
+real	0m21.038s
+user	0m39.185s
+sys	0m1.378s

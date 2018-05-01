@@ -1,0 +1,12 @@
+  haswell
+java
+
+Events were actively counted for 22.2 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                  Count                    % time counted
+	br_misp_retired        50,383,118               100.00
+	br_inst_retired        11,507,084,834           100.00
+
+real	0m22.224s
+user	1m18.581s
+sys	0m2.383s

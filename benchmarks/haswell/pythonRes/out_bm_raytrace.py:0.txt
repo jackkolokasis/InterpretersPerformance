@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+raytrace: Mean +- std dev: 1.33 sec +- 0.01 sec
+
+Events were actively counted for  1 minute and 58 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        169,081,603              100.00
+	br_inst_retired        89,363,276,012           100.00
+
+real	1m58.128s
+user	1m57.676s
+sys	0m0.419s

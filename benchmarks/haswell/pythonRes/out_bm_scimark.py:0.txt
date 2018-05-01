@@ -1,0 +1,38 @@
+  haswell
+python3
+.....................
+scimark_fft: Mean +- std dev: 714 ms +- 4 ms
+.....................
+scimark_lu: Mean +- std dev: 623 ms +- 8 ms
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (34.3 ms) is 13% of the mean (258 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+scimark_monte_carlo: Mean +- std dev: 258 ms +- 34 ms
+.....................
+scimark_sor: Mean +- std dev: 549 ms +- 11 ms
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (1.23 ms) is 12% of the mean (10.4 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+scimark_sparse_mat_mult: Mean +- std dev: 10.4 ms +- 1.2 ms
+
+Events were actively counted for  3 minutes and 42 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        285,850,018              100.00
+	br_inst_retired        176,613,370,691          100.00
+
+real	3m42.849s
+user	3m40.816s
+sys	0m1.975s

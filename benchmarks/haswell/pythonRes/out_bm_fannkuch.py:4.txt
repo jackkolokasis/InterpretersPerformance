@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+fannkuch: Mean +- std dev: 1.07 sec +- 0.03 sec
+
+Events were actively counted for  1 minute and 36 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        334,732,195              100.00
+	br_inst_retired        89,118,443,765           100.00
+
+real	1m36.245s
+user	1m35.799s
+sys	0m0.439s

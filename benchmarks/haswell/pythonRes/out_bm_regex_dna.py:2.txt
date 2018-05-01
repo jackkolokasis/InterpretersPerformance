@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+regex_dna: Mean +- std dev: 231 ms +- 3 ms
+
+Events were actively counted for 33.8 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        626,919,599              100.00
+	br_inst_retired        30,200,366,931           100.00
+
+real	0m33.881s
+user	0m33.132s
+sys	0m0.721s
