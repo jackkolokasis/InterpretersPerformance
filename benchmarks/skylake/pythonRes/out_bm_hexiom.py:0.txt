@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+hexiom: Mean +- std dev: 12.9 ms +- 0.5 ms
+
+Events were actively counted for 9.9 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      20,371,364,795           100.00
+	br_misp_retired                      119,750,094              100.00
+
+real	0m9.890s
+user	0m9.664s
+sys	0m0.140s

@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+meteor_contest: Mean +- std dev: 126 ms +- 3 ms
+
+Events were actively counted for 11.8 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      19,709,722,648           100.00
+	br_misp_retired                      370,976,458              100.00
+
+real	0m11.826s
+user	0m11.648s
+sys	0m0.096s

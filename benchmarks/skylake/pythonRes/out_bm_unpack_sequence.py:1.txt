@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+unpack_sequence: Mean +- std dev: 57.7 ns +- 0.5 ns
+
+Events were actively counted for 17.2 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      37,770,687,328           100.00
+	br_misp_retired                      41,689,267               100.00
+
+real	0m17.203s
+user	0m17.024s
+sys	0m0.096s
