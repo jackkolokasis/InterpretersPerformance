@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Check python ..."
 cd python/performance/benchmarks/
-python3 bm_2to3.py 
+python3.6 bm_2to3.py 
 cd -
 echo "----------------"
 

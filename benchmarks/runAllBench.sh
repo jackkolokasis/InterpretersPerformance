@@ -1,12 +1,14 @@
 #!/bin/bash
 architecture=$1
 iteration=$2
+pythonversion=$3
 
 if [ $# -eq 0 ]
   then
       echo "./runAllBench <architecture>"
       echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
       echo "Add add iteration id (0..30)."
+      echo "Add add python version[python3, python3.6]."
       exit
 fi
 
@@ -14,7 +16,7 @@ for f in python/performance/benchmarks/*.py
 do
     filename="${f##*/}"
     echo "bench: "${filename}
-    { time ./executeOProf.sh python3 ${f} ${architecture} > \
+    { time ./executeOProf.sh ${pythonversion} ${f} ${architecture} > \
 	    pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
     		pythonRes/out_${filename}:${iteration}.txt
 done
