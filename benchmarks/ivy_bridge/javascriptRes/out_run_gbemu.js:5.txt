@@ -1,0 +1,30 @@
+  ivy_bridge
+rhino
+Invalid option "-1"
+Usage: java org.mozilla.javascript.tools.shell.Main [options...] [files]
+Valid options are:
+    -?, -help          Displays help messages.
+    -w                 Enable warnings.
+    -version 100|110|120|130|140|150|160|170|180
+                       Set a specific language version.
+    -opt [-1|0-9]      Set optimization level.
+    -f script-filename Execute script file, or "-" for interactive.
+    -e script-source   Evaluate inline script.
+    -modules [uri]     Add a single path or URL element to the CommonJS
+                       module search path. (implies -require)
+    -require           Enable CommonJS module support.
+    -sandbox           Enable CommonJS sandbox mode. (implies -require)
+    -debug             Generate debug code.
+    -strict            Enable strict mode warnings.
+    -fatal-warnings    Treat warnings as errors.
+    -encoding charset  Use specified character encoding as default when reading scripts.
+
+Events were actively counted for 265654439 nanoseconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	br_misp_retired        3,387,685                100.00
+	br_inst_retired        73,533,857               100.00
+
+real	0m0.310s
+user	0m0.294s
+sys	0m0.089s

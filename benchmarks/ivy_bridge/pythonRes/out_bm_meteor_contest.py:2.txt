@@ -1,0 +1,14 @@
+  ivy_bridge
+python3.6
+.....................
+meteor_contest: Mean +- std dev: 349 ms +- 3 ms
+
+Events were actively counted for 33.8 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	br_misp_retired        349,864,183              100.00
+	br_inst_retired        16,300,360,605           100.00
+
+real	0m33.805s
+user	0m33.254s
+sys	0m0.546s
