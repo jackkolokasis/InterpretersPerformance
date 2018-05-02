@@ -1,0 +1,19 @@
+python3.6
+.....................
+xml_etree_parse: Mean +- std dev: 680 ms +- 8 ms
+.....................
+xml_etree_iterparse: Mean +- std dev: 571 ms +- 13 ms
+.....................
+xml_etree_generate: Mean +- std dev: 775 ms +- 7 ms
+.....................
+xml_etree_process: Mean +- std dev: 640 ms +- 5 ms
+
+Events were actively counted for  4 minutes and 48 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        2,766,379,798            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     136,052,160,489          100.00
+
+real	4m48.066s
+user	4m41.928s
+sys	0m6.172s

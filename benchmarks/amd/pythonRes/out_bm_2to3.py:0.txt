@@ -1,0 +1,13 @@
+python3.6
+.....................
+2to3: Mean +- std dev: 1.94 sec +- 0.01 sec
+
+Events were actively counted for  2 minutes and 47 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        2,884,243,370            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     66,688,890,755           100.00
+
+real	2m47.932s
+user	2m42.809s
+sys	0m4.504s

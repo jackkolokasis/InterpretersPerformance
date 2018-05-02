@@ -1,0 +1,13 @@
+python3.6
+.....................
+nqueens: Mean +- std dev: 624 ms +- 13 ms
+
+Events were actively counted for 57.2 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        684,362,066              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     30,432,913,355           100.00
+
+real	0m57.264s
+user	0m56.302s
+sys	0m0.920s
