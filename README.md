@@ -64,7 +64,12 @@ an oxi plirws atomatopoiimeno.""
 
 *Disable JIT in Java
 https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/tools/jitpd_disable.html#jitpd_disable     
-    
+# Dependencies
+	1. install python3.6 
+		CentOS: sudo yum -y install python36u
+	2. install python-pip
+	3. install pip perf
+	4. install rhino (for javascript)     
 # Python troubleshouting
 ERROR:
 	Traceback (most recent call last):
