@@ -68,7 +68,9 @@ https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.
 	1. install python3.6 
 		CentOS: sudo yum -y install python36u
 	2. install python-pip
+		python3.6 -m pip install 
 	3. install pip perf
+
 	4. install rhino (for javascript)     
 # Python troubleshouting
 ERROR:
