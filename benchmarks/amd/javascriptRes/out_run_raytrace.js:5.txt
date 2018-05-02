@@ -1,0 +1,29 @@
+rhino
+Invalid option "-1"
+Usage: java org.mozilla.javascript.tools.shell.Main [options...] [files]
+Valid options are:
+    -?, -help          Displays help messages.
+    -w                 Enable warnings.
+    -version 100|110|120|130|140|150|160|170|180
+                       Set a specific language version.
+    -opt [-1|0-9]      Set optimization level.
+    -f script-filename Execute script file, or "-" for interactive.
+    -e script-source   Evaluate inline script.
+    -modules [uri]     Add a single path or URL element to the CommonJS
+                       module search path. (implies -require)
+    -require           Enable CommonJS module support.
+    -sandbox           Enable CommonJS sandbox mode. (implies -require)
+    -debug             Generate debug code.
+    -strict            Enable strict mode warnings.
+    -fatal-warnings    Treat warnings as errors.
+    -encoding charset  Use specified character encoding as default when reading scripts.
+
+Events were actively counted for 332911969 nanoseconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        6,309,301                100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     126,658,024              100.00
+
+real	0m0.394s
+user	0m0.350s
+sys	0m0.185s

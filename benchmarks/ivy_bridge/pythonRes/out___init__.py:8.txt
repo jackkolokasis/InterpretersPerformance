@@ -1,0 +1,12 @@
+  ivy_bridge
+python3.6
+
+Events were actively counted for 81413378 nanoseconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	br_misp_retired        689,240                  100.00
+	br_inst_retired        19,960,994               100.00
+
+real	0m0.130s
+user	0m0.096s
+sys	0m0.027s

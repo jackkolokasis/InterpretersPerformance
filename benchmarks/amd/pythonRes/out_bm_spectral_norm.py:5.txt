@@ -1,0 +1,13 @@
+python3.6
+.....................
+spectral_norm: Mean +- std dev: 753 ms +- 11 ms
+
+Events were actively counted for  1 minute and 7 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        740,447,655              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     44,707,304,978           100.00
+
+real	1m7.964s
+user	1m7.101s
+sys	0m0.880s

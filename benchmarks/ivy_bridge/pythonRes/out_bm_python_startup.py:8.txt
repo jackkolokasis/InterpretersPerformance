@@ -1,0 +1,14 @@
+  ivy_bridge
+python3.6
+.....................
+python_startup: Mean +- std dev: 38.4 ms +- 3.7 ms
+
+Events were actively counted for 58.0 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	br_misp_retired        494,737,729              100.00
+	br_inst_retired        14,186,691,863           100.00
+
+real	0m58.029s
+user	0m51.043s
+sys	0m7.369s

@@ -1,0 +1,22 @@
+  ivy_bridge
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the maximum (167 us) is 61% greater than the mean (103 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+json_loads: Mean +- std dev: 103 us +- 8 us
+
+Events were actively counted for 15.1 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	br_misp_retired        82,110,954               100.00
+	br_inst_retired        8,853,282,332            100.00
+
+real	0m15.110s
+user	0m14.539s
+sys	0m0.567s

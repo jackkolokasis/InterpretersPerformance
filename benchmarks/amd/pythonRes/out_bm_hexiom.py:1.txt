@@ -1,0 +1,13 @@
+python3.6
+.....................
+hexiom: Mean +- std dev: 67.8 ms +- 1.8 ms
+
+Events were actively counted for 16.2 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        200,893,288              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     7,879,810,154            100.00
+
+real	0m16.303s
+user	0m15.414s
+sys	0m0.916s
