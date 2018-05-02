@@ -1,0 +1,18 @@
+  skylake
+python3
+.....................
+logging_format: Mean +- std dev: 14.4 us +- 0.4 us
+.....................
+logging_silent: Mean +- std dev: 421 ns +- 10 ns
+.....................
+logging_simple: Mean +- std dev: 11.8 us +- 0.5 us
+
+Events were actively counted for 37.8 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      66,874,581,482           100.00
+	br_misp_retired                      341,273,504              100.00
+
+real	0m37.816s
+user	0m37.160s
+sys	0m0.416s

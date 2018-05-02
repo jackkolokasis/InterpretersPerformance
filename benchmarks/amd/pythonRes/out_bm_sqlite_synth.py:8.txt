@@ -1,0 +1,13 @@
+python3.6
+.....................
+sqlite_synth: Mean +- std dev: 23.0 us +- 0.8 us
+
+Events were actively counted for 20.7 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        225,321,525              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     7,361,542,929            100.00
+
+real	0m20.737s
+user	0m19.838s
+sys	0m0.920s

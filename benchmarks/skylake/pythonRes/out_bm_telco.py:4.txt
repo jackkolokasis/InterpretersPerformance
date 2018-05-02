@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+telco: Mean +- std dev: 8.42 ms +- 0.18 ms
+
+Events were actively counted for 12.5 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      25,004,878,581           100.00
+	br_misp_retired                      103,080,221              100.00
+
+real	0m12.466s
+user	0m12.256s
+sys	0m0.124s

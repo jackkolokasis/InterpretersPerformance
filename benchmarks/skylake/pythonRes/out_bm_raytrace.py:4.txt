@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+raytrace: Mean +- std dev: 711 ms +- 14 ms
+
+Events were actively counted for  1 minute and 0 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      126,452,150,556          100.00
+	br_misp_retired                      586,132,925              100.00
+
+real	1m0.718s
+user	1m0.516s
+sys	0m0.112s

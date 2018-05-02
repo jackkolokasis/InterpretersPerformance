@@ -1,0 +1,13 @@
+python3.6
+.....................
+python_startup: Mean +- std dev: 59.2 ms +- 0.6 ms
+
+Events were actively counted for 52.8 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        947,139,605              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     19,515,488,957           100.00
+
+real	0m52.864s
+user	0m43.548s
+sys	0m9.690s

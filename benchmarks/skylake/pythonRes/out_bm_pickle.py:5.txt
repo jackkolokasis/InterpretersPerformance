@@ -1,0 +1,23 @@
+  skylake
+python3
+
+Events were actively counted for 33304744 nanoseconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      35,869,265               100.00
+	br_misp_retired                      1,346,212                100.00
+alibrate-loops] [--recalibrate-loops]
+                    [--calibrate-warmups] [--recalibrate-warmups] [-d]
+                    [--metadata] [--hist] [--stats] [--affinity CPU_LIST]
+                    [--inherit-environ VARS] [--no-locale] [--python PYTHON]
+                    [--compare-to REF_PYTHON]
+                    [--python-names REF_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: the following arguments are required: benchmark
+app process exited with the following status: 2
+
+real	0m0.049s
+user	0m0.024s
+sys	0m0.008s

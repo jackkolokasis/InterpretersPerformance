@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+regex_compile: Mean +- std dev: 185 ms +- 3 ms
+
+Events were actively counted for 18.4 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      34,071,214,863           100.00
+	br_misp_retired                      328,196,503              100.00
+
+real	0m18.406s
+user	0m18.180s
+sys	0m0.136s
