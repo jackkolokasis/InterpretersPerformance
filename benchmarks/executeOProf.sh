@@ -23,6 +23,13 @@ then
 	#miss predicted branches
 	miss_pred="br_misp_retired:"
 	total_branches="br_inst_retired:"
+#Nehalem
+elif [ $architecture = "nehalem" ]
+then
+	echo " " $architecture
+	#miss predicted branches
+	miss_pred="BR_MISS_PRED_RETIRED"
+	total_branches="BR_INST_RETIRED"
 # AMD
 elif [ $architecture = "amd" ]
 then
