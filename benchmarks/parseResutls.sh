@@ -10,25 +10,28 @@
 # @email    kolokasis@ics.forth.gr
 #           manospavl@ics.forth.gr
 #
-# @vrief  This script parse all the outputs metrics from the
+# @brief  This script parse all the outputs metrics from the
 # benchmarks
-# Usage ./parseResults.sh <iteration num> <architecture>
+# Usage 
+#      ./parseResults.sh <iteration num> <architecture>
 # 
 # Helpful informations:
+# ---------------------
 #   filename=$(basename -- "$fullfile")
 #   extension="${filename##*.}"
 #   filename="${filename%.*}"
 ###################################################
 
 
-iterationNum=$1
-architecture=$2
+iterationNum=$1     # Number of iterations
+architecture=$2     # Architecture version
 
 echo -n "" > pythonRes.csv
 echo -n "" > javascriptRes.csv
 echo -n "" > javaRes.csv
 
-if [ $# -eq 0 ]
+# Check input arguments
+if [ $# -lt 3 ]
   then
       echo "./ececuteOProf <interpreter> <executable> <arcitecture>"
       echo "Add iteration number."

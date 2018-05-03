@@ -1,9 +1,28 @@
 #!/bin/bash
-cmd=$1
-executable=$2
-architecture=$3
 
-if [ $# -eq 0 ]
+#############################################################
+#
+# file: executeOProf.sh
+#
+# @Author   Iacovos G. Kolokasis
+#           Emmanouil Pavlidakis
+# @Version  03-05-2018
+# @email    kolokasis@ics.forth.gr
+#           manospavl@ics.forth.gr
+#
+# @brief    Execute profiling benchmarks
+# 
+# Usage 
+#   ./executeOProf <interpreter> <executable> <arcitecture>
+#
+#############################################################
+
+cmd=$1                  # Command
+executable=$2           # Executable file
+architecture=$3         # Architecture version
+
+# Check input arguments
+if [ $# -lt 3 ]
 then
 	echo "./executeOProf <interpreter> <executable> <arcitecture>"
 	echo "Add interpreter (python/java/rhino)."
@@ -12,24 +31,30 @@ then
 	exit
 fi
 
-#run ophelp to get event name for branches (different per architecture)
+# Run ophelp to get event name for branches (different per architecture)
 ophelp > help.out
 
-#INTEL
-#Skylake + Haswell + Ivy bridge
+# INTEL
+# Skylake + Haswell + Ivy bridge
 if [ $architecture = "skylake" ] || [ $architecture = "haswell" ] || [ $architecture = "ivy_bridge" ]
 then
 	echo " " $architecture
 	#miss predicted branches
 	miss_pred="br_misp_retired:"
+
+	#all branches
 	total_branches="br_inst_retired:"
-#Nehalem
+
+# Nehalem
 elif [ $architecture = "nehalem" ]
 then
 	echo " " $architecture
 	#miss predicted branches
 	miss_pred="BR_MISS_PRED_RETIRED"
+
+	#all branches
 	total_branches="BR_INST_RETIRED"
+
 # AMD
 elif [ $architecture = "amd" ]
 then
@@ -38,6 +63,7 @@ then
 
 	#all branches
 	total_branches=`cat help.out | grep -i -B 1 "Retired Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
+
 # No info for intel
 else
 	#miss predicted branches
@@ -53,15 +79,18 @@ if [ ${cmd} == "python" ]
 then
 	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
+
 elif [ ${cmd} == "python3.6" ]
 then
 	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} ${executable}
-# Java
+# Java 
+
 elif [ ${cmd} == "java" ]
 then
 	echo ${cmd}
 	ocount --event ${miss_pred},${total_branches} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+
 #JavaScript
 else
 	echo ${cmd}
