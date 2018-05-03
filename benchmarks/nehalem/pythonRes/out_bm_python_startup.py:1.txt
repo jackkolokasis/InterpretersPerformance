@@ -1,0 +1,14 @@
+  nehalem
+python3.6
+.....................
+python_startup: Mean +- std dev: 27.7 ms +- 0.9 ms
+
+Events were actively counted for 43.8 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        1,819,825,148            100.00
+	BR_INST_RETIRED             21,067,836,687           100.00
+
+real	0m43.838s
+user	0m38.187s
+sys	0m5.983s

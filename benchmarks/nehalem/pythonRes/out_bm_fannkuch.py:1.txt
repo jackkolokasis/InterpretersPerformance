@@ -1,0 +1,14 @@
+  nehalem
+python3.6
+.....................
+fannkuch: Mean +- std dev: 1.88 sec +- 0.03 sec
+
+Events were actively counted for  2 minutes and 40 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        7,947,579,182            100.00
+	BR_INST_RETIRED             142,249,256,839          100.00
+
+real	2m41.035s
+user	2m40.627s
+sys	0m0.451s

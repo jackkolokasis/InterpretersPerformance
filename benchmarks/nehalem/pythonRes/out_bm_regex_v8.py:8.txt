@@ -1,0 +1,14 @@
+  nehalem
+python3.6
+.....................
+regex_v8: Mean +- std dev: 77.4 ms +- 1.6 ms
+
+Events were actively counted for 19.2 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        1,270,635,777            100.00
+	BR_INST_RETIRED             15,388,136,983           100.00
+
+real	0m19.270s
+user	0m18.740s
+sys	0m0.523s
