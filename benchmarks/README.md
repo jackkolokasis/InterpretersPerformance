@@ -1,7 +1,8 @@
 # Benchmark Interpreters
 
 ##Execute Benchmarks
-    Run Benchmark suite with runAllBench.sh script
-    ./runAllBench <directory> <cmd> <extention> <architecture>
+    Run Benchmark suite with runNTimes.sh script
+    ./runNTimes <architecture> <iteration_number> 
 
-    e.g ./runAllBench.sh python/performance/benchmarks/ python py amd 
+    To check if your enviroment is ok (python exists, 
+    rhino is there... etc), run ./testEnv.sh 
