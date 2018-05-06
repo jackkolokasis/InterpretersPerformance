@@ -21,16 +21,14 @@
 
 architecture=$1         # Architecture version
 iterationNum=$2         # Number of iterations
-pythonVersion=$3        # Python version
 LOGFILE=results.log     # Log file for benchmarks execution
 
 # Check input arguments
-if [ $# -lt 3 ]
+if [ $# -lt 2 ]
 then 
 	echo "./runNTimes <architecture> <iteration_number>"
-	echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
+	echo "Add architecture (core2/haswell/ivy_bridge/nehalem/amd)."
 	echo "Add number of iterations."
-	echo "Add add python version[python3, python3.6]."
 	exit 
 fi
 
@@ -59,7 +57,7 @@ for ((i=0; i<${iterationNum}; i++))
 do
 	echo "Iteration : "${i} >> ${LOGFILE}
 	echo " " >> ${LOGFILE}
-	./runAllBench.sh ${architecture} ${i} ${pythonVersion} >> ${LOGFILE}
+	./runAllBench.sh ${architecture} ${i} >> ${LOGFILE}
 done
 
 # Create a directory for the current architecture
