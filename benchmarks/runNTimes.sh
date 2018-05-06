@@ -65,4 +65,6 @@ done
 
 # Create a tar file with the results of the specific architecture
 tar cvf ${architecture}.tar ${architecture} 
+cp -rf ${architecture} ~/
+cp -rf ${architecture}.tar ~/
 
