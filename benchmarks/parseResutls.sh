@@ -26,12 +26,9 @@
 iterationNum=$1     # Number of iterations
 architecture=$2     # Architecture version
 
-echo -n "" > pythonRes.csv
-echo -n "" > javascriptRes.csv
-echo -n "" > javaRes.csv
 
 # Check input arguments
-if [ $# -lt 3 ]
+if [ $# -lt 2 ]
   then
       echo "./ececuteOProf <interpreter> <executable> <arcitecture>"
       echo "Add iteration number."
@@ -41,43 +38,71 @@ fi
 
 ophelp > help.out
 
-#INTEL
-if [ $architecture = "intel" ]; then
+# INTEL
+# Skylake + Haswell + Ivy bridge
+if [ $architecture = "skylake" ] || [ $architecture = "haswell" ] || [ $architecture = "ivy_bridge" ]
+then
+	echo " " $architecture
 	#miss predicted branches
-	miss_pred=`cat help.out \
-        | grep -i -B 1 "number of mispredicted branches retired" \
-        | grep "_" \
-        | awk '{print substr($1, 1, length($1)-1)}'`
+	miss_pred="br_misp_retired"
 
 	#all branches
-	total_branches=`cat help.out \
-        | grep -i -B 1 "number of branch instructions retired" \
-        | grep "_" \
-        | awk '{print substr($1, 1, length($1)-1)}'`
-#AMD
+	total_branches="br_inst_retired"
+
+# Nehalem
+elif [ $architecture = "nehalem" ]
+then
+	echo " " $architecture
+	#miss predicted branches
+	miss_pred="BR_MISS_PRED_RETIRED"
+
+	#all branches
+	total_branches="BR_INST_RETIRED"
+
+# AMD
+elif [ $architecture = "amd" ]
+then
+	#miss predicted branches
+	miss_pred=`cat help.out | grep -i -B 1 "Retired Mispredicted Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
+
+	#all branches
+	total_branches=`cat help.out | grep -i -B 1 "Retired Branch Instructions" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
+
+# No info for intel
 else
 	#miss predicted branches
-	miss_pred=`cat help.out \
-        | grep -i -B 1 "Retired Mispredicted Branch Instructions" \
-        | grep "_" \
-        | awk '{print substr($1, 1, length($1)-1)}'`
+	miss_pred=`cat help.out | grep -i -B 1 "number of mispredicted branches retired" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
 
 	#all branches
-	total_branches=`cat help.out \
-        | grep -i -B 1 "Retired Branch Instructions" \
-        | grep "_" \
-        | awk '{print substr($1, 1, length($1)-1)}'`
+	total_branches=`cat help.out | grep -i -B 1 "number of branch instructions retired" | grep "_" | awk '{print substr($1, 1, length($1)-1)}'`
+
 fi
+
 
 #####################################
 # Python Results
 ####################################
-RESULTDIR=pythonRes
+RESULTDIR=results/${architecture}/pythonRes
+
+# Create output file
+OUTPUTFILE=results/${architecture}/merge_pythonRes.csv
+echo -n "" > ${OUTPUTFILE}
+
+# Print Header row
+echo -ne "Benchmark;" >> ${OUTPUTFILE}
+
+for ((i=0; i<${iterationNum}; i++))
+do
+    echo -ne "All_Br_${i};Miss_Br_${i};" >> ${OUTPUTFILE}
+done
+
+echo " " >> ${OUTPUTFILE}
 
 for f in ${RESULTDIR}/*\:0.txt
 do
     filename="${f##*/}" 
 	extension="${filename%.*}"
+    
     #name of file without iteration num
     fnameNoIter=`echo ${extension} |awk -F ':' '{print ($1)}'`
     benchName=`echo ${fnameNoIter} |awk -F 'out_' '{print ($2)}'`
@@ -94,22 +119,38 @@ do
             | awk '{print$2}'`
 
         if [ ${i} -eq 0 ]; then
-            echo -ne ${benchName} " " >> ${RESULTDIR}.csv
+            echo -ne ${benchName} ";" >> ${OUTPUTFILE}
         fi
-        echo -ne ${allBranches} " " ${missPred} " " >> ${RESULTDIR}.csv
+        echo -ne ${allBranches} ";" ${missPred} ";" >> ${OUTPUTFILE}
     done
-    echo " " >> ${RESULTDIR}.csv
+    echo " " >> ${OUTPUTFILE}
 done
 
 #####################################
 # Javascript Results
 ####################################
-RESULTDIR=javascriptRes
+
+RESULTDIR=results/${architecture}/javascriptRes
+
+# Create output file
+OUTPUTFILE=results/${architecture}/merge_javascriptRes.csv
+echo -n "" > ${OUTPUTFILE}
+
+# Print Header row
+echo -ne "Benchmark;" >> ${OUTPUTFILE}
+
+for ((i=0; i<${iterationNum}; i++))
+do
+    echo -ne "All_Br_${i};Miss_Br_${i};" >> ${OUTPUTFILE}
+done
+
+echo " " >> ${OUTPUTFILE}
 
 for f in ${RESULTDIR}/*\:0.txt
 do
     filename="${f##*/}" 
 	extension="${filename%.*}"
+    
     #name of file without iteration num
     fnameNoIter=`echo ${extension} |awk -F ':' '{print ($1)}'`
     benchName=`echo ${fnameNoIter} |awk -F 'out_' '{print ($2)}'`
@@ -126,22 +167,37 @@ do
             | awk '{print$2}'`
 
         if [ ${i} -eq 0 ]; then
-            echo -ne ${benchName} " " >> ${RESULTDIR}.csv
+            echo -ne ${benchName} ";" >> ${OUTPUTFILE}
         fi
-        echo -ne ${allBranches} " " ${missPred} " " >> ${RESULTDIR}.csv
+        echo -ne ${allBranches} ";" ${missPred} ";" >> ${OUTPUTFILE}
     done
-    echo " " >> ${RESULTDIR}.csv
+    echo " " >> ${OUTPUTFILE}
 done
 
 #####################################
 # Java Results
 ####################################
-RESULTDIR=javaRes
+RESULTDIR=results/${architecture}/javaRes
+
+# Create output file
+OUTPUTFILE=results/${architecture}/merge_javaRes.csv
+echo -n "" > ${OUTPUTFILE}
+
+# Print Header row
+echo -ne "Benchmark;" >> ${OUTPUTFILE}
+
+for ((i=0; i<${iterationNum}; i++))
+do
+    echo -ne "All_Br_${i};Miss_Br_${i};" >> ${OUTPUTFILE}
+done
+
+echo " " >> ${OUTPUTFILE}
 
 for f in ${RESULTDIR}/*\:0.txt
 do
     filename="${f##*/}" 
 	extension="${filename%.*}"
+    
     #name of file without iteration num
     fnameNoIter=`echo ${extension} |awk -F ':' '{print ($1)}'`
     benchName=`echo ${fnameNoIter} |awk -F 'out_' '{print ($2)}'`
@@ -158,11 +214,11 @@ do
             | awk '{print$2}'`
 
         if [ ${i} -eq 0 ]; then
-            echo -ne ${benchName} " " >> ${RESULTDIR}.csv
+            echo -ne ${benchName} ";" >> ${OUTPUTFILE}
         fi
-        echo -ne ${allBranches} " " ${missPred} " " >> ${RESULTDIR}.csv
+        echo -ne ${allBranches} ";" ${missPred} ";" >> ${OUTPUTFILE}
     done
-    echo " " >> ${RESULTDIR}.csv
+    echo " " >> ${OUTPUTFILE}
 done
 
 # Delete help.out 
