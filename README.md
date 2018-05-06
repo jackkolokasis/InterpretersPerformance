@@ -71,18 +71,21 @@ https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.
 	1. install python3.6 
 		CentOS: sudo yum -y install python36u
 	2. install python-pip
-		python3.6 -m pip install 
+		wget https://bootstrap.pypa.io/get-pip.py
+        	sudo python3.6 get-pip.py
 	3. install pip perf
-
+		sudo python3.6 -m pip install perf	
 	4. install rhino (for javascript)     
 # Python troubleshouting
 ERROR:
 	Traceback (most recent call last):
   		File "bm_2to3.py", line 6, in <module>
     		import perf
-	ImportError: No module named perf         
+	ImportError: No module named perf (see steps 2-3 above)         
 SOLUTION:
 	sudo apt-get install python-pip
-	sudo python -m pip install perf 
+	sudo python -m pip install perf
+ 
+/bin/python3.6: No module named pip:	
 	wget https://bootstrap.pypa.io/get-pip.py
 	sudo python3.6 get-pip.py
