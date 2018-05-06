@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+sqlite_synth: Mean +- std dev: 9.66 us +- 0.67 us
+
+Events were actively counted for 16.6 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        46,887,322               100.00
+	br_inst_retired        7,467,133,650            100.00
+
+real	0m16.655s
+user	0m16.203s
+sys	0m0.444s

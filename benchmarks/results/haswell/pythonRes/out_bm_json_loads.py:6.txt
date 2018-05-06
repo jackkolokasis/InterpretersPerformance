@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+json_loads: Mean +- std dev: 59.7 us +- 4.7 us
+
+Events were actively counted for 15.9 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        122,106,641              100.00
+	br_inst_retired        15,782,942,674           100.00
+
+real	0m15.950s
+user	0m15.488s
+sys	0m0.452s

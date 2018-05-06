@@ -1,0 +1,15 @@
+  skylake
+Splay: 2963
+SplayLatency: 1727
+----
+Score (version 9): 2262
+
+Events were actively counted for 2.6 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      10,916,334,108           100.00
+	br_misp_retired                      137,036,209              100.00
+
+real	0m2.617s
+user	0m10.960s
+sys	0m0.368s

@@ -1,0 +1,13 @@
+  skylake
+.....................
+2to3: Mean +- std dev: 449 ms +- 6 ms
+
+Events were actively counted for 38.4 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      56,715,901,724           100.00
+	br_misp_retired                      790,350,272              100.00
+
+real	0m38.449s
+user	0m37.368s
+sys	0m0.824s

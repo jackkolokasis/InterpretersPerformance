@@ -1,0 +1,12 @@
+  skylake
+JAVA
+
+Events were actively counted for 5.6 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      7,716,792,164            100.00
+	br_misp_retired                      356,033,042              100.00
+
+real	0m5.594s
+user	0m14.472s
+sys	0m0.192s

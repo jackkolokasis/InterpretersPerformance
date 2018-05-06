@@ -1,0 +1,13 @@
+  skylake
+.....................
+deltablue: Mean +- std dev: 8.28 ms +- 0.18 ms
+
+Events were actively counted for 12.1 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      25,659,776,201           100.00
+	br_misp_retired                      106,028,799              100.00
+
+real	0m12.131s
+user	0m11.892s
+sys	0m0.140s

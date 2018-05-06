@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+unpack_sequence: Mean +- std dev: 103 ns +- 10 ns
+
+Events were actively counted for 17.7 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        33,015,706               100.00
+	br_inst_retired        14,574,078,351           100.00
+
+real	0m17.739s
+user	0m17.295s
+sys	0m0.437s

@@ -1,0 +1,13 @@
+  skylake
+----
+Score (version 9): NaN
+
+Events were actively counted for 212171360 nanoseconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      296,186,675              100.00
+	br_misp_retired                      10,771,209               100.00
+
+real	0m0.228s
+user	0m0.340s
+sys	0m0.016s

@@ -1,0 +1,25 @@
+  skylake
+.....................
+logging_format: Mean +- std dev: 14.1 us +- 0.6 us
+.....................
+logging_silent: Mean +- std dev: 322 ns +- 8 ns
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (1.99 us) is 14% of the mean (14.5 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+logging_simple: Mean +- std dev: 14.5 us +- 2.0 us
+
+Events were actively counted for 36.9 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      57,695,393,142           100.00
+	br_misp_retired                      419,875,229              100.00
+
+real	0m36.949s
+user	0m36.016s
+sys	0m0.652s

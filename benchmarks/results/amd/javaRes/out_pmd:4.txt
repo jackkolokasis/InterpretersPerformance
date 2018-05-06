@@ -1,0 +1,11 @@
+java
+
+Events were actively counted for 31.3 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,250,470,045            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     10,294,251,618           100.00
+
+real	0m31.379s
+user	1m32.759s
+sys	0m2.346s

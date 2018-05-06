@@ -1,0 +1,13 @@
+  skylake
+.....................
+regex_dna: Mean +- std dev: 167 ms +- 4 ms
+
+Events were actively counted for 19.7 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      41,727,978,896           100.00
+	br_misp_retired                      637,750,465              100.00
+
+real	0m19.715s
+user	0m19.208s
+sys	0m0.416s

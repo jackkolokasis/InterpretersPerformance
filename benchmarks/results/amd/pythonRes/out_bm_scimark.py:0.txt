@@ -1,0 +1,21 @@
+python3.6
+.....................
+scimark_fft: Mean +- std dev: 1.67 sec +- 0.02 sec
+.....................
+scimark_lu: Mean +- std dev: 1.60 sec +- 0.05 sec
+.....................
+scimark_monte_carlo: Mean +- std dev: 731 ms +- 21 ms
+.....................
+scimark_sor: Mean +- std dev: 1.50 sec +- 0.03 sec
+.....................
+scimark_sparse_mat_mult: Mean +- std dev: 22.6 ms +- 0.9 ms
+
+Events were actively counted for  8 minutes and 28 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        6,117,631,934            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     283,234,568,108          100.00
+
+real	8m28.578s
+user	8m24.118s
+sys	0m4.491s

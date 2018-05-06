@@ -1,0 +1,14 @@
+  skylake
+Typescript: 4395
+----
+Score (version 9): 4395
+
+Events were actively counted for 29.8 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      71,849,027,011           100.00
+	br_misp_retired                      1,102,487,853            100.00
+
+real	0m29.861s
+user	1m9.212s
+sys	0m0.504s

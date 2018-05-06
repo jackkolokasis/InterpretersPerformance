@@ -1,0 +1,14 @@
+  ivy_bridge
+python3.6
+.....................
+regex_v8: Mean +- std dev: 72.5 ms +- 0.4 ms
+
+Events were actively counted for 18.6 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	br_misp_retired        58,399,808               100.00
+	br_inst_retired        10,082,248,749           100.00
+
+real	0m18.683s
+user	0m18.091s
+sys	0m0.574s

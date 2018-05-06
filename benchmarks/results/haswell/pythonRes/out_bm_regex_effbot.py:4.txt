@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+regex_effbot: Mean +- std dev: 5.93 ms +- 0.39 ms
+
+Events were actively counted for 13.2 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        32,231,912               100.00
+	br_inst_retired        12,451,433,357           100.00
+
+real	0m13.281s
+user	0m12.825s
+sys	0m0.452s

@@ -1,0 +1,14 @@
+  skylake
+RegExp: 395
+----
+Score (version 9): 395
+
+Events were actively counted for 6.8 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      13,968,690,147           100.00
+	br_misp_retired                      122,624,538              100.00
+
+real	0m6.780s
+user	0m9.824s
+sys	0m0.168s

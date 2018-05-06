@@ -1,0 +1,12 @@
+  haswell
+python3
+
+Events were actively counted for 76615713 nanoseconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        957,907                  100.00
+	br_inst_retired        24,439,089               100.00
+
+real	0m0.125s
+user	0m0.097s
+sys	0m0.023s

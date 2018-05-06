@@ -1,0 +1,13 @@
+  skylake
+.....................
+regex_v8: Mean +- std dev: 31.0 ms +- 0.6 ms
+
+Events were actively counted for 12.0 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      26,301,605,261           100.00
+	br_misp_retired                      174,277,593              100.00
+
+real	0m11.979s
+user	0m11.652s
+sys	0m0.232s

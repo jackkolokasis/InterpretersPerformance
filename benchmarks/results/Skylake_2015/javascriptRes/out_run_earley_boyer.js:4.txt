@@ -1,0 +1,14 @@
+  skylake
+EarleyBoyer: 1381
+----
+Score (version 9): 1381
+
+Events were actively counted for 6.5 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      12,072,842,835           100.00
+	br_misp_retired                      103,969,402              100.00
+
+real	0m6.539s
+user	0m9.260s
+sys	0m0.256s

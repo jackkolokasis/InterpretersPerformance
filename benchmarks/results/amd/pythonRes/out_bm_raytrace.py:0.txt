@@ -1,0 +1,13 @@
+python3.6
+.....................
+raytrace: Mean +- std dev: 3.73 sec +- 0.04 sec
+
+Events were actively counted for  5 minutes and 17 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        4,593,665,165            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     145,898,568,424          100.00
+
+real	5m17.854s
+user	5m16.901s
+sys	0m0.938s

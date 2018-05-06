@@ -1,0 +1,13 @@
+  skylake
+.....................
+json_loads: Mean +- std dev: 58.7 us +- 1.0 us
+
+Events were actively counted for 13.6 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      27,581,861,017           100.00
+	br_misp_retired                      140,495,110              100.00
+
+real	0m13.567s
+user	0m13.312s
+sys	0m0.160s

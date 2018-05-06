@@ -1,0 +1,12 @@
+  skylake
+python3
+
+Events were actively counted for 68879051 nanoseconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      76,213,009               100.00
+	br_misp_retired                      2,810,611                100.00
+
+real	0m0.085s
+user	0m0.052s
+sys	0m0.016s

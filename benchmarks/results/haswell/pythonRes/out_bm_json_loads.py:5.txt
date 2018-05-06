@@ -1,0 +1,22 @@
+  haswell
+python3
+.....................
+WARNING: the benchmark result may be unstable
+* the maximum (97.8 us) is 57% greater than the mean (62.5 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+json_loads: Mean +- std dev: 62.5 us +- 6.0 us
+
+Events were actively counted for 16.8 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        122,488,454              100.00
+	br_inst_retired        15,777,812,292           100.00
+
+real	0m16.817s
+user	0m16.349s
+sys	0m0.458s

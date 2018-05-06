@@ -1,0 +1,13 @@
+  skylake
+.....................
+pidigits: Mean +- std dev: 182 ms +- 2 ms
+
+Events were actively counted for 16.0 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      12,094,996,813           100.00
+	br_misp_retired                      85,907,866               100.00
+
+real	0m16.032s
+user	0m15.868s
+sys	0m0.072s

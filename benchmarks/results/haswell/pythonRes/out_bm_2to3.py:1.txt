@@ -1,0 +1,14 @@
+  haswell
+python3
+.....................
+2to3: Mean +- std dev: 899 ms +- 52 ms
+
+Events were actively counted for  1 minute and 17 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        381,521,969              100.00
+	br_inst_retired        40,244,170,771           100.00
+
+real	1m17.642s
+user	1m14.857s
+sys	0m2.239s

@@ -1,0 +1,78 @@
+  skylake
+JAVA
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,128]
+Booting Geronimo Kernel (in Java 1.8.0_162)...
+Geronimo startup complete
+Resetting database and populating with 1098 stocks...
+Populating database with 192 users...
+Finished repopulating database
+Running 128 trade sessions from client via soap
+java.lang.Exception: TradeDirect:Login failure for user: 000143
+	Incorrect password-->000143:null
+	at org.apache.geronimo.samples.daytrader.direct.TradeDirect.login(TradeDirect.java:1496)
+	at org.apache.geronimo.samples.daytrader.TradeAction.login(TradeAction.java:480)
+	at org.apache.geronimo.samples.daytrader.soap.TradeWSAction.login(TradeWSAction.java:177)
+	at sun.reflect.GeneratedMethodAccessor142.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.geronimo.axis.server.POJOProvider.invokeMethod(POJOProvider.java:50)
+	at org.apache.axis.providers.java.RPCProvider.processMessage(RPCProvider.java:186)
+	at org.apache.axis.providers.java.JavaProvider.invoke(JavaProvider.java:323)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.handlers.soap.SOAPService.invoke(SOAPService.java:454)
+	at org.apache.geronimo.axis.server.AxisWebServiceContainer.doService(AxisWebServiceContainer.java:132)
+	at org.apache.geronimo.axis.server.AxisWebServiceContainer.invoke(AxisWebServiceContainer.java:81)
+	at org.apache.geronimo.webservices.WebServiceContainerInvoker.service(WebServiceContainerInvoker.java:84)
+	at org.apache.geronimo.webservices.POJOWebServiceServlet.service(POJOWebServiceServlet.java:79)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:487)
+	at org.apache.geronimo.jetty6.InternalJettyServletHolder.handle(InternalJettyServletHolder.java:65)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:362)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:726)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext.access$101(TwistyWebAppContext.java:40)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext$TwistyHandler.handle(TwistyWebAppContext.java:65)
+	at org.apache.geronimo.jetty6.handler.ThreadClassloaderHandler.handle(ThreadClassloaderHandler.java:46)
+	at org.apache.geronimo.jetty6.handler.InstanceContextHandler.handle(InstanceContextHandler.java:58)
+	at org.apache.geronimo.jetty6.handler.UserTransactionHandler.handle(UserTransactionHandler.java:48)
+	at org.apache.geronimo.jetty6.handler.ComponentContextHandler.handle(ComponentContextHandler.java:47)
+	at org.apache.geronimo.jetty6.handler.TwistyWebAppContext.handle(TwistyWebAppContext.java:59)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:206)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
+	at org.mortbay.jetty.Server.handle(Server.java:324)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:505)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:842)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:648)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:211)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:380)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:395)
+	at org.apache.geronimo.pool.ThreadPool$1.run(ThreadPool.java:214)
+	at org.apache.geronimo.pool.ThreadPool$ContextClassLoaderRunnable.run(ThreadPool.java:344)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Completed 128 trade sessions comprising 2280 trader actions
+	Home ....................   447 (19.6%)
+	Portfolio ...............   173 ( 7.6%)
+	Quote ...................   959 (42.1%)
+	Buy .....................   202 ( 8.9%)
+	Sell ....................   192 ( 8.4%)
+	Update ..................    25 ( 1.1%)
+	Register ................    13 ( 0.6%)
+	Login ...................   128 ( 5.6%)
+	Logout ..................   141 ( 6.2%)
+Shutting down Geronimo...
+
+Events were actively counted for 48.2 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      78,231,485,759           100.00
+	br_misp_retired                      6,791,814,892            100.00
+
+real	0m48.217s
+user	3m19.388s
+sys	0m3.716s

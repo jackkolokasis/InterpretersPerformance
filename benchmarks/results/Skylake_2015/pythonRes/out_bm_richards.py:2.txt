@@ -1,0 +1,13 @@
+  skylake
+.....................
+richards: Mean +- std dev: 93.3 ms +- 1.3 ms
+
+Events were actively counted for 16.8 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      30,088,721,226           100.00
+	br_misp_retired                      175,709,606              100.00
+
+real	0m16.820s
+user	0m16.512s
+sys	0m0.192s

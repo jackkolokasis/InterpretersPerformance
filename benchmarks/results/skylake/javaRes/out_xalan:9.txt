@@ -1,0 +1,14 @@
+  skylake
+java
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,100]
+Normal completion.
+
+Events were actively counted for 8.2 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                Count                    % time counted
+	br_inst_retired                      21,528,080,753           100.00
+	br_misp_retired                      2,536,062,998            100.00
+
+real	0m8.218s
+user	1m1.660s
+sys	0m0.712s

@@ -1,0 +1,90 @@
+  nehalem
+java
+-------------------------------------------------------------------------------
+PYBENCH 2.0
+-------------------------------------------------------------------------------
+* using Python 2.5.0+
+* system check interval set to maximum: 2147483647
+* using timer: time.time
+
+Calibrating tests. Please wait...
+
+Running 1 round(s) of the suite at warp factor 20:
+
+* Round 1 done in 112.302 seconds.
+
+-------------------------------------------------------------------------------
+Benchmark: 2018-05-03 01:15:56
+-------------------------------------------------------------------------------
+
+    Rounds: 1
+    Warp:   20
+    Timer:  time.time
+
+Test                             minimum  average  operation  overhead
+-------------------------------------------------------------------------------
+          BuiltinFunctionCalls:    947ms    947ms    3.71us    0.000ms
+           BuiltinMethodLookup:   1739ms   1739ms    3.31us    0.000ms
+                 CompareFloats:   1461ms   1461ms    2.43us    0.000ms
+         CompareFloatsIntegers:   1458ms   1458ms    3.24us    0.000ms
+               CompareIntegers:   2410ms   2410ms    2.68us    0.000ms
+        CompareInternedStrings:   2302ms   2302ms    3.07us    0.000ms
+                  CompareLongs:   1554ms   1554ms    2.96us    0.000ms
+                CompareStrings:   1611ms   1611ms    3.22us    0.000ms
+                CompareUnicode:   1218ms   1218ms    3.25us    0.000ms
+                 ConcatStrings:    890ms    890ms    3.56us    0.000ms
+                 ConcatUnicode:    546ms    546ms    3.64us    0.000ms
+               CreateInstances:   1563ms   1563ms   27.91us    0.000ms
+            CreateNewInstances:   2663ms   2663ms   63.40us    0.000ms
+       CreateStringsWithConcat:   1657ms   1657ms    3.31us    0.000ms
+       CreateUnicodeWithConcat:    689ms    689ms    3.44us    0.000ms
+                  DictCreation:   1351ms   1351ms    6.76us    0.000ms
+             DictWithFloatKeys:   1369ms   1369ms    3.04us    0.000ms
+           DictWithIntegerKeys:    914ms    914ms    1.52us    0.000ms
+            DictWithStringKeys:    987ms    987ms    1.64us    0.000ms
+                      ForLoops:   2413ms   2413ms  193.04us    0.000ms
+                    IfThenElse:   1573ms   1573ms    2.33us    0.000ms
+                   ListSlicing:   3221ms   3221ms  460.14us    0.000ms
+                NestedForLoops:   2298ms   2298ms    3.06us    0.000ms
+          NormalClassAttribute:   1111ms   1111ms    1.85us    0.000ms
+       NormalInstanceAttribute:    993ms    993ms    1.66us    0.000ms
+           PythonFunctionCalls:   1494ms   1494ms    9.05us    0.000ms
+             PythonMethodCalls:   2196ms   2196ms   19.52us    0.000ms
+                     Recursion:   2958ms   2958ms  118.32us    0.000ms
+                  SecondImport:   1663ms   1663ms   33.26us    0.000ms
+           SecondPackageImport:   1679ms   1679ms   33.58us    0.000ms
+         SecondSubmoduleImport:   2222ms   2222ms   44.44us    0.000ms
+       SimpleComplexArithmetic:    874ms    874ms    1.99us    0.000ms
+        SimpleDictManipulation:   1152ms   1152ms    1.92us    0.000ms
+         SimpleFloatArithmetic:    986ms    986ms    1.49us    0.000ms
+      SimpleIntFloatArithmetic:    912ms    912ms    1.38us    0.000ms
+       SimpleIntegerArithmetic:    916ms    916ms    1.39us    0.000ms
+        SimpleListManipulation:   1265ms   1265ms    2.16us    0.000ms
+          SimpleLongArithmetic:   1129ms   1129ms    3.42us    0.000ms
+                    SmallLists:   1895ms   1895ms    5.57us    0.000ms
+                   SmallTuples:   2239ms   2239ms    8.29us    0.000ms
+         SpecialClassAttribute:   1114ms   1114ms    1.86us    0.000ms
+      SpecialInstanceAttribute:    987ms    987ms    1.64us    0.000ms
+                StringMappings:  12152ms  12152ms   96.44us    0.000ms
+              StringPredicates:   3052ms   3052ms    8.72us    0.000ms
+                 StringSlicing:   1667ms   1667ms    5.95us    0.000ms
+                     TryExcept:    135ms    135ms    0.12us    0.000ms
+                TryRaiseExcept:   1325ms   1325ms   41.41us    0.000ms
+                  TupleSlicing:    701ms    701ms    5.34us    0.000ms
+               UnicodeMappings:   4913ms   4913ms  272.94us    0.000ms
+             UnicodePredicates:   2728ms   2728ms   10.10us    0.000ms
+             UnicodeProperties:  19462ms  19462ms   97.31us    0.000ms
+                UnicodeSlicing:   1548ms   1548ms    6.32us    0.000ms
+-------------------------------------------------------------------------------
+Totals:                         112302ms 112302ms
+
+
+Events were actively counted for  3 minutes and 6 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        6,936,492,846            100.00
+	BR_INST_RETIRED             50,286,884,955           100.00
+
+real	3m6.971s
+user	3m3.779s
+sys	0m1.472s

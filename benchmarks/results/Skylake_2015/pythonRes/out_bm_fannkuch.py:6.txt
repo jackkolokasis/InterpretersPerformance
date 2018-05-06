@@ -1,0 +1,13 @@
+  skylake
+.....................
+fannkuch: Mean +- std dev: 479 ms +- 4 ms
+
+Events were actively counted for 41.1 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      96,604,933,800           100.00
+	br_misp_retired                      316,011,610              100.00
+
+real	0m41.091s
+user	0m40.864s
+sys	0m0.136s

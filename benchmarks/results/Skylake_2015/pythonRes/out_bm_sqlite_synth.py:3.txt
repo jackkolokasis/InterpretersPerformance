@@ -1,0 +1,13 @@
+  skylake
+.....................
+sqlite_synth: Mean +- std dev: 2.97 us +- 0.08 us
+
+Events were actively counted for 17.3 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      31,778,169,855           100.00
+	br_misp_retired                      85,934,552               100.00
+
+real	0m17.351s
+user	0m16.992s
+sys	0m0.252s

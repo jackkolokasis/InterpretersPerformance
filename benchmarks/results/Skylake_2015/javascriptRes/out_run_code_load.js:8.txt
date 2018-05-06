@@ -1,0 +1,14 @@
+  skylake
+CodeLoad: 9655
+----
+Score (version 9): 9655
+
+Events were actively counted for 2.3 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      7,550,934,762            100.00
+	br_misp_retired                      208,422,271              100.00
+
+real	0m2.281s
+user	0m8.840s
+sys	0m0.144s

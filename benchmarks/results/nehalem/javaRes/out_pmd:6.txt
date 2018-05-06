@@ -1,0 +1,12 @@
+  nehalem
+java
+
+Events were actively counted for 13.1 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        967,160,440              100.00
+	BR_INST_RETIRED             7,712,281,996            100.00
+
+real	0m13.097s
+user	0m29.364s
+sys	0m0.954s

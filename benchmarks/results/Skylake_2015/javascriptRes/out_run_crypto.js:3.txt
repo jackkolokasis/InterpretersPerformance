@@ -1,0 +1,14 @@
+  skylake
+Crypto: 989
+----
+Score (version 9): 989
+
+Events were actively counted for 7.7 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      21,980,823,758           100.00
+	br_misp_retired                      123,145,452              100.00
+
+real	0m7.698s
+user	0m10.940s
+sys	0m0.372s

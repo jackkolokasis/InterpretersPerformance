@@ -1,0 +1,14 @@
+  skylake
+RayTrace: 1345
+----
+Score (version 9): 1345
+
+Events were actively counted for 3.3 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      6,881,612,175            100.00
+	br_misp_retired                      101,163,275              100.00
+
+real	0m3.324s
+user	0m7.228s
+sys	0m0.172s

@@ -1,0 +1,22 @@
+  skylake
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (77.7 ms) is 12% of the mean (648 ms)
+* the maximum (1.03 sec) is 60% greater than the mean (648 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+raytrace: Mean +- std dev: 648 ms +- 78 ms
+
+Events were actively counted for 54.9 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      106,940,371,068          100.00
+	br_misp_retired                      630,153,206              100.00
+
+real	0m54.922s
+user	0m54.684s
+sys	0m0.140s

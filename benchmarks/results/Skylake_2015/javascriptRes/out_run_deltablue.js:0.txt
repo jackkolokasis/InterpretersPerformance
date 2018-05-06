@@ -1,0 +1,14 @@
+  skylake
+DeltaBlue: 1142
+----
+Score (version 9): 1142
+
+Events were actively counted for 2.2 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      6,079,733,254            100.00
+	br_misp_retired                      83,629,264               100.00
+
+real	0m2.242s
+user	0m4.780s
+sys	0m0.120s

@@ -1,0 +1,11 @@
+  skylake
+
+Events were actively counted for 34838231 nanoseconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      18,784,950               100.00
+	br_misp_retired                      633,023                  100.00
+
+real	0m0.058s
+user	0m0.028s
+sys	0m0.008s

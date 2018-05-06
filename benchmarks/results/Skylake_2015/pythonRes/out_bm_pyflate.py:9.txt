@@ -1,0 +1,13 @@
+  skylake
+.....................
+pyflate: Mean +- std dev: 671 ms +- 9 ms
+
+Events were actively counted for 57.2 seconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      127,121,233,606          100.00
+	br_misp_retired                      440,870,777              100.00
+
+real	0m57.191s
+user	0m56.744s
+sys	0m0.336s

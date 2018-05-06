@@ -1,0 +1,22 @@
+  nehalem
+python3.6
+.....................
+scimark_fft: Mean +- std dev: 1.38 sec +- 0.01 sec
+.....................
+scimark_lu: Mean +- std dev: 932 ms +- 28 ms
+.....................
+scimark_monte_carlo: Mean +- std dev: 498 ms +- 7 ms
+.....................
+scimark_sor: Mean +- std dev: 919 ms +- 18 ms
+.....................
+scimark_sparse_mat_mult: Mean +- std dev: 17.4 ms +- 0.3 ms
+
+Events were actively counted for  5 minutes and 46 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        17,696,840,333           100.00
+	BR_INST_RETIRED             281,940,807,484          100.00
+
+real	5m46.832s
+user	5m44.814s
+sys	0m2.071s

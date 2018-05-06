@@ -1,0 +1,22 @@
+  skylake
+
+Events were actively counted for 22784579 nanoseconds.
+Event counts (actual) for /usr/bin/python:
+	Event                                Count                    % time counted
+	br_inst_retired                      24,017,930               100.00
+	br_misp_retired                      784,510                  100.00
+calibrate-loops] [--recalibrate-loops]
+                    [--calibrate-warmups] [--recalibrate-warmups] [-d]
+                    [--metadata] [--hist] [--stats] [--affinity CPU_LIST]
+                    [--inherit-environ VARS] [--no-locale] [--python PYTHON]
+                    [--compare-to REF_PYTHON]
+                    [--python-names REF_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: too few arguments
+app process exited with the following status: 2
+
+real	0m0.038s
+user	0m0.020s
+sys	0m0.000s

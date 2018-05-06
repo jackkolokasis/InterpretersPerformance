@@ -1,0 +1,13 @@
+python3.6
+.....................
+regex_dna: Mean +- std dev: 588 ms +- 12 ms
+
+Events were actively counted for  1 minute and 13 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,300,102,696            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     47,536,880,487           100.00
+
+real	1m13.751s
+user	1m11.599s
+sys	0m2.160s

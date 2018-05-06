@@ -1,0 +1,18 @@
+  haswell
+python3
+.....................
+logging_format: Mean +- std dev: 33.9 us +- 3.1 us
+.....................
+logging_silent: Mean +- std dev: 1.06 us +- 0.10 us
+.....................
+logging_simple: Mean +- std dev: 29.1 us +- 1.6 us
+
+Events were actively counted for 52.0 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                  Count                    % time counted
+	br_misp_retired        117,885,533              100.00
+	br_inst_retired        27,819,360,293           100.00
+
+real	0m52.004s
+user	0m50.675s
+sys	0m1.287s

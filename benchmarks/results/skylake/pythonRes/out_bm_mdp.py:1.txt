@@ -1,0 +1,14 @@
+  skylake
+python3
+.....................
+mdp: Mean +- std dev: 3.14 sec +- 0.01 sec
+
+Events were actively counted for  4 minutes and 24 seconds.
+Event counts (actual) for /usr/bin/python3:
+	Event                                Count                    % time counted
+	br_inst_retired                      608,241,788,313          100.00
+	br_misp_retired                      2,061,508,548            100.00
+
+real	4m24.020s
+user	4m23.808s
+sys	0m0.104s

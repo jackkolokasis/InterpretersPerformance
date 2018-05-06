@@ -1,0 +1,14 @@
+  skylake
+NavierStokes: 1054
+----
+Score (version 9): 1054
+
+Events were actively counted for 3.6 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      8,884,936,980            100.00
+	br_misp_retired                      67,779,103               100.00
+
+real	0m3.637s
+user	0m5.896s
+sys	0m0.272s

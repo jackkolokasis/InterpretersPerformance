@@ -1,0 +1,14 @@
+  skylake
+Box2D: 1037
+----
+Score (version 9): 1037
+
+Events were actively counted for 7.4 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                Count                    % time counted
+	br_inst_retired                      15,223,143,813           100.00
+	br_misp_retired                      248,522,706              100.00
+
+real	0m7.451s
+user	0m23.720s
+sys	0m0.232s

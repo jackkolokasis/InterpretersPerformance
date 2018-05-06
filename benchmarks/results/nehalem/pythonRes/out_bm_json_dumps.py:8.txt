@@ -1,0 +1,14 @@
+  nehalem
+python3.6
+.....................
+json_dumps: Mean +- std dev: 56.3 ms +- 0.8 ms
+
+Events were actively counted for 12.7 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	BR_MISS_PRED_RETIRED        776,026,046              100.00
+	BR_INST_RETIRED             8,478,014,378            100.00
+
+real	0m12.777s
+user	0m12.181s
+sys	0m0.591s
