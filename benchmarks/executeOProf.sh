@@ -133,8 +133,7 @@ then
 	total_branches_retired="BR_INST_RETIRED"
 
 	# Miss Retired
-	total_branches_miss_retired="BR_MISS_RETIRED"
-
+	total_branches_miss_retired="BR_MISS_PRED_RETIRED"
 	# AMD
 	# OProfiler do not support speculative optimization.
 elif [ $architecture = "amd" ]
