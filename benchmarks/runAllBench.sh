@@ -39,7 +39,6 @@ do
     { time ./executeOProf.sh ${pythonversion} ${f} ${architecture} > \
 	    ${architecture}/pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
     		${architecture}/pythonRes/out_${filename}:${iteration}.txt
-    break
 done
 # Run javascript benchmarks suite
 cd javascript/octane/     
@@ -49,8 +48,6 @@ do
     echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
         ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
-   		 ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt 
-    break
 done
 cd -
 
@@ -65,6 +62,5 @@ do
     { time ./executeOProf.sh java ${i} ${architecture} > \
 	    ${architecture}/javaRes/out_${i}:${iteration}.txt ; } 2>> ${architecture}/javaRes/out_${i}:${iteration}.txt 
 
-    break
 done
 
