@@ -160,45 +160,33 @@ then
 	#INTEL Archs
 	if [ ${architecture} != "amd" ]
 	then
-		ocount --event ${total_instr},${miss_pred},${total_branches},\
-			${miss_indirect_br},${indirect_br},${conditional_br},\
-			${miss_conditional_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} ${executable}
-		#AMD Archs
+		ocount --event ${total_instr},${miss_pred},${total_branches},${miss_indirect_br},${indirect_br},${conditional_br},${miss_conditional_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} ${executable}
+	#AMD Archs
 	else
-		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} ${executable}  
+		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} ${executable}  
 	fi
-	#Java
+#Java
 elif [ ${cmd} == "java" ]
 then
 	echo ${cmd}
 	#INTEL Archs
 	if [ ${architecture} != "amd" ]
 	then
-		ocount --event ${total_instr},${miss_pred},${total_branches},\
-			${miss_indirect_br},${indirect_br},${conditional_br},\
-			${miss_conditional_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
-		#AMD Archs
+		ocount --event ${total_instr},${miss_pred},${total_branches},${miss_indirect_br},${indirect_br},${conditional_br},${miss_conditional_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+	#AMD Archs
 	else
-		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
+		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} -Xint -jar java/dacapo-9.12-bach.jar ${executable}
 	fi
 
-	#JavaScript
+#JavaScript
 else
 	echo ${cmd}
 	#INTEL Archs
 	if [ ${architecture} != "amd" ]
 	then
-		ocount --event ${total_instr},${miss_pred},${total_branches},\
-			${miss_indirect_br},${indirect_br},${conditional_br},\
-			${miss_conditional_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} -1 ${executable}
-		#AMD Archs
+		ocount --event ${total_instr},${miss_pred},${total_branches},${miss_indirect_br},${indirect_br},${conditional_br},${miss_conditional_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} -1 ${executable}
+	#AMD Archs
 	else
-		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},\
-			${total_branches_miss_retired} ${cmd} -1 ${executable}
+		ocount --event ${total_instr},${miss_indirect_br},${total_branches_retired},${total_branches_miss_retired} ${cmd} -1 ${executable}
 	fi
 fi
