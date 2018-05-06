@@ -18,17 +18,16 @@
 #
 ######################################################################
 
-architecture=$1         # Architecture version
-iteration=$2            # Number of iterations
-pythonversion=$3        # Python version
+architecture=$1			# Architecture version
+iteration=$2			# Number of iterations
+pythonversion=python3.6		# Python version
 
 # Check input arguments
 if [ $# -lt 3 ]
   then
-      echo "./runAllBench <architecture> <iteration_number> <python version>"
-      echo "Add architecture (Skylake/Haswell/Ivy_bridge/intel/amd)."
+      echo "./runAllBench <architecture> <iteration_number>"
+      echo "Add architecture (core2/haswell/ivy_bridge/nehalem/amd)."
       echo "Add add iteration id (0..30)."
-      echo "Add add python version[python3, python3.6]."
       exit
 fi
 
@@ -42,7 +41,7 @@ do
     		pythonRes/out_${filename}:${iteration}.txt
 done
 
-# Run javascript benchmarks suit
+# Run javascript benchmarks suite
 cd javascript/octane/     
 for f in run_*.js
 do
