@@ -1,5 +1,4 @@
 #!/bin/bash
-
-rm -rf javascriptRes
-rm -rf pythonRes
-rm -rf javaRes
+rm help.out
+rm results.log
+rm javascript/octane/help.out
