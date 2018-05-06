@@ -41,9 +41,12 @@ rm -rf results.log
 
 # Create new directories for the results
 echo "Create new dirs"
+mkdir ${architecture}
+cd ${architecture}
 mkdir javascriptRes
 mkdir javaRes
 mkdir pythonRes
+cd -
 
 # Start benchmarks execution
 echo "Start execution"
@@ -60,19 +63,6 @@ do
 	./runAllBench.sh ${architecture} ${i} >> ${LOGFILE}
 done
 
-# Create a directory for the current architecture
-# Moving all results to the arch directory
-echo "Move results to architecture dir..."
-mkdir ${architecture}
-cp -rf javascriptRes ${architecture}
-cp -rf javaRes ${architecture}
-cp -rf pythonRes ${architecture}
-
 # Create a tar file with the results of the specific architecture
 tar cvf ${architecture}.tar ${architecture} 
 
-# Clear all generated directories
-echo "Clear results..."
-rm -rf javascriptRes
-rm -rf javaRes
-rm -rf pythonRes

@@ -20,27 +20,27 @@
 
 architecture=$1			# Architecture version
 iteration=$2			# Number of iterations
-pythonversion=python3.6		# Python version
+pythonversion="python3.6"	# Python version
 
 # Check input arguments
-if [ $# -lt 3 ]
+if [ $# -lt 2 ]
   then
       echo "./runAllBench <architecture> <iteration_number>"
       echo "Add architecture (core2/haswell/ivy_bridge/nehalem/amd)."
-      echo "Add add iteration id (0..30)."
+      echo "Add iteration count (0..30)."
       exit
 fi
-
+echo "Iteration : "$iteration
 # Run pyhton benchmarks suit
 for f in python/performance/benchmarks/*.py
 do
     filename="${f##*/}"
     echo "bench: "${filename}
     { time ./executeOProf.sh ${pythonversion} ${f} ${architecture} > \
-	    pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
-    		pythonRes/out_${filename}:${iteration}.txt
+	    ${architecture}/pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
+    		${architecture}/pythonRes/out_${filename}:${iteration}.txt
+    break
 done
-
 # Run javascript benchmarks suite
 cd javascript/octane/     
 for f in run_*.js
@@ -48,8 +48,9 @@ do
     filename="${f##*/}"
     echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
-        ../../javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
-   		 ../../javascriptRes/out_${filename}:${iteration}.txt 
+        ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
+   		 ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt 
+    break
 done
 cd -
 
@@ -62,6 +63,8 @@ for i in "${dacapoArgs[@]}"
 do
     echo "bench: " ${i}
     { time ./executeOProf.sh java ${i} ${architecture} > \
-	    javaRes/out_${i}:${iteration}.txt ; } 2>> javaRes/out_${i}:${iteration}.txt 
+	    ${architecture}/javaRes/out_${i}:${iteration}.txt ; } 2>> ${architecture}/javaRes/out_${i}:${iteration}.txt 
+
+    break
 done
 
