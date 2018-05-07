@@ -30,16 +30,15 @@ if [ $# -lt 2 ]
       echo "Add iteration count (0..30)."
       exit
 fi
-echo "Iteration : "$iteration
-# Run pyhton benchmarks suit
-for f in python/performance/benchmarks/*.py
-do
-    filename="${f##*/}"
-    echo "bench: "${filename}
-    { time ./executeOProf.sh ${pythonversion} ${f} ${architecture} > \
-	    ${architecture}/pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
-    		${architecture}/pythonRes/out_${filename}:${iteration}.txt
-done
+## Run pyhton benchmarks suit
+#for f in python/performance/benchmarks/*.py
+#do
+#    filename="${f##*/}"
+#    echo "bench: "${filename}
+#    { time ./executeOProf.sh ${pythonversion} ${f} ${architecture} > \
+#	    ${architecture}/pythonRes/out_${filename}:${iteration}.txt ; } 2>> \
+#    		${architecture}/pythonRes/out_${filename}:${iteration}.txt
+#done
 # Run javascript benchmarks suite
 cd javascript/octane/     
 for f in run_*.js
@@ -48,6 +47,7 @@ do
     echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
         ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
+	../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt
 done
 cd -
 
