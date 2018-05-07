@@ -30,7 +30,6 @@ if [ $# -lt 2 ]
       echo "Add iteration count (0..30)."
       exit
 fi
-echo "Iteration : "$iteration
 ## Run pyhton benchmarks suit
 #for f in python/performance/benchmarks/*.py
 #do
@@ -48,6 +47,7 @@ do
     echo "bench: "${filename}
     { time ../../executeOProf.sh rhino ${f} ${architecture} > \
         ../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt ; } 2>> \
+	../../${architecture}/javascriptRes/out_${filename}:${iteration}.txt
 done
 cd -
 
