@@ -21,10 +21,10 @@
 
 #  Architectures to be tested 
   1. Intel  : 
+  		0. Core 2 Duo (penguin4)
 		1. Nehalem(2008) (piranha93), 
 		2. Ivy Bridge(2012) (jedi8), 
 		3. Haswell(2013) (sith8), 
-		4. Skylake(2015) (ManosPC)
   2. AMD    : AMD64 family15h (hydra)
 
 ** piranha93 xray5
