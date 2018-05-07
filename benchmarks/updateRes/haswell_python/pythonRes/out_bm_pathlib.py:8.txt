@@ -1,0 +1,29 @@
+  haswell
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (4.43 ms) is 14% of the mean (31.1 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+pathlib: Mean +- std dev: 31.1 ms +- 4.4 ms
+
+Events were actively counted for 19.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           89,486,333,745           55.71
+	br_misp_exec           127,645,240              55.67
+	br_inst_exec           17,688,855,799           55.63
+	br_misp_exec           34,967,916               55.62
+	br_inst_exec           1,742,376,175            55.62
+	br_inst_exec           11,092,426,045           44.52
+	br_misp_exec           54,600,626               44.55
+	br_inst_retired        12,598,076,380           44.57
+	br_misp_retired        45,842,740               44.61
+
+real	0m19.831s
+user	0m14.274s
+sys	0m4.672s

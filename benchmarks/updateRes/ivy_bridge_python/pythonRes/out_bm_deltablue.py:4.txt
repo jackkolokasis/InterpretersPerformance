@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+deltablue: Mean +- std dev: 30.5 ms +- 0.3 ms
+
+Events were actively counted for 14.0 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           49,099,038,184           55.92
+	br_misp_exec           150,275,320              55.82
+	br_inst_exec           10,847,831,051           55.76
+	br_misp_exec           92,723,204               55.66
+	br_inst_exec           1,138,240,459            55.64
+	br_inst_exec           7,003,008,532            44.47
+	br_misp_exec           44,909,908               44.65
+	br_inst_retired        6,743,341,718            44.78
+	br_misp_retired        39,023,739               44.78
+
+real	0m14.054s
+user	0m13.546s
+sys	0m0.531s

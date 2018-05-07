@@ -1,0 +1,19 @@
+  haswell
+python3.6
+
+Events were actively counted for 72586571 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           167,042,424              55.76
+	br_misp_exec           1,267,773                55.74
+	br_inst_exec           35,752,959               55.76
+	br_misp_exec           241,473                  55.78
+	br_inst_exec           2,964,488                55.75
+	br_inst_exec           23,778,879               44.60
+	br_misp_exec           893,938                  45.85
+	br_inst_retired        25,703,182               45.19
+	br_misp_retired        746,428                  44.58
+
+real	0m0.159s
+user	0m0.113s
+sys	0m0.048s

@@ -1,0 +1,19 @@
+python3.6
+.....................
+logging_format: Mean +- std dev: 73.9 us +- 1.0 us
+.....................
+logging_silent: Mean +- std dev: 2.21 us +- 0.09 us
+.....................
+logging_simple: Mean +- std dev: 65.1 us +- 2.1 us
+
+Events were actively counted for 59.5 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            116,305,995,310          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          413,503,673              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     24,776,368,504           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        890,324,704              100.00
+
+real	0m59.566s
+user	0m57.136s
+sys	0m2.534s

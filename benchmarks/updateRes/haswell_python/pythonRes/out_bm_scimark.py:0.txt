@@ -1,0 +1,29 @@
+  haswell
+python3.6
+.....................
+scimark_fft: Mean +- std dev: 581 ms +- 4 ms
+.....................
+scimark_lu: Mean +- std dev: 422 ms +- 10 ms
+.....................
+scimark_monte_carlo: Mean +- std dev: 208 ms +- 3 ms
+.....................
+scimark_sor: Mean +- std dev: 397 ms +- 5 ms
+.....................
+scimark_sparse_mat_mult: Mean +- std dev: 7.35 ms +- 0.06 ms
+
+Events were actively counted for  2 minutes and 39 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           1,285,788,479,041        55.63
+	br_misp_exec           1,072,846,639            55.61
+	br_inst_exec           239,533,641,088          55.60
+	br_misp_exec           751,661,321              55.60
+	br_inst_exec           35,153,394,882           55.60
+	br_inst_exec           142,745,026,585          44.48
+	br_misp_exec           290,532,921              44.51
+	br_inst_retired        180,364,810,841          44.51
+	br_misp_retired        248,065,394              44.51
+
+real	2m39.134s
+user	2m37.590s
+sys	0m1.623s

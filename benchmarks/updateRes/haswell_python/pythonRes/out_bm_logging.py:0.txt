@@ -1,0 +1,25 @@
+  haswell
+python3.6
+.....................
+logging_format: Mean +- std dev: 20.9 us +- 1.8 us
+.....................
+logging_silent: Mean +- std dev: 630 ns +- 15 ns
+.....................
+logging_simple: Mean +- std dev: 17.2 us +- 0.3 us
+
+Events were actively counted for 39.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           244,647,766,059          55.71
+	br_misp_exec           469,461,634              55.66
+	br_inst_exec           47,803,855,089           55.69
+	br_misp_exec           259,540,760              55.68
+	br_inst_exec           5,825,650,952            55.69
+	br_inst_exec           31,096,137,378           44.56
+	br_misp_exec           115,357,026              44.59
+	br_inst_retired        35,585,647,871           44.59
+	br_misp_retired        94,754,621               44.57
+
+real	0m39.152s
+user	0m38.158s
+sys	0m1.037s

@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+spectral_norm: Mean +- std dev: 238 ms +- 7 ms
+
+Events were actively counted for 22.3 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           188,954,215,579          55.64
+	br_misp_exec           51,188,277               55.60
+	br_inst_exec           33,567,862,778           55.63
+	br_misp_exec           12,584,458               55.66
+	br_inst_exec           4,479,788,228            55.65
+	br_inst_exec           21,369,831,489           44.52
+	br_misp_exec           34,783,991               44.54
+	br_inst_retired        28,010,733,410           44.52
+	br_misp_retired        29,308,170               44.51
+
+real	0m22.384s
+user	0m22.035s
+sys	0m0.366s

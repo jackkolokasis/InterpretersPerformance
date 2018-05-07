@@ -1,0 +1,15 @@
+python3.6
+.....................
+telco: Mean +- std dev: 47.6 ms +- 1.9 ms
+
+Events were actively counted for 20.7 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            39,320,195,311           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          148,452,431              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     8,489,645,635            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        255,899,055              100.00
+
+real	0m20.792s
+user	0m19.941s
+sys	0m0.886s

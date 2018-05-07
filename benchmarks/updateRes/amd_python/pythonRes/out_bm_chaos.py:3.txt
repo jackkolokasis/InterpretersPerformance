@@ -1,0 +1,15 @@
+python3.6
+.....................
+chaos: Mean +- std dev: 784 ms +- 43 ms
+
+Events were actively counted for  1 minute and 14 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            157,305,295,110          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          763,518,460              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     34,567,571,769           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,243,503,784            100.00
+
+real	1m14.811s
+user	1m13.802s
+sys	0m1.046s

@@ -1,0 +1,15 @@
+python3.6
+.....................
+json_loads: Mean +- std dev: 185 us +- 4 us
+
+Events were actively counted for 24.6 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            51,468,589,102           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          99,790,021               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     12,529,158,790           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        388,589,957              100.00
+
+real	0m24.722s
+user	0m20.813s
+sys	0m3.948s

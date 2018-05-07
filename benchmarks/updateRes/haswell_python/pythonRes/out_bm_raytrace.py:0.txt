@@ -1,0 +1,29 @@
+  haswell
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the maximum (1.72 sec) is 63% greater than the mean (1.05 sec)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+raytrace: Mean +- std dev: 1.05 sec +- 0.10 sec
+
+Events were actively counted for  1 minute and 29 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           647,145,896,843          55.59
+	br_misp_exec           1,257,076,635            55.58
+	br_inst_exec           125,172,669,874          55.57
+	br_misp_exec           711,841,815              55.57
+	br_inst_exec           16,224,709,137           55.57
+	br_inst_exec           77,713,792,098           44.46
+	br_misp_exec           126,533,137              44.47
+	br_inst_retired        91,179,622,505           44.47
+	br_misp_retired        103,068,178              44.47
+
+real	1m30.077s
+user	1m29.694s
+sys	0m0.401s

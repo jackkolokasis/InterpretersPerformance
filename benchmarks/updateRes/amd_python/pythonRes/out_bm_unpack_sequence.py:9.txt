@@ -1,0 +1,15 @@
+python3.6
+.....................
+unpack_sequence: Mean +- std dev: 217 ns +- 1 ns
+
+Events were actively counted for 20.1 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            74,992,259,517           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          303,510,258              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     12,150,389,474           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        361,420,314              100.00
+
+real	0m20.226s
+user	0m19.312s
+sys	0m0.952s

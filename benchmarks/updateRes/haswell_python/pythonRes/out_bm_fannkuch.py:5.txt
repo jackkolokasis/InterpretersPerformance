@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+fannkuch: Mean +- std dev: 854 ms +- 7 ms
+
+Events were actively counted for  1 minute and 14 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           613,700,000,424          55.58
+	br_misp_exec           510,294,847              55.57
+	br_inst_exec           116,489,782,571          55.57
+	br_misp_exec           189,542,995              55.58
+	br_inst_exec           17,430,019,612           55.59
+	br_inst_exec           73,285,611,975           44.47
+	br_misp_exec           312,321,087              44.47
+	br_inst_retired        92,604,529,721           44.47
+	br_misp_retired        305,392,281              44.46
+
+real	1m14.426s
+user	1m14.057s
+sys	0m0.384s

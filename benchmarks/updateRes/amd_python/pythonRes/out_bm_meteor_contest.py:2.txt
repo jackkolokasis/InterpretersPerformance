@@ -1,0 +1,15 @@
+python3.6
+.....................
+meteor_contest: Mean +- std dev: 497 ms +- 7 ms
+
+Events were actively counted for 47.3 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            109,229,054,756          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          261,928,879              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     23,375,045,239           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        844,409,317              100.00
+
+real	0m47.422s
+user	0m46.437s
+sys	0m1.024s

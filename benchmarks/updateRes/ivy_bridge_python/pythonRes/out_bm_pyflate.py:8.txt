@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+pyflate: Mean +- std dev: 2.82 sec +- 0.02 sec
+
+Events were actively counted for  4 minutes and 1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           882,222,536,114          55.56
+	br_misp_exec           2,807,887,148            55.55
+	br_inst_exec           197,824,166,775          55.56
+	br_misp_exec           2,184,297,484            55.57
+	br_inst_exec           21,499,051,624           55.57
+	br_inst_exec           133,077,523,086          44.47
+	br_misp_exec           408,855,758              44.46
+	br_inst_retired        129,238,415,432          44.45
+	br_misp_retired        390,279,179              44.45
+
+real	4m1.250s
+user	3m59.067s
+sys	0m2.213s

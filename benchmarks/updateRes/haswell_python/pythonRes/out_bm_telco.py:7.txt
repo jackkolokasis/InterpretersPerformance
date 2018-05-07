@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+telco: Mean +- std dev: 11.5 ms +- 0.6 ms
+
+Events were actively counted for 10.0 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           65,635,493,347           55.70
+	br_misp_exec           77,234,231               55.65
+	br_inst_exec           12,548,062,293           55.70
+	br_misp_exec           16,417,679               55.70
+	br_inst_exec           1,382,337,029            55.76
+	br_inst_exec           7,826,780,656            44.69
+	br_misp_exec           55,381,988               44.67
+	br_inst_retired        9,416,031,366            44.60
+	br_misp_retired        49,471,737               44.55
+
+real	0m10.123s
+user	0m9.763s
+sys	0m0.378s

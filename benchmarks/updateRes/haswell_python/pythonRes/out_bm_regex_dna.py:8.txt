@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+regex_dna: Mean +- std dev: 224 ms +- 1 ms
+
+Events were actively counted for 28.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           209,599,436,989          55.64
+	br_misp_exec           654,251,177              55.61
+	br_inst_exec           39,960,772,092           55.61
+	br_misp_exec           29,555,334               55.59
+	br_inst_exec           5,564,042,587            55.61
+	br_inst_exec           26,393,079,759           44.51
+	br_misp_exec           622,844,122              44.51
+	br_inst_retired        30,077,371,507           44.53
+	br_misp_retired        613,250,877              44.53
+
+real	0m28.156s
+user	0m27.553s
+sys	0m0.618s

@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+hexiom: Mean +- std dev: 19.8 ms +- 0.2 ms
+
+Events were actively counted for 15.5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           117,120,376,572          55.66
+	br_misp_exec           168,621,337              55.64
+	br_inst_exec           21,927,488,201           55.71
+	br_misp_exec           90,214,635               55.71
+	br_inst_exec           3,167,020,833            55.68
+	br_inst_exec           13,805,791,990           44.51
+	br_misp_exec           68,709,284               44.51
+	br_inst_retired        16,615,240,908           44.50
+	br_misp_retired        60,721,155               44.53
+
+real	0m15.656s
+user	0m15.285s
+sys	0m0.388s

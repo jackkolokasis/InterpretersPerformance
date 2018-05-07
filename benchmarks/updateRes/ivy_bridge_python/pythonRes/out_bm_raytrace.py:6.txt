@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+raytrace: Mean +- std dev: 2.43 sec +- 0.06 sec
+
+Events were actively counted for  3 minutes and 27 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           688,029,025,695          55.57
+	br_misp_exec           2,818,017,623            55.56
+	br_inst_exec           153,884,455,931          55.56
+	br_misp_exec           1,972,181,408            55.57
+	br_inst_exec           16,869,274,293           55.57
+	br_inst_exec           95,924,399,367           44.47
+	br_misp_exec           168,922,349              44.46
+	br_inst_retired        92,105,804,010           44.46
+	br_misp_retired        150,449,098              44.45
+
+real	3m27.534s
+user	3m26.942s
+sys	0m0.622s

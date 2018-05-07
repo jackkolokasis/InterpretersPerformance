@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+mdp: Mean +- std dev: 4.96 sec +- 0.13 sec
+
+Events were actively counted for  7 minutes and 1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           3,103,246,307,462        55.56
+	br_misp_exec           3,710,766,213            55.56
+	br_inst_exec           626,354,331,285          55.56
+	br_misp_exec           1,689,867,438            55.56
+	br_inst_exec           116,015,220,952          55.56
+	br_inst_exec           354,921,541,695          44.45
+	br_misp_exec           1,250,530,236            44.45
+	br_inst_retired        467,284,475,508          44.45
+	br_misp_retired        981,985,626              44.45
+
+real	7m1.283s
+user	7m0.610s
+sys	0m0.682s

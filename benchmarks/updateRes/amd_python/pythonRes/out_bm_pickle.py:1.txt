@@ -1,0 +1,21 @@
+python3.6
+
+Events were actively counted for 141932472 nanoseconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            238,646,172              100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          751,151                  100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     53,262,815               100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        2,529,278                100.00
+     [--inherit-environ VARS] [--no-locale] [--python PYTHON]
+                    [--compare-to REF_PYTHON]
+                    [--python-names REF_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: the following arguments are required: benchmark
+app process exited with the following status: 2
+
+real	0m0.222s
+user	0m0.161s
+sys	0m0.062s

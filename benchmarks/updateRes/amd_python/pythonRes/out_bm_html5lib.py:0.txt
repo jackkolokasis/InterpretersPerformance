@@ -1,0 +1,13 @@
+python3.6
+
+Events were actively counted for 60335538 nanoseconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            99,099,423               100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          287,417                  100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     22,564,235               100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,100,884                100.00
+
+real	0m0.139s
+user	0m0.083s
+sys	0m0.056s

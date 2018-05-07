@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+fannkuch: Mean +- std dev: 1.86 sec +- 0.05 sec
+
+Events were actively counted for  2 minutes and 39 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           651,469,107,570          55.58
+	br_misp_exec           1,765,894,999            55.57
+	br_inst_exec           146,256,754,447          55.57
+	br_misp_exec           1,419,838,312            55.57
+	br_inst_exec           17,948,643,321           55.57
+	br_inst_exec           96,028,548,907           44.46
+	br_misp_exec           325,836,119              44.46
+	br_inst_retired        93,653,204,124           44.46
+	br_misp_retired        319,637,023              44.47
+
+real	2m39.837s
+user	2m39.266s
+sys	0m0.600s

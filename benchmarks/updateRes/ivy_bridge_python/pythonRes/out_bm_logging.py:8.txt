@@ -1,0 +1,34 @@
+  ivy_bridge
+python3.6
+.....................
+logging_format: Mean +- std dev: 57.6 us +- 0.6 us
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (150 ns) is 11% of the mean (1.40 us)
+* the maximum (2.38 us) is 70% greater than the mean (1.40 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+logging_silent: Mean +- std dev: 1.40 us +- 0.15 us
+.....................
+logging_simple: Mean +- std dev: 48.4 us +- 0.7 us
+
+Events were actively counted for 43.9 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           114,590,720,105          55.77
+	br_misp_exec           545,753,326              55.64
+	br_inst_exec           25,886,915,334           55.64
+	br_misp_exec           337,606,593              55.68
+	br_inst_exec           2,624,690,553            55.70
+	br_inst_exec           16,749,945,882           44.64
+	br_misp_exec           120,175,403              44.73
+	br_inst_retired        15,950,994,857           44.68
+	br_misp_retired        103,024,285              44.65
+
+real	0m44.060s
+user	0m42.451s
+sys	0m1.685s

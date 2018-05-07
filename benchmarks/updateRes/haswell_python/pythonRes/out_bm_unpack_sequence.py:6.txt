@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+unpack_sequence: Mean +- std dev: 81.6 ns +- 5.2 ns
+
+Events were actively counted for 13.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           135,938,119,988          55.69
+	br_misp_exec           47,505,829               55.68
+	br_inst_exec           19,871,952,155           55.73
+	br_misp_exec           10,828,581               55.70
+	br_inst_exec           3,506,685,764            55.70
+	br_inst_exec           15,158,434,390           44.52
+	br_misp_exec           33,596,894               44.54
+	br_inst_retired        17,985,555,003           44.58
+	br_misp_retired        27,601,135               44.55
+
+real	0m13.806s
+user	0m13.466s
+sys	0m0.355s

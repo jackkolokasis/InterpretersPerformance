@@ -1,0 +1,47 @@
+  haswell
+python3.6
+.....................
+scimark_fft: Mean +- std dev: 581 ms +- 4 ms
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (63.7 ms) is 14% of the mean (440 ms)
+* the maximum (748 ms) is 70% greater than the mean (440 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+scimark_lu: Mean +- std dev: 440 ms +- 64 ms
+.....................
+scimark_monte_carlo: Mean +- std dev: 208 ms +- 4 ms
+.....................
+scimark_sor: Mean +- std dev: 401 ms +- 18 ms
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (2.55 ms) is 30% of the mean (8.41 ms)
+* the maximum (14.5 ms) is 72% greater than the mean (8.41 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+scimark_sparse_mat_mult: Mean +- std dev: 8.41 ms +- 2.55 ms
+
+Events were actively counted for  2 minutes and 41 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           1,285,403,839,604        55.61
+	br_misp_exec           1,071,857,584            55.58
+	br_inst_exec           239,517,656,484          55.60
+	br_misp_exec           748,531,339              55.61
+	br_inst_exec           35,140,607,547           55.62
+	br_inst_exec           142,656,676,942          44.51
+	br_misp_exec           288,370,012              44.51
+	br_inst_retired        180,282,948,603          44.50
+	br_misp_retired        245,586,116              44.49
+
+real	2m41.177s
+user	2m39.656s
+sys	0m1.588s
