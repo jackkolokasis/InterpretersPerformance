@@ -1,0 +1,23 @@
+  core2
+rhino
+Splay: 280
+SplayLatency: 1173
+----
+Score (version 9): 573
+
+Events were actively counted for 6.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          30,376,627,709           33.47
+	BR_MISSP_EXEC               193,650,765              33.38
+	BR_INST_EXEC                5,534,080,618            33.39
+	BR_IND_MISSP_EXEC           81,346,089               22.29
+	BR_IND_EXEC                 436,510,086              22.30
+	BR_CND_EXEC                 4,102,752,411            22.31
+	BR_CND_MISSP_EXEC           105,301,103              22.31
+	BR_INST_RETIRED             183,345,532              22.31
+	BR_MISS_PRED_RETIRED        182,834,187              22.35
+
+real	0m6.638s
+user	0m13.835s
+sys	0m0.993s

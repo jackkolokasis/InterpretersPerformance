@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+fannkuch: Mean +- std dev: 2.22 sec +- 0.06 sec
+
+Events were actively counted for  3 minutes and 10 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          651,718,659,963          33.35
+	BR_MISSP_EXEC               2,873,282,478            33.35
+	BR_INST_EXEC                145,497,553,781          33.35
+	BR_IND_MISSP_EXEC           1,238,653,423            22.24
+	BR_IND_EXEC                 19,480,330,540           22.24
+	BR_CND_EXEC                 95,370,592,541           22.24
+	BR_CND_MISSP_EXEC           1,391,180,534            22.23
+	BR_INST_RETIRED             2,828,590,430            22.23
+	BR_MISS_PRED_RETIRED        2,825,865,849            22.23
+
+real	3m10.587s
+user	3m9.889s
+sys	0m0.682s

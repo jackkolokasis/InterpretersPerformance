@@ -1,0 +1,21 @@
+  core2
+java
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,100]
+Normal completion.
+
+Events were actively counted for 16.9 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          133,733,249,008          33.34
+	BR_MISSP_EXEC               4,051,793,032            33.33
+	BR_INST_EXEC                24,695,057,027           33.33
+	BR_IND_MISSP_EXEC           3,614,875,151            22.23
+	BR_IND_EXEC                 8,803,641,013            22.23
+	BR_CND_EXEC                 11,717,995,778           22.25
+	BR_CND_MISSP_EXEC           425,983,821              22.25
+	BR_INST_RETIRED             3,714,407,941            22.23
+	BR_MISS_PRED_RETIRED        3,713,752,360            22.23
+
+real	0m17.040s
+user	1m56.937s
+sys	0m2.126s

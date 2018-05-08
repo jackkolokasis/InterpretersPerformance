@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+python_startup: Mean +- std dev: 36.8 ms +- 0.1 ms
+
+Events were actively counted for 56.4 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          90,289,311,736           34.84
+	BR_MISSP_EXEC               955,265,298              34.40
+	BR_INST_EXEC                21,766,417,657           34.39
+	BR_IND_MISSP_EXEC           227,746,435              22.94
+	BR_IND_EXEC                 2,074,891,869            23.28
+	BR_CND_EXEC                 14,238,924,810           23.25
+	BR_CND_MISSP_EXEC           675,511,975              23.19
+	BR_INST_RETIRED             875,112,264              23.30
+	BR_MISS_PRED_RETIRED        875,503,204              23.30
+
+real	0m56.573s
+user	0m46.022s
+sys	0m11.016s

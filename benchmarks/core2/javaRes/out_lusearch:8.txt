@@ -1,0 +1,36 @@
+  core2
+java
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,64]
+4 query batches completed
+8 query batches completed
+12 query batches completed
+16 query batches completed
+20 query batches completed
+24 query batches completed
+28 query batches completed
+32 query batches completed
+36 query batches completed
+40 query batches completed
+44 query batches completed
+48 query batches completed
+52 query batches completed
+56 query batches completed
+60 query batches completed
+64 query batches completed
+
+Events were actively counted for 18.9 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          142,314,148,925          33.33
+	BR_MISSP_EXEC               3,363,898,131            33.33
+	BR_INST_EXEC                24,999,095,352           33.34
+	BR_IND_MISSP_EXEC           3,047,452,014            22.23
+	BR_IND_EXEC                 9,475,195,457            22.24
+	BR_CND_EXEC                 11,251,161,400           22.24
+	BR_CND_MISSP_EXEC           312,913,994              22.23
+	BR_INST_RETIRED             3,177,311,919            22.23
+	BR_MISS_PRED_RETIRED        3,173,237,412            22.23
+
+real	0m19.025s
+user	1m48.763s
+sys	0m1.464s

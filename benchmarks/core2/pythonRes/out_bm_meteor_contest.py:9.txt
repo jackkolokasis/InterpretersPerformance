@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+meteor_contest: Mean +- std dev: 451 ms +- 3 ms
+
+Events were actively counted for 42.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          107,756,289,298          33.43
+	BR_MISSP_EXEC               807,005,684              33.41
+	BR_INST_EXEC                24,129,913,718           33.43
+	BR_IND_MISSP_EXEC           194,288,267              22.30
+	BR_IND_EXEC                 2,592,686,723            22.29
+	BR_CND_EXEC                 16,864,745,873           22.27
+	BR_CND_MISSP_EXEC           577,526,141              22.26
+	BR_INST_RETIRED             768,811,646              22.28
+	BR_MISS_PRED_RETIRED        767,583,591              22.29
+
+real	0m42.839s
+user	0m42.002s
+sys	0m0.839s

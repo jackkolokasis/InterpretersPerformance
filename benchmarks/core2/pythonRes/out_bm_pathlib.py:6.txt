@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+pathlib: Mean +- std dev: 141 ms +- 1 ms
+
+Events were actively counted for 29.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          38,594,704,358           33.47
+	BR_MISSP_EXEC               281,358,164              33.44
+	BR_INST_EXEC                8,572,378,191            33.45
+	BR_IND_MISSP_EXEC           117,981,701              22.31
+	BR_IND_EXEC                 886,030,563              22.35
+	BR_CND_EXEC                 5,410,554,945            22.35
+	BR_CND_MISSP_EXEC           133,546,487              22.30
+	BR_INST_RETIRED             261,918,695              22.28
+	BR_MISS_PRED_RETIRED        261,269,269              22.32
+
+real	0m29.815s
+user	0m20.958s
+sys	0m7.642s

@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+pyflate: Mean +- std dev: 3.54 sec +- 0.03 sec
+
+Events were actively counted for  5 minutes and 3 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          880,741,423,033          33.35
+	BR_MISSP_EXEC               3,963,426,065            33.35
+	BR_INST_EXEC                197,768,963,399          33.34
+	BR_IND_MISSP_EXEC           2,247,842,775            22.23
+	BR_IND_EXEC                 24,821,455,273           22.23
+	BR_CND_EXEC                 132,947,708,584          22.23
+	BR_CND_MISSP_EXEC           1,404,877,926            22.23
+	BR_INST_RETIRED             3,849,093,560            22.23
+	BR_MISS_PRED_RETIRED        3,848,189,099            22.23
+
+real	5m3.148s
+user	4m59.618s
+sys	0m3.491s

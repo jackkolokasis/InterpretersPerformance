@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+json_loads: Mean +- std dev: 135 us +- 1 us
+
+Events were actively counted for 18.8 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          46,912,511,814           33.61
+	BR_MISSP_EXEC               336,797,801              33.51
+	BR_INST_EXEC                11,895,586,640           33.48
+	BR_IND_MISSP_EXEC           78,584,023               22.30
+	BR_IND_EXEC                 839,199,970              22.37
+	BR_CND_EXEC                 8,936,037,921            22.37
+	BR_CND_MISSP_EXEC           243,916,913              22.36
+	BR_INST_RETIRED             324,885,242              22.39
+	BR_MISS_PRED_RETIRED        324,829,741              22.40
+
+real	0m18.966s
+user	0m18.172s
+sys	0m0.796s

@@ -1,0 +1,22 @@
+  core2
+rhino
+Typescript: 774
+----
+Score (version 9): 774
+
+Events were actively counted for  2 minutes and 46 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          530,948,484,987          33.33
+	BR_MISSP_EXEC               2,963,955,510            33.34
+	BR_INST_EXEC                66,481,521,241           33.33
+	BR_IND_MISSP_EXEC           1,619,962,637            22.22
+	BR_IND_EXEC                 4,636,020,453            22.22
+	BR_CND_EXEC                 47,314,169,438           22.23
+	BR_CND_MISSP_EXEC           1,298,453,027            22.24
+	BR_INST_RETIRED             2,843,693,618            22.23
+	BR_MISS_PRED_RETIRED        2,842,525,017            22.22
+
+real	2m46.684s
+user	3m15.067s
+sys	0m4.641s

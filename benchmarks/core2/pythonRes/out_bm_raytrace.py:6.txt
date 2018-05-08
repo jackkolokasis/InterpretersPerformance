@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+raytrace: Mean +- std dev: 3.17 sec +- 0.03 sec
+
+Events were actively counted for  4 minutes and 29 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          685,322,955,141          33.35
+	BR_MISSP_EXEC               4,680,012,463            33.35
+	BR_INST_EXEC                153,847,849,152          33.35
+	BR_IND_MISSP_EXEC           2,170,150,105            22.23
+	BR_IND_EXEC                 20,138,612,982           22.23
+	BR_CND_EXEC                 96,129,370,599           22.23
+	BR_CND_MISSP_EXEC           1,615,041,078            22.23
+	BR_INST_RETIRED             4,441,735,511            22.23
+	BR_MISS_PRED_RETIRED        4,438,488,386            22.23
+
+real	4m30.092s
+user	4m29.316s
+sys	0m0.743s

@@ -1,0 +1,22 @@
+  core2
+rhino
+RegExp: 81.2
+----
+Score (version 9): 81.2
+
+Events were actively counted for 23.4 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          100,354,847,013          33.37
+	BR_MISSP_EXEC               350,002,959              33.39
+	BR_INST_EXEC                14,746,210,308           33.39
+	BR_IND_MISSP_EXEC           141,605,535              22.26
+	BR_IND_EXEC                 969,952,932              22.24
+	BR_CND_EXEC                 11,424,865,337           22.24
+	BR_CND_MISSP_EXEC           192,596,957              22.28
+	BR_INST_RETIRED             332,384,924              22.28
+	BR_MISS_PRED_RETIRED        331,540,163              22.24
+
+real	0m23.562s
+user	0m32.442s
+sys	0m0.642s

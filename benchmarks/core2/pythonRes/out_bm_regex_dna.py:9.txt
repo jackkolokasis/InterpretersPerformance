@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+regex_dna: Mean +- std dev: 531 ms +- 7 ms
+
+Events were actively counted for  1 minute and 5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          229,299,743,054          33.40
+	BR_MISSP_EXEC               1,007,059,781            33.39
+	BR_INST_EXEC                48,337,246,949           33.37
+	BR_IND_MISSP_EXEC           72,098,962               22.24
+	BR_IND_EXEC                 5,782,284,122            22.26
+	BR_CND_EXEC                 31,857,941,628           22.27
+	BR_CND_MISSP_EXEC           902,308,348              22.27
+	BR_INST_RETIRED             997,664,034              22.26
+	BR_MISS_PRED_RETIRED        997,444,361              22.27
+
+real	1m5.525s
+user	1m3.936s
+sys	0m1.587s

@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+sqlite_synth: Mean +- std dev: 25.9 us +- 0.1 us
+
+Events were actively counted for 13.0 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          18,239,810,489           33.57
+	BR_MISSP_EXEC               109,175,597              33.50
+	BR_INST_EXEC                4,402,260,529            33.55
+	BR_IND_MISSP_EXEC           47,006,351               22.40
+	BR_IND_EXEC                 504,044,394              22.47
+	BR_CND_EXEC                 2,683,341,923            22.46
+	BR_CND_MISSP_EXEC           52,486,499               22.42
+	BR_INST_RETIRED             102,719,970              22.45
+	BR_MISS_PRED_RETIRED        103,342,769              22.41
+
+real	0m13.129s
+user	0m12.401s
+sys	0m0.735s

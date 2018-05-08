@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+spectral_norm: Mean +- std dev: 632 ms +- 7 ms
+
+Events were actively counted for 56.9 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          207,696,208,857          33.41
+	BR_MISSP_EXEC               534,615,093              33.39
+	BR_INST_EXEC                45,494,469,095           33.38
+	BR_IND_MISSP_EXEC           320,702,190              22.26
+	BR_IND_EXEC                 6,288,386,607            22.27
+	BR_CND_EXEC                 29,344,951,577           22.26
+	BR_CND_MISSP_EXEC           120,607,735              22.27
+	BR_INST_RETIRED             517,995,774              22.27
+	BR_MISS_PRED_RETIRED        517,697,883              22.28
+
+real	0m57.096s
+user	0m56.365s
+sys	0m0.708s

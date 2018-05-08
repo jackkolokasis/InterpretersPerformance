@@ -1,0 +1,25 @@
+  core2
+python3.6
+.....................
+logging_format: Mean +- std dev: 73.7 us +- 1.0 us
+.....................
+logging_silent: Mean +- std dev: 1.64 us +- 0.04 us
+.....................
+logging_simple: Mean +- std dev: 63.5 us +- 0.7 us
+
+Events were actively counted for 53.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          113,371,416,892          33.58
+	BR_MISSP_EXEC               908,896,165              33.50
+	BR_INST_EXEC                25,720,543,580           33.49
+	BR_IND_MISSP_EXEC           386,690,586              22.33
+	BR_IND_EXEC                 3,042,849,143            22.38
+	BR_CND_EXEC                 16,668,028,244           22.37
+	BR_CND_MISSP_EXEC           458,402,522              22.36
+	BR_INST_RETIRED             842,011,517              22.39
+	BR_MISS_PRED_RETIRED        842,111,474              22.40
+
+real	0m53.253s
+user	0m51.190s
+sys	0m2.049s

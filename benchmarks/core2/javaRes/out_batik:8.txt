@@ -1,0 +1,49 @@
+  core2
+java
+About to transcode 3 SVG file(s)
+
+Converting mapWaadt.svg to /home1/public/kolokasis/hy446Project/benchmarks/./scratch/mapWaadt.png ... ... success
+Converting mapSpain.svg to /home1/public/kolokasis/hy446Project/benchmarks/./scratch/mapSpain.png ... ... success
+Converting sydney.svg to /home1/public/kolokasis/hy446Project/benchmarks/./scratch/sydney.png ... 
+Events were actively counted for 14.8 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          24,269,934,217           33.36
+	BR_MISSP_EXEC               408,624,232              33.32
+	BR_INST_EXEC                4,454,188,640            33.33
+	BR_IND_MISSP_EXEC           360,678,323              22.31
+	BR_IND_EXEC                 1,679,079,046            22.33
+	BR_CND_EXEC                 2,118,713,290            22.32
+	BR_CND_MISSP_EXEC           47,032,176               22.31
+	BR_INST_RETIRED             382,954,755              22.24
+	BR_MISS_PRED_RETIRED        382,352,857              22.22
+/sun/image/codec/jpeg/TruncatedFileException
+	at org.apache.batik.ext.awt.image.codec.jpeg.JPEGRegistryEntry.handleStream(JPEGRegistryEntry.java:87)
+	at org.apache.batik.ext.awt.image.spi.ImageTagRegistry.readURL(ImageTagRegistry.java:189)
+	at org.apache.batik.bridge.SVGImageElementBridge.createImageGraphicsNode(SVGImageElementBridge.java:257)
+	at org.apache.batik.bridge.SVGImageElementBridge.buildImageGraphicsNode(SVGImageElementBridge.java:176)
+	at org.apache.batik.bridge.SVGImageElementBridge.createGraphicsNode(SVGImageElementBridge.java:118)
+	at org.apache.batik.bridge.GVTBuilder.buildGraphicsNode(GVTBuilder.java:206)
+	at org.apache.batik.bridge.GVTBuilder.buildComposite(GVTBuilder.java:164)
+	at org.apache.batik.bridge.GVTBuilder.buildGraphicsNode(GVTBuilder.java:212)
+	at org.apache.batik.bridge.GVTBuilder.buildComposite(GVTBuilder.java:164)
+	at org.apache.batik.bridge.GVTBuilder.build(GVTBuilder.java:78)
+	at org.apache.batik.transcoder.SVGAbstractTranscoder.transcode(SVGAbstractTranscoder.java:214)
+	at org.apache.batik.transcoder.image.ImageTranscoder.transcode(ImageTranscoder.java:92)
+	at org.apache.batik.transcoder.XMLAbstractTranscoder.transcode(XMLAbstractTranscoder.java:142)
+	at org.apache.batik.transcoder.SVGAbstractTranscoder.transcode(SVGAbstractTranscoder.java:159)
+	at org.apache.batik.apps.rasterizer.SVGConverter.transcode(SVGConverter.java:992)
+	at org.apache.batik.apps.rasterizer.SVGConverter.execute(SVGConverter.java:715)
+	at org.apache.batik.apps.rasterizer.Main.execute(Main.java:938)
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: com.sun.image.codec.jpeg.TruncatedFileException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.dacapo.harness.DacapoClassLoader.loadClass(DacapoClassLoader.java:127)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+app process exited with the following status: 255
+
+real	0m14.908s
+user	0m14.215s
+sys	0m0.435s

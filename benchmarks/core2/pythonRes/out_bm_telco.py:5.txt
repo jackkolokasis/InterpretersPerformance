@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+telco: Mean +- std dev: 51.5 ms +- 0.3 ms
+
+Events were actively counted for 12.6 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          22,278,429,628           33.72
+	BR_MISSP_EXEC               141,603,226              33.63
+	BR_INST_EXEC                5,036,670,317            33.49
+	BR_IND_MISSP_EXEC           60,159,562               22.25
+	BR_IND_EXEC                 563,545,058              22.40
+	BR_CND_EXEC                 3,146,324,949            22.49
+	BR_CND_MISSP_EXEC           74,648,136               22.47
+	BR_INST_RETIRED             134,142,190              22.49
+	BR_MISS_PRED_RETIRED        133,991,811              22.52
+
+real	0m12.765s
+user	0m11.938s
+sys	0m0.770s

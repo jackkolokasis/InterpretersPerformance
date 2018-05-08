@@ -1,0 +1,19 @@
+  core2
+python3.6
+
+Events were actively counted for 88124097 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          136,481,972              33.87
+	BR_MISSP_EXEC               1,602,740                34.90
+	BR_INST_EXEC                34,084,595               35.69
+	BR_IND_MISSP_EXEC           393,572                  23.66
+	BR_IND_EXEC                 3,762,065                23.38
+	BR_CND_EXEC                 23,954,712               22.89
+	BR_CND_MISSP_EXEC           1,056,481                21.45
+	BR_INST_RETIRED             1,526,614                20.42
+	BR_MISS_PRED_RETIRED        1,497,648                22.11
+
+real	0m0.226s
+user	0m0.128s
+sys	0m0.095s
