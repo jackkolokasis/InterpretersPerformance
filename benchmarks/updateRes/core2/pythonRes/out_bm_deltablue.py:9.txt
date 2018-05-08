@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+deltablue: Mean +- std dev: 38.8 ms +- 0.5 ms
+
+Events were actively counted for 17.2 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          48,734,336,942           33.55
+	BR_MISSP_EXEC               246,916,176              33.54
+	BR_INST_EXEC                10,788,638,622           33.51
+	BR_IND_MISSP_EXEC           94,988,602               22.34
+	BR_IND_EXEC                 1,329,707,648            22.36
+	BR_CND_EXEC                 6,984,838,010            22.36
+	BR_CND_MISSP_EXEC           136,782,252              22.40
+	BR_INST_RETIRED             233,723,421              22.39
+	BR_MISS_PRED_RETIRED        233,677,058              22.35
+
+real	0m17.371s
+user	0m16.585s
+sys	0m0.792s

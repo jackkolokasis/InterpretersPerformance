@@ -1,0 +1,22 @@
+  core2
+rhino
+RayTrace: 137
+----
+Score (version 9): 137
+
+Events were actively counted for 19.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          64,722,438,234           33.41
+	BR_MISSP_EXEC               358,113,260              33.34
+	BR_INST_EXEC                8,299,712,205            33.31
+	BR_IND_MISSP_EXEC           218,853,463              22.22
+	BR_IND_EXEC                 695,643,486              22.28
+	BR_CND_EXEC                 5,921,304,860            22.31
+	BR_CND_MISSP_EXEC           127,445,487              22.33
+	BR_INST_RETIRED             342,988,121              22.32
+	BR_MISS_PRED_RETIRED        342,066,207              22.27
+
+real	0m19.592s
+user	0m24.762s
+sys	0m0.488s

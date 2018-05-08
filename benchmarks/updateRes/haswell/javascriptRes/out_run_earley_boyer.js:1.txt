@@ -1,0 +1,22 @@
+  haswell
+rhino
+EarleyBoyer: 343
+----
+Score (version 9): 343
+
+Events were actively counted for 25.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           225,037,671,983          55.55
+	br_misp_exec           296,502,085              55.50
+	br_inst_exec           25,733,002,819           55.54
+	br_misp_exec           97,212,767               55.60
+	br_inst_exec           2,145,658,315            55.67
+	br_inst_exec           18,317,061,308           44.59
+	br_misp_exec           155,165,747              44.57
+	br_inst_retired        18,830,202,726           44.50
+	br_misp_retired        131,675,467              44.42
+
+real	0m25.570s
+user	0m34.841s
+sys	0m1.331s

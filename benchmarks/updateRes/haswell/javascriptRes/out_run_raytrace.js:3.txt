@@ -1,0 +1,22 @@
+  haswell
+rhino
+RayTrace: 374
+----
+Score (version 9): 374
+
+Events were actively counted for 8.3 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           70,111,584,582           55.95
+	br_misp_exec           149,739,028              55.87
+	br_inst_exec           10,055,701,979           55.70
+	br_misp_exec           51,251,341               55.61
+	br_inst_exec           673,052,072              55.43
+	br_inst_exec           7,626,777,173            44.29
+	br_misp_exec           78,898,901               44.55
+	br_inst_retired        7,983,444,447            44.61
+	br_misp_retired        68,659,062               44.84
+
+real	0m8.403s
+user	0m13.436s
+sys	0m0.532s

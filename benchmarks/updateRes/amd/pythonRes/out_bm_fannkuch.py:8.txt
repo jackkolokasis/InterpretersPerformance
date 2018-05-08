@@ -1,0 +1,15 @@
+python3.6
+.....................
+fannkuch: Mean +- std dev: 2.38 sec +- 0.06 sec
+
+Events were actively counted for  3 minutes and 24 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            653,645,489,001          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          2,250,102,599            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     142,249,384,419          100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        3,234,387,818            100.00
+
+real	3m24.811s
+user	3m23.961s
+sys	0m0.868s

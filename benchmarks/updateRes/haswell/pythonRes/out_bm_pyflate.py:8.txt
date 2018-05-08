@@ -1,0 +1,30 @@
+  haswell
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (164 ms) is 13% of the mean (1.23 sec)
+* the maximum (1.97 sec) is 61% greater than the mean (1.23 sec)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+pyflate: Mean +- std dev: 1.23 sec +- 0.16 sec
+
+Events were actively counted for  1 minute and 45 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           831,425,416,905          55.57
+	br_misp_exec           683,882,060              55.56
+	br_inst_exec           154,594,744,141          55.57
+	br_misp_exec           256,660,768              55.58
+	br_inst_exec           19,720,025,979           55.58
+	br_inst_exec           102,514,794,590          44.47
+	br_misp_exec           359,522,253              44.47
+	br_inst_retired        127,303,869,519          44.47
+	br_misp_retired        337,539,503              44.46
+
+real	1m45.627s
+user	1m44.424s
+sys	0m1.221s

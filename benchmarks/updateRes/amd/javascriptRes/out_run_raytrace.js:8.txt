@@ -1,0 +1,16 @@
+rhino
+RayTrace: 141
+----
+Score (version 9): 141
+
+Events were actively counted for 19.8 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            63,192,903,710           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          210,238,564              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     9,133,011,730            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        370,831,064              100.00
+
+real	0m19.858s
+user	0m24.784s
+sys	0m1.756s

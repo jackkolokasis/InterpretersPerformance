@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+pyflate: Mean +- std dev: 1.19 sec +- 0.01 sec
+
+Events were actively counted for  1 minute and 42 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           829,814,489,650          55.58
+	br_misp_exec           698,717,725              55.57
+	br_inst_exec           154,786,616,640          55.57
+	br_misp_exec           273,082,530              55.57
+	br_inst_exec           19,738,358,531           55.57
+	br_inst_exec           102,835,634,657          44.46
+	br_misp_exec           355,286,993              44.46
+	br_inst_retired        127,086,195,544          44.47
+	br_misp_retired        336,128,393              44.47
+
+real	1m42.575s
+user	1m41.387s
+sys	0m1.203s

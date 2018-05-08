@@ -1,0 +1,29 @@
+  haswell
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the maximum (1.43 sec) is 66% greater than the mean (864 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+fannkuch: Mean +- std dev: 864 ms +- 75 ms
+
+Events were actively counted for  1 minute and 15 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           613,560,638,274          55.59
+	br_misp_exec           501,482,389              55.58
+	br_inst_exec           116,303,749,120          55.58
+	br_misp_exec           179,437,912              55.58
+	br_inst_exec           17,431,839,245           55.58
+	br_inst_exec           73,118,058,166           44.47
+	br_misp_exec           312,098,035              44.47
+	br_inst_retired        92,614,954,128           44.47
+	br_misp_retired        305,165,586              44.47
+
+real	1m15.465s
+user	1m15.104s
+sys	0m0.377s

@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+pidigits: Mean +- std dev: 232 ms +- 13 ms
+
+Events were actively counted for 21.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           197,043,742,049          55.67
+	br_misp_exec           105,282,890              55.64
+	br_inst_exec           14,373,077,800           55.63
+	br_misp_exec           15,438,613               55.64
+	br_inst_exec           370,025,053              55.65
+	br_inst_exec           13,142,696,036           44.49
+	br_misp_exec           85,327,023               44.52
+	br_inst_retired        13,415,207,528           44.53
+	br_misp_retired        79,122,754               44.52
+
+real	0m21.810s
+user	0m21.457s
+sys	0m0.372s

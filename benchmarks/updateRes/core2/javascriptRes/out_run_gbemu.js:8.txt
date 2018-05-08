@@ -1,0 +1,21 @@
+  core2
+rhino
+----
+Score (version 9): NaN
+
+Events were actively counted for 850030182 nanoseconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          3,653,044,360            33.89
+	BR_MISSP_EXEC               38,714,410               33.80
+	BR_INST_EXEC                739,419,885              33.76
+	BR_IND_MISSP_EXEC           11,713,203               22.43
+	BR_IND_EXEC                 48,880,283               22.41
+	BR_CND_EXEC                 532,631,212              22.47
+	BR_CND_MISSP_EXEC           26,931,648               22.47
+	BR_INST_RETIRED             36,953,850               22.64
+	BR_MISS_PRED_RETIRED        35,832,939               22.71
+
+real	0m0.993s
+user	0m2.066s
+sys	0m0.257s

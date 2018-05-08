@@ -1,0 +1,22 @@
+  ivy_bridge
+rhino
+RegExp: 90.2
+----
+Score (version 9): 90.2
+
+Events were actively counted for 21.1 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           118,000,639,406          55.66
+	br_misp_exec           359,595,242              55.60
+	br_inst_exec           16,817,944,021           55.54
+	br_misp_exec           150,374,727              55.53
+	br_inst_exec           898,640,235              55.58
+	br_inst_exec           12,799,307,739           44.49
+	br_misp_exec           168,393,659              44.57
+	br_inst_retired        12,426,874,413           44.56
+	br_misp_retired        146,019,485              44.52
+
+real	0m21.183s
+user	0m31.060s
+sys	0m1.344s

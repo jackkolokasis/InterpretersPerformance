@@ -1,0 +1,22 @@
+  core2
+rhino
+DeltaBlue: 38.3
+----
+Score (version 9): 38.3
+
+Events were actively counted for 7.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          30,278,184,073           33.48
+	BR_MISSP_EXEC               227,700,880              33.38
+	BR_INST_EXEC                5,208,102,315            33.36
+	BR_IND_MISSP_EXEC           125,539,601              22.29
+	BR_IND_EXEC                 518,262,723              22.33
+	BR_CND_EXEC                 3,848,548,605            22.37
+	BR_CND_MISSP_EXEC           91,518,635               22.34
+	BR_INST_RETIRED             215,615,788              22.28
+	BR_MISS_PRED_RETIRED        215,259,177              22.32
+
+real	0m7.628s
+user	0m12.393s
+sys	0m0.477s

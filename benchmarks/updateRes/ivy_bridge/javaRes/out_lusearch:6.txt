@@ -1,0 +1,36 @@
+  ivy_bridge
+java
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,64]
+4 query batches completed
+8 query batches completed
+12 query batches completed
+16 query batches completed
+20 query batches completed
+24 query batches completed
+28 query batches completed
+32 query batches completed
+36 query batches completed
+40 query batches completed
+44 query batches completed
+48 query batches completed
+52 query batches completed
+56 query batches completed
+60 query batches completed
+64 query batches completed
+
+Events were actively counted for 10.7 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           143,313,674,960          55.56
+	br_misp_exec           3,236,896,366            55.54
+	br_inst_exec           25,782,494,924           55.56
+	br_misp_exec           3,147,050,140            55.57
+	br_inst_exec           9,305,310,903            55.58
+	br_inst_exec           11,678,274,165           44.48
+	br_misp_exec           74,014,294               44.47
+	br_inst_retired        10,797,054,079           44.45
+	br_misp_retired        65,214,369               44.44
+
+real	0m10.838s
+user	2m8.692s
+sys	0m3.463s

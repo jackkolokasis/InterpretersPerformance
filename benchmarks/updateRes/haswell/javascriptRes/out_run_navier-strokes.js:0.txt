@@ -1,0 +1,22 @@
+  haswell
+rhino
+NavierStokes: 206
+----
+Score (version 9): 206
+
+Events were actively counted for 14.4 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           126,221,776,672          55.56
+	br_misp_exec           104,724,366              55.50
+	br_inst_exec           16,326,822,572           55.55
+	br_misp_exec           25,508,020               55.62
+	br_inst_exec           1,071,673,707            55.63
+	br_inst_exec           12,474,099,947           44.59
+	br_misp_exec           57,316,286               44.61
+	br_inst_retired        13,611,091,753           44.52
+	br_misp_retired        49,495,016               44.49
+
+real	0m14.495s
+user	0m18.085s
+sys	0m0.433s

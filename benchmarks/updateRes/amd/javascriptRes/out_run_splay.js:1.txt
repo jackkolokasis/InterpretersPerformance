@@ -1,0 +1,17 @@
+rhino
+Splay: 292
+SplayLatency: 1408
+----
+Score (version 9): 642
+
+Events were actively counted for 7.7 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            33,967,974,242           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          115,172,460              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     6,922,845,155            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        275,601,989              100.00
+
+real	0m7.779s
+user	0m17.035s
+sys	0m2.259s

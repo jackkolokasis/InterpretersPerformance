@@ -1,0 +1,22 @@
+  nehalem
+rhino
+Box2D: 197
+----
+Score (version 9): 197
+
+Events were actively counted for 22.9 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                120,633,033,930          44.52
+	BR_MISP_EXEC                31,223,238               44.50
+	BR_INST_EXEC                985,480,653              44.46
+	BR_MISP_EXEC                212,636,749              44.45
+	BR_INST_EXEC                689,705,718              44.47
+	BR_INST_EXEC                11,136,597,397           44.50
+	BR_MISP_EXEC                208,520,734              44.55
+	BR_INST_RETIRED             14,103,978,713           44.50
+	BR_MISS_PRED_RETIRED        1,020,244,025            44.52
+
+real	0m22.964s
+user	0m33.777s
+sys	0m0.675s

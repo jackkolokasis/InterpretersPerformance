@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+json_loads: Mean +- std dev: 40.0 us +- 2.0 us
+
+Events were actively counted for 19.5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           150,270,779,223          55.69
+	br_misp_exec           191,140,057              55.66
+	br_inst_exec           29,618,248,803           55.64
+	br_misp_exec           60,013,158               55.65
+	br_inst_exec           2,077,038,009            55.66
+	br_inst_exec           22,687,123,246           44.51
+	br_misp_exec           114,548,530              44.50
+	br_inst_retired        29,892,455,274           44.52
+	br_misp_retired        105,391,008              44.55
+
+real	0m19.576s
+user	0m19.212s
+sys	0m0.382s

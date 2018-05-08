@@ -1,0 +1,16 @@
+rhino
+Crypto: 40.3
+----
+Score (version 9): 40.3
+
+Events were actively counted for  1 minute and 38 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            366,821,838,054          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          1,285,267,356            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     34,648,903,695           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,447,182,120            100.00
+
+real	1m38.732s
+user	1m42.314s
+sys	0m1.952s

@@ -1,0 +1,16 @@
+rhino
+Typescript: 685
+----
+Score (version 9): 685
+
+Events were actively counted for  3 minutes and 8 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            522,332,803,038          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          1,785,905,030            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     64,129,320,067           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        2,907,778,006            100.00
+
+real	3m8.547s
+user	3m31.132s
+sys	0m59.516s

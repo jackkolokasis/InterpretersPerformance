@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+spectral_norm: Mean +- std dev: 501 ms +- 3 ms
+
+Events were actively counted for 45.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           207,795,070,953          55.63
+	br_misp_exec           349,318,922              55.60
+	br_inst_exec           45,311,157,458           55.60
+	br_misp_exec           303,631,585              55.60
+	br_inst_exec           5,000,375,364            55.61
+	br_inst_exec           29,207,487,670           44.49
+	br_misp_exec           39,393,410               44.51
+	br_inst_retired        28,754,082,958           44.52
+	br_misp_retired        34,135,033               44.52
+
+real	0m45.815s
+user	0m45.268s
+sys	0m0.574s

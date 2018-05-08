@@ -1,0 +1,22 @@
+  ivy_bridge
+rhino
+NavierStokes: 85.4
+----
+Score (version 9): 85.4
+
+Events were actively counted for 30.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           152,162,006,802          55.61
+	br_misp_exec           323,596,899              55.56
+	br_inst_exec           18,381,023,513           55.58
+	br_misp_exec           234,325,680              55.57
+	br_inst_exec           675,379,299              55.59
+	br_inst_exec           14,899,953,246           44.50
+	br_misp_exec           72,932,007               44.49
+	br_inst_retired        14,709,030,617           44.51
+	br_misp_retired        64,550,355               44.48
+
+real	0m30.577s
+user	0m36.359s
+sys	0m0.592s

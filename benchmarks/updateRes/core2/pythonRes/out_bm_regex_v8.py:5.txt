@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+regex_v8: Mean +- std dev: 95.5 ms +- 0.3 ms
+
+Events were actively counted for 23.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          74,102,417,173           33.54
+	BR_MISSP_EXEC               206,609,013              33.52
+	BR_INST_EXEC                15,693,167,343           33.47
+	BR_IND_MISSP_EXEC           71,995,723               22.28
+	BR_IND_EXEC                 2,042,552,466            22.31
+	BR_CND_EXEC                 10,200,936,509           22.32
+	BR_CND_MISSP_EXEC           120,395,325              22.31
+	BR_INST_RETIRED             192,032,061              22.34
+	BR_MISS_PRED_RETIRED        191,452,535              22.38
+
+real	0m23.809s
+user	0m22.883s
+sys	0m0.932s

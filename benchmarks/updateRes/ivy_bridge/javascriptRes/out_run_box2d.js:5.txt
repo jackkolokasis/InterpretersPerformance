@@ -1,0 +1,22 @@
+  ivy_bridge
+rhino
+Box2D: 192
+----
+Score (version 9): 192
+
+Events were actively counted for 23.5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           127,976,465,308          55.55
+	br_misp_exec           478,273,599              55.56
+	br_inst_exec           16,662,780,409           55.61
+	br_misp_exec           267,429,852              55.59
+	br_inst_exec           1,035,656,415            55.67
+	br_inst_exec           12,219,931,039           44.52
+	br_misp_exec           160,552,404              44.50
+	br_inst_retired        11,738,039,614           44.49
+	br_misp_retired        137,615,758              44.44
+
+real	0m23.645s
+user	0m35.247s
+sys	0m0.945s

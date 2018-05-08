@@ -1,0 +1,31 @@
+  ivy_bridge
+java
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,4000]
+....
+Completed 4000 transactions
+	Stock level .............   155 ( 3.9%)
+	Order status by name ....   108 ( 2.7%)
+	Order status by ID ......    65 ( 1.6%)
+	Payment by name .........  1050 (26.2%)
+	Payment by ID ...........   661 (16.5%)
+	Delivery schedule .......   167 ( 4.2%)
+	New order ...............  1774 (44.4%)
+	New order rollback ......    20 ( 0.5%)
+Resetting database to initial state
+
+Events were actively counted for  8 minutes and 53 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           819,478,443,208          55.57
+	br_misp_exec           15,642,805,220           55.56
+	br_inst_exec           159,942,668,031          55.55
+	br_misp_exec           15,253,872,504           55.56
+	br_inst_exec           46,574,440,898           55.56
+	br_inst_exec           81,574,820,469           44.44
+	br_misp_exec           372,388,514              44.45
+	br_inst_retired        73,223,428,355           44.45
+	br_misp_retired        322,769,276              44.44
+
+real	8m54.090s
+user	9m26.836s
+sys	0m5.939s

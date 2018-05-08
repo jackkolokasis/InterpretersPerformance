@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+nqueens: Mean +- std dev: 654 ms +- 8 ms
+
+Events were actively counted for 58.8 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          136,812,957,174          33.41
+	BR_MISSP_EXEC               624,710,234              33.40
+	BR_INST_EXEC                30,978,596,222           33.39
+	BR_IND_MISSP_EXEC           366,489,968              22.24
+	BR_IND_EXEC                 4,231,413,826            22.26
+	BR_CND_EXEC                 19,801,447,939           22.26
+	BR_CND_MISSP_EXEC           206,658,269              22.27
+	BR_INST_RETIRED             601,738,220              22.27
+	BR_MISS_PRED_RETIRED        601,357,903              22.27
+
+real	0m58.968s
+user	0m58.248s
+sys	0m0.717s

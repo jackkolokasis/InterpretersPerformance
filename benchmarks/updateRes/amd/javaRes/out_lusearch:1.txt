@@ -1,0 +1,30 @@
+java
+Using scaled threading model. 64 processors detected, 64 threads used to drive the workload, in a possible range of [1,64]
+4 query batches completed
+8 query batches completed
+12 query batches completed
+16 query batches completed
+20 query batches completed
+24 query batches completed
+28 query batches completed
+32 query batches completed
+36 query batches completed
+40 query batches completed
+44 query batches completed
+48 query batches completed
+52 query batches completed
+56 query batches completed
+60 query batches completed
+64 query batches completed
+
+Events were actively counted for 15.9 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            150,045,720,588          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          4,149,510,529            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     24,589,745,452           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        4,529,509,022            100.00
+
+real	0m15.932s
+user	5m11.545s
+sys	0m8.420s

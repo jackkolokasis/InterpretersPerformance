@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+sqlite_synth: Mean +- std dev: 5.71 us +- 0.14 us
+
+Events were actively counted for 10.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           51,643,150,300           55.75
+	br_misp_exec           71,571,508               55.66
+	br_inst_exec           11,610,677,957           55.67
+	br_misp_exec           16,474,081               55.65
+	br_inst_exec           1,357,933,413            55.74
+	br_inst_exec           6,716,014,532            44.68
+	br_misp_exec           46,718,261               44.70
+	br_inst_retired        7,720,646,830            44.64
+	br_misp_retired        39,710,160               44.59
+
+real	0m10.251s
+user	0m9.892s
+sys	0m0.378s

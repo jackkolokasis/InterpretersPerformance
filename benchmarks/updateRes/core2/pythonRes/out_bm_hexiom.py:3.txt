@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+hexiom: Mean +- std dev: 50.0 ms +- 0.3 ms
+
+Events were actively counted for 12.5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          35,422,316,718           33.62
+	BR_MISSP_EXEC               159,541,715              33.55
+	BR_INST_EXEC                7,890,445,710            33.55
+	BR_IND_MISSP_EXEC           68,341,901               22.37
+	BR_IND_EXEC                 1,034,614,604            22.44
+	BR_CND_EXEC                 5,018,672,595            22.48
+	BR_CND_MISSP_EXEC           81,092,600               22.51
+	BR_INST_RETIRED             149,982,520              22.46
+	BR_MISS_PRED_RETIRED        150,066,170              22.42
+
+real	0m12.662s
+user	0m11.902s
+sys	0m0.750s

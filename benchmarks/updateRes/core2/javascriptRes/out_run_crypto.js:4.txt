@@ -1,0 +1,22 @@
+  core2
+rhino
+Crypto: 40.6
+----
+Score (version 9): 40.6
+
+Events were actively counted for  1 minute and 24 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          334,100,617,413          33.34
+	BR_MISSP_EXEC               1,330,997,495            33.33
+	BR_INST_EXEC                37,766,911,445           33.33
+	BR_IND_MISSP_EXEC           1,167,094,079            22.23
+	BR_IND_EXEC                 3,067,468,409            22.24
+	BR_CND_EXEC                 26,907,578,714           22.24
+	BR_CND_MISSP_EXEC           135,395,127              22.25
+	BR_INST_RETIRED             1,314,402,058            22.24
+	BR_MISS_PRED_RETIRED        1,313,575,243            22.23
+
+real	1m24.560s
+user	1m31.273s
+sys	0m0.544s

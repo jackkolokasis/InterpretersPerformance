@@ -1,0 +1,20 @@
+  haswell
+java
+Using scaled threading model. 32 processors detected, 32 threads used to drive the workload, in a possible range of [1,256]
+
+Events were actively counted for 14.5 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           651,807,574,457          55.58
+	br_misp_exec           5,445,367,758            55.57
+	br_inst_exec           112,426,036,440          55.57
+	br_misp_exec           4,877,584,175            55.56
+	br_inst_exec           48,404,815,001           55.56
+	br_inst_exec           44,189,937,698           44.45
+	br_misp_exec           546,453,278              44.45
+	br_inst_retired        42,655,290,102           44.46
+	br_misp_retired        526,058,296              44.46
+
+real	0m14.591s
+user	5m16.268s
+sys	0m0.587s

@@ -1,0 +1,23 @@
+  ivy_bridge
+rhino
+Splay: 353
+SplayLatency: 1692
+----
+Score (version 9): 773
+
+Events were actively counted for 6.4 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           39,046,499,031           55.61
+	br_misp_exec           204,676,831              55.55
+	br_inst_exec           8,161,568,019            55.63
+	br_misp_exec           91,120,837               55.72
+	br_inst_exec           427,355,722              55.82
+	br_inst_exec           6,508,405,988            44.66
+	br_misp_exec           88,069,024               44.57
+	br_inst_retired        6,282,888,670            44.47
+	br_misp_retired        76,176,044               44.40
+
+real	0m6.542s
+user	0m14.782s
+sys	0m1.403s

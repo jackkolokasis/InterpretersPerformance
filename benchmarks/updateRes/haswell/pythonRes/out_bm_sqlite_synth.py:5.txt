@@ -1,0 +1,29 @@
+  haswell
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (926 ns) is 15% of the mean (6.13 us)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+sqlite_synth: Mean +- std dev: 6.13 us +- 0.93 us
+
+Events were actively counted for 10.9 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           51,591,915,182           55.74
+	br_misp_exec           70,719,775               55.67
+	br_inst_exec           11,557,611,282           55.67
+	br_misp_exec           15,731,357               55.74
+	br_inst_exec           1,358,065,737            55.75
+	br_inst_exec           6,684,005,905            44.66
+	br_misp_exec           46,925,482               44.61
+	br_inst_retired        7,720,538,110            44.58
+	br_misp_retired        40,061,316               44.57
+
+real	0m10.963s
+user	0m10.546s
+sys	0m0.436s

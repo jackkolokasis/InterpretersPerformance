@@ -1,0 +1,22 @@
+  haswell
+rhino
+DeltaBlue: 122
+----
+Score (version 9): 122
+
+Events were actively counted for 3.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           35,062,503,759           55.98
+	br_misp_exec           99,373,710               55.80
+	br_inst_exec           5,968,532,832            55.59
+	br_misp_exec           18,625,787               55.61
+	br_inst_exec           488,555,222              55.59
+	br_inst_exec           4,463,347,610            44.56
+	br_misp_exec           63,910,953               44.82
+	br_inst_retired        4,782,817,723            44.78
+	br_misp_retired        55,471,377               44.82
+
+real	0m3.715s
+user	0m7.659s
+sys	0m0.483s

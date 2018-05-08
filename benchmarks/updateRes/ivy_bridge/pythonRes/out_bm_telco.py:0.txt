@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+telco: Mean +- std dev: 37.2 ms +- 0.2 ms
+
+Events were actively counted for 16.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           38,644,210,551           55.79
+	br_misp_exec           135,375,728              55.72
+	br_inst_exec           8,593,278,241            55.71
+	br_misp_exec           58,012,337               55.69
+	br_inst_exec           822,654,629              55.69
+	br_inst_exec           5,393,023,507            44.57
+	br_misp_exec           54,203,802               44.64
+	br_inst_retired        5,253,127,882            44.63
+	br_misp_retired        48,435,910               44.63
+
+real	0m16.266s
+user	0m15.737s
+sys	0m0.554s

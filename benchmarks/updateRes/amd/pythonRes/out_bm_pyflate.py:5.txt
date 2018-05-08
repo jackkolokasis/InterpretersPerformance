@@ -1,0 +1,15 @@
+python3.6
+.....................
+pyflate: Mean +- std dev: 4.13 sec +- 0.04 sec
+
+Events were actively counted for  5 minutes and 52 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            884,575,443,144          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          2,717,513,628            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     190,731,066,483          100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        4,160,191,744            100.00
+
+real	5m52.780s
+user	5m47.886s
+sys	0m4.883s

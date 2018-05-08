@@ -1,0 +1,22 @@
+  haswell
+rhino
+Box2D: 431
+----
+Score (version 9): 431
+
+Events were actively counted for 10.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           100,194,749,833          55.78
+	br_misp_exec           275,789,723              55.52
+	br_inst_exec           14,593,865,085           55.30
+	br_misp_exec           97,333,739               55.29
+	br_inst_exec           1,152,965,988            55.49
+	br_inst_exec           10,473,694,451           44.68
+	br_misp_exec           136,338,103              44.89
+	br_inst_retired        11,008,760,231           44.85
+	br_misp_retired        117,177,068              44.71
+
+real	0m10.751s
+user	0m18.305s
+sys	0m0.629s

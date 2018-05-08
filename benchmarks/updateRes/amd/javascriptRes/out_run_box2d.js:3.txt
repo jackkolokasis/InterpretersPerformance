@@ -1,0 +1,16 @@
+rhino
+Box2D: 173
+----
+Score (version 9): 173
+
+Events were actively counted for 26.4 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            102,357,059,682          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          296,228,402              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     14,098,662,855           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        561,103,157              100.00
+
+real	0m26.443s
+user	0m37.583s
+sys	0m2.394s

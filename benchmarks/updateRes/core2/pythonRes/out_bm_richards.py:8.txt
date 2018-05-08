@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+richards: Mean +- std dev: 401 ms +- 7 ms
+
+Events were actively counted for 37.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          109,262,234,205          33.42
+	BR_MISSP_EXEC               764,426,191              33.40
+	BR_INST_EXEC                24,109,146,491           33.39
+	BR_IND_MISSP_EXEC           328,621,314              22.29
+	BR_IND_EXEC                 3,065,421,824            22.30
+	BR_CND_EXEC                 15,759,923,385           22.31
+	BR_CND_MISSP_EXEC           404,597,399              22.30
+	BR_INST_RETIRED             711,142,514              22.28
+	BR_MISS_PRED_RETIRED        710,709,155              22.29
+
+real	0m37.797s
+user	0m37.081s
+sys	0m0.720s

@@ -1,0 +1,16 @@
+rhino
+NavierStokes: 87.4
+----
+Score (version 9): 87.4
+
+Events were actively counted for 30.7 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            120,212,050,878          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          290,655,663              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     17,301,177,694           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        466,690,689              100.00
+
+real	0m30.742s
+user	0m37.176s
+sys	0m0.895s

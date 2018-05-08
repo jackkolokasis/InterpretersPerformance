@@ -1,0 +1,21 @@
+  core2
+python3.6
+.....................
+unpack_sequence: Mean +- std dev: 253 ns +- 6 ns
+
+Events were actively counted for 13.1 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          40,518,432,823           33.65
+	BR_MISSP_EXEC               242,874,358              33.61
+	BR_INST_EXEC                7,080,857,988            33.62
+	BR_IND_MISSP_EXEC           174,208,308              22.49
+	BR_IND_EXEC                 1,006,443,250            22.47
+	BR_CND_EXEC                 5,603,084,261            22.36
+	BR_CND_MISSP_EXEC           63,605,135               22.32
+	BR_INST_RETIRED             238,098,639              22.37
+	BR_MISS_PRED_RETIRED        237,724,241              22.46
+
+real	0m13.261s
+user	0m12.505s
+sys	0m0.756s

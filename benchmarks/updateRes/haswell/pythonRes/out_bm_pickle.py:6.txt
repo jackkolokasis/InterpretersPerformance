@@ -1,0 +1,25 @@
+  haswell
+python3.6
+
+Events were actively counted for 94624567 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           201,186,790              56.05
+	br_misp_exec           1,642,512                56.53
+	br_inst_exec           44,742,599               56.99
+	br_misp_exec           299,418                  57.45
+	br_inst_exec           3,940,010                57.58
+	br_inst_exec           32,076,555               44.84
+	br_misp_exec           1,041,013                43.78
+	br_inst_retired        32,853,509               42.72
+	br_misp_retired        1,006,671                42.55
+EF_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: the following arguments are required: benchmark
+app process exited with the following status: 2
+
+real	0m0.214s
+user	0m0.145s
+sys	0m0.071s

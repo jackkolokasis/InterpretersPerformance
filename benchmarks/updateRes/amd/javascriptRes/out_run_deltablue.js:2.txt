@@ -1,0 +1,16 @@
+rhino
+DeltaBlue: 41.8
+----
+Score (version 9): 41.8
+
+Events were actively counted for 7.3 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            30,100,277,018           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          57,523,722               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     5,408,256,382            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        177,348,971              100.00
+
+real	0m7.406s
+user	0m12.025s
+sys	0m1.361s

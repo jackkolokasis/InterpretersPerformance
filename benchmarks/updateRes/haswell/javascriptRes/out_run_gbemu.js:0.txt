@@ -1,0 +1,21 @@
+  haswell
+rhino
+----
+Score (version 9): NaN
+
+Events were actively counted for 511120959 nanoseconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           4,075,065,572            55.80
+	br_misp_exec           32,315,507               54.86
+	br_inst_exec           842,640,241              54.97
+	br_misp_exec           3,468,706                55.45
+	br_inst_exec           27,352,277               55.96
+	br_inst_exec           560,852,711              45.99
+	br_misp_exec           23,077,887               45.91
+	br_inst_retired        556,954,842              45.89
+	br_misp_retired        19,012,900               45.28
+
+real	0m0.622s
+user	0m1.899s
+sys	0m0.356s

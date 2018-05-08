@@ -1,0 +1,15 @@
+python3.6
+.....................
+pidigits: Mean +- std dev: 582 ms +- 1 ms
+
+Events were actively counted for 53.4 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            226,228,362,793          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          55,074,778               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     22,970,381,225           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        189,175,581              100.00
+
+real	0m53.519s
+user	0m52.663s
+sys	0m0.893s

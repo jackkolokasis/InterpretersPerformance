@@ -1,0 +1,27 @@
+  ivy_bridge
+python3.6
+.....................
+xml_etree_parse: Mean +- std dev: 511 ms +- 6 ms
+.....................
+xml_etree_iterparse: Mean +- std dev: 367 ms +- 7 ms
+.....................
+xml_etree_generate: Mean +- std dev: 542 ms +- 14 ms
+.....................
+xml_etree_process: Mean +- std dev: 450 ms +- 5 ms
+
+Events were actively counted for  3 minutes and 23 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           612,658,866,203          55.63
+	br_misp_exec           1,814,425,075            55.60
+	br_inst_exec           140,513,879,066          55.60
+	br_misp_exec           1,159,616,916            55.60
+	br_inst_exec           14,416,264,286           55.60
+	br_inst_exec           88,473,862,523           44.48
+	br_misp_exec           355,645,813              44.51
+	br_inst_retired        85,495,496,150           44.52
+	br_misp_retired        317,138,995              44.51
+
+real	3m23.826s
+user	3m20.375s
+sys	0m3.550s

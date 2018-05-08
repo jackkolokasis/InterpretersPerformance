@@ -1,0 +1,15 @@
+python3.6
+.....................
+regex_effbot: Mean +- std dev: 10.9 ms +- 0.4 ms
+
+Events were actively counted for 13.8 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            47,142,445,823           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          48,092,222               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     9,447,064,421            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        117,209,057              100.00
+
+real	0m13.875s
+user	0m12.981s
+sys	0m0.932s

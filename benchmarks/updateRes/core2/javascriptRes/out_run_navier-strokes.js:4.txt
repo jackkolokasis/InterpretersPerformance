@@ -1,0 +1,22 @@
+  core2
+rhino
+NavierStokes: 91.4
+----
+Score (version 9): 91.4
+
+Events were actively counted for 29.1 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          119,519,675,438          33.39
+	BR_MISSP_EXEC               244,734,521              33.35
+	BR_INST_EXEC                17,143,262,101           33.33
+	BR_IND_MISSP_EXEC           158,206,467              22.24
+	BR_IND_EXEC                 736,957,810              22.27
+	BR_CND_EXEC                 13,899,315,555           22.26
+	BR_CND_MISSP_EXEC           75,761,907               22.27
+	BR_INST_RETIRED             232,340,973              22.28
+	BR_MISS_PRED_RETIRED        234,102,534              22.27
+
+real	0m29.224s
+user	0m33.939s
+sys	0m0.523s

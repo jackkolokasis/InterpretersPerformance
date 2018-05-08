@@ -1,0 +1,21 @@
+  ivy_bridge
+python3.6
+.....................
+sqlite_synth: Mean +- std dev: 18.3 us +- 0.1 us
+
+Events were actively counted for 16.5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           30,155,849,232           55.81
+	br_misp_exec           88,920,893               55.73
+	br_inst_exec           7,330,699,102            55.66
+	br_misp_exec           32,066,748               55.63
+	br_inst_exec           759,763,809              55.67
+	br_inst_exec           4,413,462,146            44.56
+	br_misp_exec           42,902,777               44.63
+	br_inst_retired        4,328,343,491            44.68
+	br_misp_retired        38,073,808               44.69
+
+real	0m16.643s
+user	0m16.069s
+sys	0m0.602s

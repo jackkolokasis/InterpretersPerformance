@@ -1,0 +1,36 @@
+  haswell
+python3.6
+.....................
+xml_etree_parse: Mean +- std dev: 206 ms +- 10 ms
+.....................
+xml_etree_iterparse: Mean +- std dev: 177 ms +- 2 ms
+.....................
+xml_etree_generate: Mean +- std dev: 189 ms +- 6 ms
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (25.7 ms) is 16% of the mean (161 ms)
+* the maximum (258 ms) is 60% greater than the mean (161 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+xml_etree_process: Mean +- std dev: 161 ms +- 26 ms
+
+Events were actively counted for  1 minute and 22 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           574,495,442,779          55.66
+	br_misp_exec           515,808,761              55.62
+	br_inst_exec           112,602,449,039          55.62
+	br_misp_exec           160,101,870              55.62
+	br_inst_exec           13,849,193,523           55.63
+	br_inst_exec           69,161,426,132           44.53
+	br_misp_exec           313,849,574              44.55
+	br_inst_retired        84,378,241,851           44.55
+	br_misp_retired        263,068,278              44.54
+
+real	1m22.536s
+user	1m20.566s
+sys	0m2.036s

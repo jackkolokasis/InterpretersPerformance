@@ -1,0 +1,16 @@
+rhino
+CodeLoad: 2388
+----
+Score (version 9): 2388
+
+Events were actively counted for 2.8 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            28,466,144,352           100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          65,190,502               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     5,455,796,542            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        274,965,879              100.00
+
+real	0m2.887s
+user	0m15.164s
+sys	0m1.344s

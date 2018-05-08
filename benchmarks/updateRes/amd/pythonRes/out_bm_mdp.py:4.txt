@@ -1,0 +1,15 @@
+python3.6
+.....................
+mdp: Mean +- std dev: 18.5 sec +- 0.1 sec
+
+Events were actively counted for  25 minutes and 56 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            3,167,438,066,711        100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          17,489,764,531           100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     723,310,420,938          100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        30,372,771,889           100.00
+
+real	25m56.861s
+user	25m53.217s
+sys	0m3.503s

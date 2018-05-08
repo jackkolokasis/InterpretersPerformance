@@ -1,0 +1,19 @@
+  core2
+java
+
+Events were actively counted for 13.9 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          17,476,278,276           33.38
+	BR_MISSP_EXEC               431,389,123              33.34
+	BR_INST_EXEC                3,283,639,838            33.34
+	BR_IND_MISSP_EXEC           372,871,063              22.31
+	BR_IND_EXEC                 1,000,000,683            22.37
+	BR_CND_EXEC                 1,692,241,241            22.32
+	BR_CND_MISSP_EXEC           55,187,217               22.25
+	BR_INST_RETIRED             395,800,656              22.23
+	BR_MISS_PRED_RETIRED        395,031,036              22.25
+
+real	0m14.014s
+user	0m13.439s
+sys	0m0.472s

@@ -1,0 +1,31 @@
+  haswell
+java
+Using scaled threading model. 32 processors detected, 32 threads used to drive the workload, in a possible range of [1,4000]
+....
+Completed 4000 transactions
+	Stock level .............   155 ( 3.9%)
+	Order status by name ....   108 ( 2.7%)
+	Order status by ID ......    65 ( 1.6%)
+	Payment by name .........  1050 (26.2%)
+	Payment by ID ...........   661 (16.5%)
+	Delivery schedule .......   167 ( 4.2%)
+	New order ...............  1774 (44.4%)
+	New order rollback ......    20 ( 0.5%)
+Resetting database to initial state
+
+Events were actively counted for  5 minutes and 32 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           832,028,349,027          55.57
+	br_misp_exec           5,339,894,924            55.59
+	br_inst_exec           146,076,270,967          55.58
+	br_misp_exec           4,945,568,640            55.57
+	br_inst_exec           45,927,540,495           55.55
+	br_inst_exec           75,657,819,473           44.42
+	br_misp_exec           376,392,841              44.44
+	br_inst_retired        73,316,642,003           44.45
+	br_misp_retired        318,251,022              44.46
+
+real	5m32.147s
+user	6m5.953s
+sys	0m5.465s

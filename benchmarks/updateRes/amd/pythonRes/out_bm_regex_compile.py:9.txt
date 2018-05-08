@@ -1,0 +1,15 @@
+python3.6
+.....................
+regex_compile: Mean +- std dev: 1.20 sec +- 0.02 sec
+
+Events were actively counted for  1 minute and 53 seconds.
+Event counts (actual) for /usr/bin/python3.6:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            242,749,845,967          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          1,007,178,361            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     51,385,545,736           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,867,169,547            100.00
+
+real	1m53.563s
+user	1m52.676s
+sys	0m0.915s

@@ -1,0 +1,22 @@
+  haswell
+rhino
+Crypto: 97.3
+----
+Score (version 9): 97.3
+
+Events were actively counted for 36.1 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           358,137,188,366          55.68
+	br_misp_exec           302,186,237              55.60
+	br_inst_exec           38,655,144,735           55.56
+	br_misp_exec           153,391,326              55.52
+	br_inst_exec           3,196,462,108            55.53
+	br_inst_exec           27,711,505,500           44.46
+	br_misp_exec           109,145,339              44.55
+	br_inst_retired        28,503,530,335           44.58
+	br_misp_retired        88,074,984               44.58
+
+real	0m36.189s
+user	0m41.141s
+sys	0m0.655s

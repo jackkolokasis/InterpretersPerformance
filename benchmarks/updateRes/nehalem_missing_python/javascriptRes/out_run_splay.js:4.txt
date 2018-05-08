@@ -1,0 +1,23 @@
+  nehalem
+rhino
+Splay: 369
+SplayLatency: 1532
+----
+Score (version 9): 752
+
+Events were actively counted for 6.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                41,071,263,043           44.60
+	BR_MISP_EXEC                18,355,217               44.70
+	BR_INST_EXEC                350,657,679              44.65
+	BR_MISP_EXEC                109,099,606              44.60
+	BR_INST_EXEC                530,631,336              44.52
+	BR_INST_EXEC                7,055,584,818            44.38
+	BR_MISP_EXEC                127,229,349              44.40
+	BR_INST_RETIRED             8,532,023,349            44.46
+	BR_MISS_PRED_RETIRED        671,041,739              44.49
+
+real	0m6.686s
+user	0m15.817s
+sys	0m3.643s

@@ -1,0 +1,22 @@
+  ivy_bridge
+rhino
+DeltaBlue: 55.9
+----
+Score (version 9): 55.9
+
+Events were actively counted for 5.8 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           35,913,658,432           55.81
+	br_misp_exec           106,854,112              55.61
+	br_inst_exec           6,663,447,893            55.61
+	br_misp_exec           28,148,589               55.56
+	br_inst_exec           129,409,493              55.68
+	br_inst_exec           5,630,620,826            44.66
+	br_misp_exec           65,137,462               44.69
+	br_inst_retired        5,463,077,941            44.71
+	br_misp_retired        56,934,506               44.65
+
+real	0m5.937s
+user	0m10.708s
+sys	0m0.559s

@@ -1,0 +1,22 @@
+  core2
+rhino
+Box2D: 183
+----
+Score (version 9): 183
+
+Events were actively counted for 24.7 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          94,965,758,524           33.34
+	BR_MISSP_EXEC               494,350,680              33.35
+	BR_INST_EXEC                12,444,757,725           33.36
+	BR_IND_MISSP_EXEC           293,694,761              22.25
+	BR_IND_EXEC                 924,688,083              22.27
+	BR_CND_EXEC                 8,974,524,256            22.28
+	BR_CND_MISSP_EXEC           179,049,911              22.27
+	BR_INST_RETIRED             473,634,424              22.25
+	BR_MISS_PRED_RETIRED        473,756,408              22.23
+
+real	0m24.825s
+user	0m32.770s
+sys	0m0.543s

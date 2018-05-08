@@ -1,0 +1,31 @@
+  core2
+java
+Using scaled threading model. 8 processors detected, 8 threads used to drive the workload, in a possible range of [1,4000]
+....
+Completed 4000 transactions
+	Stock level .............   155 ( 3.9%)
+	Order status by name ....   108 ( 2.7%)
+	Order status by ID ......    65 ( 1.6%)
+	Payment by name .........  1050 (26.2%)
+	Payment by ID ...........   661 (16.5%)
+	Delivery schedule .......   167 ( 4.2%)
+	New order ...............  1774 (44.4%)
+	New order rollback ......    20 ( 0.5%)
+Resetting database to initial state
+
+Events were actively counted for  10 minutes and 2 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          821,880,212,221          33.34
+	BR_MISSP_EXEC               16,968,123,707           33.34
+	BR_INST_EXEC                150,623,392,187          33.33
+	BR_IND_MISSP_EXEC           14,947,727,106           22.22
+	BR_IND_EXEC                 46,999,740,435           22.23
+	BR_CND_EXEC                 77,999,686,740           22.22
+	BR_CND_MISSP_EXEC           2,013,230,696            22.22
+	BR_INST_RETIRED             15,507,265,917           22.22
+	BR_MISS_PRED_RETIRED        15,490,475,796           22.23
+
+real	10m2.454s
+user	10m24.827s
+sys	0m2.418s

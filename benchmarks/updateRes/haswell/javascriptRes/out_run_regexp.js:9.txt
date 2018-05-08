@@ -1,0 +1,22 @@
+  haswell
+rhino
+RegExp: 192
+----
+Score (version 9): 192
+
+Events were actively counted for 10.2 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           110,234,723,764          55.86
+	br_misp_exec           229,999,059              55.66
+	br_inst_exec           16,174,837,561           55.52
+	br_misp_exec           26,927,497               55.45
+	br_inst_exec           1,173,075,847            55.47
+	br_inst_exec           12,116,652,708           44.54
+	br_misp_exec           161,992,141              44.67
+	br_inst_retired        12,802,579,800           44.75
+	br_misp_retired        139,927,729              44.74
+
+real	0m10.352s
+user	0m19.029s
+sys	0m0.795s

@@ -1,0 +1,16 @@
+rhino
+RegExp: 74.5
+----
+Score (version 9): 74.5
+
+Events were actively counted for 24.7 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            105,819,043,674          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          156,169,201              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     16,251,880,592           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        427,375,061              100.00
+
+real	0m24.820s
+user	0m35.597s
+sys	0m2.768s

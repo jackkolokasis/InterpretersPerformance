@@ -1,0 +1,22 @@
+  core2
+rhino
+CodeLoad: 2137
+----
+Score (version 9): 2137
+
+Events were actively counted for 2.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED_ANY_P          18,546,045,165           33.44
+	BR_MISSP_EXEC               182,951,952              33.39
+	BR_INST_EXEC                3,800,115,461            33.39
+	BR_IND_MISSP_EXEC           42,316,694               22.35
+	BR_IND_EXEC                 191,185,191              22.44
+	BR_CND_EXEC                 2,815,645,508            22.36
+	BR_CND_MISSP_EXEC           134,280,843              22.35
+	BR_INST_RETIRED             167,519,711              22.33
+	BR_MISS_PRED_RETIRED        167,188,731              22.28
+
+real	0m2.747s
+user	0m9.618s
+sys	0m0.473s

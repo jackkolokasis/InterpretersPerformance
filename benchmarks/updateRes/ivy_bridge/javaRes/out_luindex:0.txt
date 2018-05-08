@@ -1,0 +1,19 @@
+  ivy_bridge
+java
+
+Events were actively counted for 26.3 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           39,931,217,335           55.53
+	br_misp_exec           980,693,053              55.47
+	br_inst_exec           7,448,452,061            55.51
+	br_misp_exec           953,462,993              55.57
+	br_inst_exec           2,851,162,657            55.63
+	br_inst_exec           3,325,732,431            44.57
+	br_misp_exec           25,116,223               44.57
+	br_inst_retired        3,016,711,930            44.51
+	br_misp_retired        23,740,149               44.46
+
+real	0m26.427s
+user	0m25.850s
+sys	0m0.396s

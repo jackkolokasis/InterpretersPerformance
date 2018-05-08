@@ -1,0 +1,25 @@
+  ivy_bridge
+python3.6
+
+Events were actively counted for 112607829 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           230,884,041              53.64
+	br_misp_exec           1,807,847                54.46
+	br_inst_exec           54,147,313               56.37
+	br_misp_exec           393,273                  56.77
+	br_inst_exec           4,013,774                57.16
+	br_inst_exec           34,107,694               45.61
+	br_misp_exec           1,162,397                44.70
+	br_inst_retired        32,610,988               43.81
+	br_misp_retired        1,026,089                42.91
+F_NAME:CHANGED_NAMED]
+                    [--tracemalloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: the following arguments are required: benchmark
+app process exited with the following status: 2
+
+real	0m0.235s
+user	0m0.160s
+sys	0m0.077s

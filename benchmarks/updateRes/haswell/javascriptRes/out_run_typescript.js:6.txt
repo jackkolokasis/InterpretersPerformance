@@ -1,0 +1,22 @@
+  haswell
+rhino
+Typescript: 1983
+----
+Score (version 9): 1983
+
+Events were actively counted for  1 minute and 5 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           499,450,983,994          55.59
+	br_misp_exec           1,060,768,495            55.58
+	br_inst_exec           64,912,566,853           55.57
+	br_misp_exec           611,497,899              55.57
+	br_inst_exec           4,769,748,705            55.60
+	br_inst_exec           44,344,228,296           44.45
+	br_misp_exec           387,115,290              44.46
+	br_inst_retired        44,931,534,578           44.47
+	br_misp_retired        312,258,792              44.45
+
+real	1m5.177s
+user	1m28.893s
+sys	0m9.136s

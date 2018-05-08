@@ -1,0 +1,23 @@
+  haswell
+rhino
+Splay: 797
+SplayLatency: 1994
+----
+Score (version 9): 1261
+
+Events were actively counted for 4.1 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                  Count                    % time counted
+	INST_RETIRED           41,306,010,591           55.69
+	br_misp_exec           129,108,157              55.57
+	br_inst_exec           7,342,975,566            55.63
+	br_misp_exec           29,378,300               55.68
+	br_inst_exec           734,066,889              55.69
+	br_inst_exec           5,110,510,964            44.61
+	br_misp_exec           71,847,207               44.61
+	br_inst_retired        5,450,341,130            44.60
+	br_misp_retired        62,964,265               44.59
+
+real	0m4.232s
+user	0m11.993s
+sys	0m2.940s

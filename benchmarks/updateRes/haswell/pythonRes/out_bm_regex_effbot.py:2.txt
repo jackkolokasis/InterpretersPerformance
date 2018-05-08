@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+regex_effbot: Mean +- std dev: 4.15 ms +- 0.35 ms
+
+Events were actively counted for 9.2 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           79,188,168,227           55.74
+	br_misp_exec           51,120,474               55.69
+	br_inst_exec           13,551,761,122           55.79
+	br_misp_exec           12,257,786               55.82
+	br_inst_exec           1,869,461,925            55.85
+	br_inst_exec           9,254,465,030            44.65
+	br_misp_exec           34,236,430               44.60
+	br_inst_retired        11,633,597,776           44.55
+	br_misp_retired        27,954,507               44.55
+
+real	0m9.290s
+user	0m8.958s
+sys	0m0.347s

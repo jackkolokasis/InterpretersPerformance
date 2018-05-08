@@ -1,0 +1,15 @@
+rhino
+----
+Score (version 9): NaN
+
+Events were actively counted for 987677132 nanoseconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            6,192,314,703            100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          20,407,157               100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     1,239,085,579            100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        69,353,487               100.00
+
+real	0m1.067s
+user	0m4.111s
+sys	0m0.736s

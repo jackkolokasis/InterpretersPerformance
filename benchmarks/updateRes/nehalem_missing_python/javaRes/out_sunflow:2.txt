@@ -1,0 +1,20 @@
+  nehalem
+java
+Using scaled threading model. 16 processors detected, 16 threads used to drive the workload, in a possible range of [1,256]
+
+Events were actively counted for 36.9 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED                652,375,608,803          44.45
+	BR_MISP_EXEC                101,921,891              44.45
+	BR_INST_EXEC                1,237,685,392            44.44
+	BR_MISP_EXEC                14,998,296,369           44.45
+	BR_INST_EXEC                48,937,628,977           44.45
+	BR_INST_EXEC                45,438,508,174           44.45
+	BR_MISP_EXEC                916,859,586              44.45
+	BR_INST_RETIRED             107,256,552,882          44.45
+	BR_MISS_PRED_RETIRED        17,477,498,637           44.45
+
+real	0m36.995s
+user	8m21.715s
+sys	0m0.659s

@@ -1,0 +1,16 @@
+rhino
+EarleyBoyer: 114
+----
+Score (version 9): 114
+
+Events were actively counted for  1 minute and 4 seconds.
+Event counts (actual) for /usr/bin/rhino:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            215,658,375,376          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          741,128,517              100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     24,262,701,333           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        1,033,722,227            100.00
+
+real	1m4.583s
+user	1m16.944s
+sys	0m4.011s

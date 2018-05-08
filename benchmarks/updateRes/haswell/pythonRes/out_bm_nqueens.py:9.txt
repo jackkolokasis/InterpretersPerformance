@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+nqueens: Mean +- std dev: 188 ms +- 17 ms
+
+Events were actively counted for 18.4 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           129,734,155,490          55.68
+	br_misp_exec           138,513,496              55.66
+	br_inst_exec           24,939,885,053           55.67
+	br_misp_exec           33,995,413               55.68
+	br_inst_exec           3,611,847,146            55.68
+	br_inst_exec           15,433,067,092           44.51
+	br_misp_exec           83,253,771               44.53
+	br_inst_retired        19,164,853,564           44.54
+	br_misp_retired        72,427,472               44.52
+
+real	0m18.443s
+user	0m18.087s
+sys	0m0.376s

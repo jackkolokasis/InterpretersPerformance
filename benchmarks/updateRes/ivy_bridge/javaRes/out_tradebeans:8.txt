@@ -1,0 +1,37 @@
+  ivy_bridge
+java
+Using scaled threading model. 24 processors detected, 24 threads used to drive the workload, in a possible range of [1,512]
+Booting Geronimo Kernel (in Java 1.8.0_141)...
+Geronimo startup complete
+Resetting database and populating with 1098 stocks...
+Populating database with 768 users...
+Finished repopulating database
+Running 512 trade sessions directly on server
+Completed 512 trade sessions comprising 8862 trader actions
+	Home ....................  1653 (18.7%)
+	Portfolio ...............   738 ( 8.3%)
+	Quote ...................  3758 (42.4%)
+	Buy .....................   726 ( 8.2%)
+	Sell ....................   761 ( 8.6%)
+	Update ..................   126 ( 1.4%)
+	Register ................    38 ( 0.4%)
+	Login ...................   512 ( 5.8%)
+	Logout ..................   550 ( 6.2%)
+Shutting down Geronimo...
+
+Events were actively counted for  2 minutes and 8 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                  Count                    % time counted
+	INST_RETIRED           444,790,408,768          55.67
+	br_misp_exec           10,238,389,524           55.61
+	br_inst_exec           90,520,564,388           55.49
+	br_misp_exec           8,936,798,263            55.45
+	br_inst_exec           26,659,693,930           55.51
+	br_inst_exec           45,709,293,879           44.46
+	br_misp_exec           1,264,365,751            44.58
+	br_inst_retired        40,551,019,444           44.63
+	br_misp_retired        1,039,660,255            44.56
+
+real	2m8.867s
+user	5m39.765s
+sys	0m18.477s

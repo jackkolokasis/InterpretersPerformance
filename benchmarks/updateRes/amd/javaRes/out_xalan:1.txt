@@ -1,0 +1,15 @@
+java
+Using scaled threading model. 64 processors detected, 64 threads used to drive the workload, in a possible range of [1,100]
+Normal completion.
+
+Events were actively counted for 7.0 seconds.
+Event counts (actual) for /usr/bin/java:
+	Event                                           Count                    % time counted
+	RETIRED_INSTRUCTIONS                            141,048,932,335          100.00
+	RETIRED_INDIRECT_BRANCHES_MISPREDICTED          4,430,551,498            100.00
+	RETIRED_BRANCH_INSTRUCTIONS                     23,605,650,465           100.00
+	RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS        4,992,786,729            100.00
+
+real	0m7.066s
+user	4m52.972s
+sys	0m4.343s

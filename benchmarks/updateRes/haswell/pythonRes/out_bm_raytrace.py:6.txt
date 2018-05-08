@@ -1,0 +1,21 @@
+  haswell
+python3.6
+.....................
+raytrace: Mean +- std dev: 1.04 sec +- 0.06 sec
+
+Events were actively counted for  1 minute and 30 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                  Count                    % time counted
+	INST_RETIRED           647,259,085,170          55.58
+	br_misp_exec           1,237,372,925            55.58
+	br_inst_exec           124,857,968,975          55.58
+	br_misp_exec           691,936,306              55.57
+	br_inst_exec           16,180,132,385           55.57
+	br_inst_exec           77,567,430,630           44.46
+	br_misp_exec           125,581,763              44.47
+	br_inst_retired        91,281,737,851           44.47
+	br_misp_retired        102,907,194              44.46
+
+real	1m30.530s
+user	1m30.155s
+sys	0m0.391s
