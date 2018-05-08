@@ -1,7 +1,13 @@
 #!/bin/bash
 echo "Check python ..."
 cd python/performance/benchmarks/
-python3.6 bm_2to3.py 
+
+for f in *.py
+do
+	python3.6 ${f}
+done
+
+#python3.6 bm_2to3.py 
 cd -
 echo "----------------"
 
