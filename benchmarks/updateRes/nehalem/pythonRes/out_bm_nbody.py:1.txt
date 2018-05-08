@@ -1,0 +1,29 @@
+  nehalem
+python3.6
+.....................
+WARNING: the benchmark result may be unstable
+* the standard deviation (76.9 ms) is 16% of the mean (492 ms)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python3.6 -m perf system tune' command to reduce the system jitter.
+Use perf stats, perf dump and perf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+nbody: Mean +- std dev: 492 ms +- 77 ms
+
+Events were actively counted for 44.6 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                181,738,777,862          44.51
+	BR_MISP_EXEC                84,820,006               44.50
+	BR_INST_EXEC                4,175,889,770            44.51
+	BR_MISP_EXEC                371,130,076              44.53
+	BR_INST_EXEC                4,807,897,568            44.52
+	BR_INST_EXEC                23,363,685,644           44.51
+	BR_MISP_EXEC                149,420,809              44.52
+	BR_INST_RETIRED             36,339,839,381           44.50
+	BR_MISS_PRED_RETIRED        1,632,683,775            44.50
+
+real	0m44.705s
+user	0m42.719s
+sys	0m2.018s

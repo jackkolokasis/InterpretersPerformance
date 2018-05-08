@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+raytrace: Mean +- std dev: 2.53 sec +- 0.03 sec
+
+Events were actively counted for  3 minutes and 35 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                686,627,209,970          44.45
+	BR_MISP_EXEC                271,821,785              44.45
+	BR_INST_EXEC                15,456,127,965           44.46
+	BR_MISP_EXEC                2,030,147,219            44.46
+	BR_INST_EXEC                16,892,403,081           44.47
+	BR_INST_EXEC                96,350,914,728           44.47
+	BR_MISP_EXEC                1,295,733,223            44.46
+	BR_INST_RETIRED             145,594,437,195          44.46
+	BR_MISS_PRED_RETIRED        9,499,912,396            44.45
+
+real	3m35.685s
+user	3m35.229s
+sys	0m0.513s

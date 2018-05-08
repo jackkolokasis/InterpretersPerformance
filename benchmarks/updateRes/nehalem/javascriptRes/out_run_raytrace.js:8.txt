@@ -1,0 +1,22 @@
+  nehalem
+rhino
+RayTrace: 165
+----
+Score (version 9): 165
+
+Events were actively counted for 17.0 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                78,394,248,366           44.57
+	BR_MISP_EXEC                13,635,487               44.57
+	BR_INST_EXEC                524,360,835              44.59
+	BR_MISP_EXEC                169,765,945              44.51
+	BR_INST_EXEC                554,286,307              44.51
+	BR_INST_EXEC                7,530,530,650            44.52
+	BR_MISP_EXEC                120,004,289              44.48
+	BR_INST_RETIRED             9,428,207,865            44.63
+	BR_MISS_PRED_RETIRED        726,984,863              44.64
+
+real	0m17.081s
+user	0m22.826s
+sys	0m0.497s

@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+pyflate: Mean +- std dev: 2.89 sec +- 0.03 sec
+
+Events were actively counted for  4 minutes and 6 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                880,424,376,335          44.46
+	BR_MISP_EXEC                224,556,317              44.46
+	BR_INST_EXEC                15,796,520,028           44.47
+	BR_MISP_EXEC                2,305,490,611            44.47
+	BR_INST_EXEC                21,568,959,852           44.46
+	BR_INST_EXEC                133,113,742,488          44.45
+	BR_MISP_EXEC                1,171,596,407            44.45
+	BR_INST_RETIRED             189,635,554,537          44.45
+	BR_MISS_PRED_RETIRED        11,054,845,420           44.45
+
+real	4m6.556s
+user	4m4.956s
+sys	0m1.516s

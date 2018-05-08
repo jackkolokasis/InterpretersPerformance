@@ -1,0 +1,19 @@
+  nehalem
+python3.6
+
+Events were actively counted for 29683909 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                59,039,822               46.43
+	BR_MISP_EXEC                53,606                   48.27
+	BR_INST_EXEC                1,580,712                48.69
+	BR_MISP_EXEC                97,533                   48.71
+	BR_INST_EXEC                1,205,537                45.25
+	BR_INST_EXEC                10,121,356               41.86
+	BR_MISP_EXEC                438,484                  41.38
+	BR_INST_RETIRED             12,653,579               46.15
+	BR_MISS_PRED_RETIRED        1,160,543                44.41
+
+real	0m0.119s
+user	0m0.072s
+sys	0m0.047s

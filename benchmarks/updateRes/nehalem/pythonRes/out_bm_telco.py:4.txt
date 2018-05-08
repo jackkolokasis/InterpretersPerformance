@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+telco: Mean +- std dev: 38.0 ms +- 0.5 ms
+
+Events were actively counted for 16.2 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                38,494,451,946           44.64
+	BR_MISP_EXEC                23,836,062               44.63
+	BR_INST_EXEC                882,765,719              44.60
+	BR_MISP_EXEC                72,400,485               44.66
+	BR_INST_EXEC                821,252,187              44.64
+	BR_INST_EXEC                5,358,876,076            44.65
+	BR_MISP_EXEC                110,069,344              44.60
+	BR_INST_RETIRED             8,299,054,517            44.59
+	BR_MISS_PRED_RETIRED        526,870,019              44.59
+
+real	0m16.304s
+user	0m15.860s
+sys	0m0.469s

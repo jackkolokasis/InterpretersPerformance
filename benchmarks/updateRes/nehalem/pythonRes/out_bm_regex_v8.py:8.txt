@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+regex_v8: Mean +- std dev: 78.4 ms +- 1.1 ms
+
+Events were actively counted for 19.5 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                74,122,541,914           44.67
+	BR_MISP_EXEC                10,057,154               44.62
+	BR_INST_EXEC                963,047,159              44.57
+	BR_MISP_EXEC                63,280,744               44.53
+	BR_INST_EXEC                1,851,280,398            44.52
+	BR_INST_EXEC                10,266,289,043           44.55
+	BR_MISP_EXEC                112,192,670              44.62
+	BR_INST_RETIRED             15,338,897,183           44.64
+	BR_MISS_PRED_RETIRED        1,272,023,397            44.64
+
+real	0m19.623s
+user	0m19.120s
+sys	0m0.528s

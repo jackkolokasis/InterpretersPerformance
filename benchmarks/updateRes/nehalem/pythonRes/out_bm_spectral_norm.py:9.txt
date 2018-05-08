@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+spectral_norm: Mean +- std dev: 564 ms +- 9 ms
+
+Events were actively counted for 50.6 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                207,982,225,196          44.48
+	BR_MISP_EXEC                134,149,815              44.46
+	BR_INST_EXEC                4,285,199,243            44.48
+	BR_MISP_EXEC                335,368,169              44.49
+	BR_INST_EXEC                5,060,512,025            44.51
+	BR_INST_EXEC                29,289,101,673           44.54
+	BR_MISP_EXEC                53,383,252               44.54
+	BR_INST_RETIRED             44,410,180,338           44.52
+	BR_MISS_PRED_RETIRED        2,476,637,791            44.50
+
+real	0m50.742s
+user	0m50.327s
+sys	0m0.448s

@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+deltablue: Mean +- std dev: 32.0 ms +- 0.7 ms
+
+Events were actively counted for 14.3 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                48,952,681,539           44.51
+	BR_MISP_EXEC                10,789,432               44.59
+	BR_INST_EXEC                955,938,085              44.78
+	BR_MISP_EXEC                98,888,046               44.86
+	BR_INST_EXEC                1,125,917,553            44.83
+	BR_INST_EXEC                6,984,598,130            44.73
+	BR_MISP_EXEC                96,104,279               44.56
+	BR_INST_RETIRED             10,336,181,675           44.49
+	BR_MISS_PRED_RETIRED        739,556,373              44.48
+
+real	0m14.465s
+user	0m13.891s
+sys	0m0.452s

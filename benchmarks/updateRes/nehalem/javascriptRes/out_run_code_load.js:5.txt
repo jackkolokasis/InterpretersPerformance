@@ -1,0 +1,22 @@
+  nehalem
+rhino
+CodeLoad: 4066
+----
+Score (version 9): 4066
+
+Events were actively counted for 2.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                32,934,276,707           44.70
+	BR_MISP_EXEC                44,143,830               44.76
+	BR_INST_EXEC                542,396,900              44.72
+	BR_MISP_EXEC                22,146,759               44.60
+	BR_INST_EXEC                115,866,836              44.49
+	BR_INST_EXEC                5,144,137,111            44.33
+	BR_MISP_EXEC                221,466,960              44.36
+	BR_INST_RETIRED             6,238,402,082            44.54
+	BR_MISS_PRED_RETIRED        601,424,363              44.52
+
+real	0m2.709s
+user	0m16.240s
+sys	0m0.870s

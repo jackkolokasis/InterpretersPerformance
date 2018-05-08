@@ -1,0 +1,22 @@
+  nehalem
+rhino
+Typescript: 829
+----
+Score (version 9): 829
+
+Events were actively counted for  2 minutes and 34 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                673,969,008,701          44.42
+	BR_MISP_EXEC                56,285,790               44.42
+	BR_INST_EXEC                4,791,172,852            44.43
+	BR_MISP_EXEC                1,538,103,488            44.43
+	BR_INST_EXEC                4,020,829,192            44.48
+	BR_INST_EXEC                44,940,598,724           44.50
+	BR_MISP_EXEC                805,520,416              44.49
+	BR_INST_RETIRED             61,188,440,665           44.49
+	BR_MISS_PRED_RETIRED        6,300,607,807            44.44
+
+real	2m34.918s
+user	2m59.878s
+sys	0m12.660s

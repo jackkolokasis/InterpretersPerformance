@@ -1,0 +1,25 @@
+  nehalem
+python3.6
+.....................
+logging_format: Mean +- std dev: 62.6 us +- 1.2 us
+.....................
+logging_silent: Mean +- std dev: 1.39 us +- 0.03 us
+.....................
+logging_simple: Mean +- std dev: 52.0 us +- 0.6 us
+
+Events were actively counted for 44.6 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                113,879,890,166          44.63
+	BR_MISP_EXEC                73,093,831               44.64
+	BR_INST_EXEC                2,367,609,199            44.66
+	BR_MISP_EXEC                354,021,292              44.68
+	BR_INST_EXEC                2,642,030,191            44.68
+	BR_INST_EXEC                16,926,718,326           44.64
+	BR_MISP_EXEC                424,054,752              44.62
+	BR_INST_RETIRED             24,195,504,229           44.62
+	BR_MISS_PRED_RETIRED        1,921,725,128            44.60
+
+real	0m44.669s
+user	0m43.391s
+sys	0m1.292s

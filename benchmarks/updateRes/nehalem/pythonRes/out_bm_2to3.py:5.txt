@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+2to3: Mean +- std dev: 1.36 sec +- 0.01 sec
+
+Events were actively counted for  1 minute and 57 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                310,812,891,108          44.50
+	BR_MISP_EXEC                154,503,964              44.51
+	BR_INST_EXEC                6,348,123,248            44.50
+	BR_MISP_EXEC                1,115,670,799            44.50
+	BR_INST_EXEC                7,782,975,407            44.50
+	BR_INST_EXEC                46,243,260,928           44.49
+	BR_MISP_EXEC                1,063,172,048            44.49
+	BR_INST_RETIRED             65,967,513,682           44.51
+	BR_MISS_PRED_RETIRED        5,381,029,968            44.49
+
+real	1m57.730s
+user	1m55.677s
+sys	0m2.079s

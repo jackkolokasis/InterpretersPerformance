@@ -1,0 +1,24 @@
+  nehalem
+python3.6
+
+Events were actively counted for 100484694 nanoseconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                222,226,507              45.00
+	BR_MISP_EXEC                129,925                  44.99
+	BR_INST_EXEC                5,278,291                45.00
+	BR_MISP_EXEC                479,999                  45.00
+	BR_INST_EXEC                4,383,375                44.44
+	BR_INST_EXEC                34,317,031               45.83
+	BR_MISP_EXEC                1,438,788                45.35
+	BR_INST_RETIRED             47,738,453               44.89
+	BR_MISS_PRED_RETIRED        4,363,841                44.44
+malloc | --track-memory] [--pure-python]
+                    [--protocol PROTOCOL]
+                    {pickle,pickle_dict,pickle_list,unpickle,unpickle_list}
+bm_pickle.py: error: the following arguments are required: benchmark
+app process exited with the following status: 2
+
+real	0m0.205s
+user	0m0.145s
+sys	0m0.060s

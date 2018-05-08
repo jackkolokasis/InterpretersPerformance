@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+pathlib: Mean +- std dev: 93.7 ms +- 2.5 ms
+
+Events were actively counted for 30.3 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                54,728,706,786           44.57
+	BR_MISP_EXEC                50,547,560               44.61
+	BR_INST_EXEC                1,298,448,192            44.58
+	BR_MISP_EXEC                136,223,169              44.55
+	BR_INST_EXEC                1,159,121,109            44.50
+	BR_INST_EXEC                7,834,234,449            44.50
+	BR_MISP_EXEC                192,987,790              44.50
+	BR_INST_RETIRED             11,694,616,785           44.51
+	BR_MISS_PRED_RETIRED        977,563,960              44.58
+
+real	0m30.354s
+user	0m23.062s
+sys	0m6.278s

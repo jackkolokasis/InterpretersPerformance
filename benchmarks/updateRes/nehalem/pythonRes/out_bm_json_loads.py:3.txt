@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+json_loads: Mean +- std dev: 111 us +- 1 us
+
+Events were actively counted for 15.4 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                47,116,930,235           44.63
+	BR_MISP_EXEC                9,363,719                44.68
+	BR_INST_EXEC                677,111,818              44.67
+	BR_MISP_EXEC                77,807,325               44.67
+	BR_INST_EXEC                714,479,708              44.68
+	BR_INST_EXEC                8,977,399,211            44.62
+	BR_MISP_EXEC                232,523,548              44.54
+	BR_INST_RETIRED             11,589,475,197           44.60
+	BR_MISS_PRED_RETIRED        882,051,515              44.64
+
+real	0m15.496s
+user	0m15.054s
+sys	0m0.465s

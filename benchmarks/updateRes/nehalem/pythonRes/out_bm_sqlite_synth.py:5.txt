@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+sqlite_synth: Mean +- std dev: 18.2 us +- 0.1 us
+
+Events were actively counted for 16.0 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                29,901,610,642           44.63
+	BR_MISP_EXEC                19,657,866               44.62
+	BR_INST_EXEC                835,345,250              44.61
+	BR_MISP_EXEC                54,449,741               44.68
+	BR_INST_EXEC                759,429,932              44.61
+	BR_INST_EXEC                4,382,232,419            44.64
+	BR_MISP_EXEC                86,250,214               44.67
+	BR_INST_RETIRED             7,103,044,751            44.65
+	BR_MISS_PRED_RETIRED        434,772,996              44.60
+
+real	0m16.085s
+user	0m15.653s
+sys	0m0.456s

@@ -1,0 +1,27 @@
+  nehalem
+python3.6
+.....................
+xml_etree_parse: Mean +- std dev: 512 ms +- 6 ms
+.....................
+xml_etree_iterparse: Mean +- std dev: 383 ms +- 5 ms
+.....................
+xml_etree_generate: Mean +- std dev: 551 ms +- 7 ms
+.....................
+xml_etree_process: Mean +- std dev: 453 ms +- 6 ms
+
+Events were actively counted for  3 minutes and 25 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                612,272,883,388          44.52
+	BR_MISP_EXEC                264,980,001              44.50
+	BR_INST_EXEC                12,939,179,205           44.49
+	BR_MISP_EXEC                1,348,083,741            44.49
+	BR_INST_EXEC                14,368,251,997           44.50
+	BR_INST_EXEC                88,024,609,591           44.51
+	BR_MISP_EXEC                684,544,654              44.51
+	BR_INST_RETIRED             135,068,826,723          44.51
+	BR_MISS_PRED_RETIRED        8,668,391,755            44.51
+
+real	3m25.387s
+user	3m22.368s
+sys	0m3.128s

@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+regex_effbot: Mean +- std dev: 8.53 ms +- 0.17 ms
+
+Events were actively counted for 17.8 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                86,157,426,370           44.59
+	BR_MISP_EXEC                5,744,828                44.65
+	BR_INST_EXEC                705,085,785              44.66
+	BR_MISP_EXEC                20,995,738               44.62
+	BR_INST_EXEC                2,089,583,589            44.62
+	BR_INST_EXEC                11,967,846,533           44.59
+	BR_MISP_EXEC                68,723,370               44.57
+	BR_INST_RETIRED             17,075,499,107           44.57
+	BR_MISS_PRED_RETIRED        1,855,427,150            44.58
+
+real	0m17.864s
+user	0m17.424s
+sys	0m0.464s

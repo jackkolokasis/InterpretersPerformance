@@ -1,0 +1,22 @@
+  nehalem
+rhino
+NavierStokes: 81.9
+----
+Score (version 9): 81.9
+
+Events were actively counted for 31.6 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                149,199,704,698          44.49
+	BR_MISP_EXEC                12,604,345               44.52
+	BR_INST_EXEC                785,556,221              44.50
+	BR_MISP_EXEC                221,034,274              44.50
+	BR_INST_EXEC                675,060,113              44.50
+	BR_INST_EXEC                14,748,430,000           44.50
+	BR_MISP_EXEC                86,249,426               44.49
+	BR_INST_RETIRED             17,814,850,194           44.48
+	BR_MISS_PRED_RETIRED        1,449,588,040            44.51
+
+real	0m31.688s
+user	0m36.887s
+sys	0m0.489s

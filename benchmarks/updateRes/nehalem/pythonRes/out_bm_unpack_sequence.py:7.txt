@@ -1,0 +1,21 @@
+  nehalem
+python3.6
+.....................
+unpack_sequence: Mean +- std dev: 203 ns +- 2 ns
+
+Events were actively counted for 17.7 seconds.
+Event counts (scaled) for /usr/bin/python3.6:
+	Event                       Count                    % time counted
+	INST_RETIRED                74,038,294,734           44.62
+	BR_MISP_EXEC                4,965,456                44.63
+	BR_INST_EXEC                176,990,256              44.67
+	BR_MISP_EXEC                304,469,969              44.67
+	BR_INST_EXEC                1,824,079,368            44.66
+	BR_INST_EXEC                9,962,103,595            44.63
+	BR_MISP_EXEC                45,390,361               44.54
+	BR_INST_RETIRED             11,961,191,486           44.55
+	BR_MISS_PRED_RETIRED        494,364,234              44.52
+
+real	0m17.780s
+user	0m17.371s
+sys	0m0.436s

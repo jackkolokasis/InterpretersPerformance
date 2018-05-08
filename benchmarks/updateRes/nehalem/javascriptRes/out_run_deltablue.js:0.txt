@@ -1,0 +1,22 @@
+  nehalem
+rhino
+DeltaBlue: 48.2
+----
+Score (version 9): 48.2
+
+Events were actively counted for 6.8 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                35,376,216,055           44.84
+	BR_MISP_EXEC                10,632,907               44.60
+	BR_INST_EXEC                279,562,108              44.45
+	BR_MISP_EXEC                78,590,562               44.47
+	BR_INST_EXEC                328,910,156              44.24
+	BR_INST_EXEC                4,300,251,497            44.49
+	BR_MISP_EXEC                76,980,482               44.62
+	BR_INST_RETIRED             5,284,583,603            44.80
+	BR_MISS_PRED_RETIRED        371,327,569              44.91
+
+real	0m6.902s
+user	0m10.926s
+sys	0m0.418s

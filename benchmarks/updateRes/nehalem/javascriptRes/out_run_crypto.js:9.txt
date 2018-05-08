@@ -1,0 +1,22 @@
+  nehalem
+rhino
+Crypto: 43.6
+----
+Score (version 9): 43.6
+
+Events were actively counted for  1 minute and 33 seconds.
+Event counts (scaled) for /usr/bin/rhino:
+	Event                       Count                    % time counted
+	INST_RETIRED                439,406,688,705          44.46
+	BR_MISP_EXEC                15,030,385               44.44
+	BR_INST_EXEC                2,402,142,694            44.46
+	BR_MISP_EXEC                1,017,602,586            44.46
+	BR_INST_EXEC                2,348,771,414            44.49
+	BR_INST_EXEC                26,014,482,387           44.51
+	BR_MISP_EXEC                113,666,621              44.50
+	BR_INST_RETIRED             34,803,047,925           44.47
+	BR_MISS_PRED_RETIRED        3,041,077,769            44.46
+
+real	1m33.514s
+user	1m39.068s
+sys	0m0.504s

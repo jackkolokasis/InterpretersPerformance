@@ -1,0 +1,37 @@
+  nehalem
+java
+Using scaled threading model. 16 processors detected, 16 threads used to drive the workload, in a possible range of [1,512]
+Booting Geronimo Kernel (in Java 1.8.0_141)...
+Geronimo startup complete
+Resetting database and populating with 1098 stocks...
+Populating database with 768 users...
+Finished repopulating database
+Running 512 trade sessions directly on server
+Completed 512 trade sessions comprising 8862 trader actions
+	Home ....................  1653 (18.7%)
+	Portfolio ...............   738 ( 8.3%)
+	Quote ...................  3758 (42.4%)
+	Buy .....................   726 ( 8.2%)
+	Sell ....................   761 ( 8.6%)
+	Update ..................   126 ( 1.4%)
+	Register ................    38 ( 0.4%)
+	Login ...................   512 ( 5.8%)
+	Logout ..................   550 ( 6.2%)
+Shutting down Geronimo...
+
+Events were actively counted for  2 minutes and 52 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED                447,435,616,688          44.49
+	BR_MISP_EXEC                39,066,297               44.41
+	BR_INST_EXEC                2,507,033,159            44.45
+	BR_MISP_EXEC                8,992,194,879            44.41
+	BR_INST_EXEC                26,539,615,774           44.41
+	BR_INST_EXEC                45,035,897,117           44.50
+	BR_MISP_EXEC                1,321,319,118            44.55
+	BR_INST_RETIRED             78,494,395,161           44.55
+	BR_MISS_PRED_RETIRED        10,431,447,501           44.56
+
+real	2m52.563s
+user	7m14.849s
+sys	0m14.000s

@@ -1,0 +1,31 @@
+  nehalem
+java
+Using scaled threading model. 16 processors detected, 16 threads used to drive the workload, in a possible range of [1,4000]
+....
+Completed 4000 transactions
+	Stock level .............   155 ( 3.9%)
+	Order status by name ....   108 ( 2.7%)
+	Order status by ID ......    65 ( 1.6%)
+	Payment by name .........  1050 (26.2%)
+	Payment by ID ...........   661 (16.5%)
+	Delivery schedule .......   167 ( 4.2%)
+	New order ...............  1774 (44.4%)
+	New order rollback ......    20 ( 0.5%)
+Resetting database to initial state
+
+Events were actively counted for  8 minutes and 18 seconds.
+Event counts (scaled) for /usr/bin/java:
+	Event                       Count                    % time counted
+	INST_RETIRED                830,797,919,104          44.46
+	BR_MISP_EXEC                29,758,473               44.47
+	BR_INST_EXEC                4,512,626,615            44.49
+	BR_MISP_EXEC                15,558,705,796           44.50
+	BR_INST_EXEC                46,908,387,042           44.44
+	BR_INST_EXEC                81,052,422,677           44.43
+	BR_MISP_EXEC                1,213,257,843            44.43
+	BR_INST_RETIRED             140,353,143,246          44.41
+	BR_MISS_PRED_RETIRED        17,334,144,130           44.41
+
+real	8m19.085s
+user	8m54.787s
+sys	0m5.283s
