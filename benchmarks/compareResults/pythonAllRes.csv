@@ -1,0 +1,5 @@
+core2 nehalem  ivy  bridge  haswell amd
+bm_pidigits.py 1 7 8 9 1
+bm_pyflate.py 2 10 4 12 5
+bm_python_startup.py 3 2 3 3 3
+bm_raytrace.py 4 15 12 5 6
