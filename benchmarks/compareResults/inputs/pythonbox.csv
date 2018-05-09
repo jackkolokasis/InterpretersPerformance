@@ -1,0 +1,18 @@
+     
+benchmark CORE2  NEHALEM    IVY_BIDGE HASWELL AMD
+bm_pidigits 6 12 1 3 25
+bm_pyflate 7 5 2 45 42
+bm_python_startup 17 4 4 6 4
+bm_raytrace.py 8 3 6 73 47
+bm_regex_compile.py 6 7 5 1 85
+bm_regex_dna.py 7 8 5 3 4
+bm_regex_effbot.py 8 9 4 5 5
+bm_regex_v8.py 9 8 32 10 12
+bm_richards.py 12 2 2 12 16
+bm_scimark.py 18 9 3 14 14
+     
+     
+     
+     
+     
+ Find  the  avg  MPKI  from  6  iterations  per  benchmark      
