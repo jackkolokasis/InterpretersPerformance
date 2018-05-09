@@ -119,9 +119,9 @@ parser () {
                     | awk '{print$2}')
 
                 total_instr=`echo ${grepLines} | cut -d ' ' -f2`
-                miss_indirect_br=`echo ${grepLines} | cut -d ' ' -f5`
-                total_branches_retired=`echo ${grepLines} | cut -d ' ' -f9`
-                total_branches_miss_retired=`echo ${grepLines} | cut -d ' ' -f10`
+                miss_indirect_br=`echo ${grepLines} | cut -d ' ' -f3`
+                total_branches_retired=`echo ${grepLines} | cut -d ' ' -f4`
+                total_branches_miss_retired=`echo ${grepLines} | cut -d ' ' -f5`
 
                 echo -ne "${total_instr};${total_branches_retired};" >> ${OUTPUTFILE}
                 echo -ne "${total_branches_miss_retired};" >> ${OUTPUTFILE}
