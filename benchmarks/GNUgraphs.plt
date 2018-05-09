@@ -1,3 +1,4 @@
+######################## histogramm for python ##############################
 set key vertical maxrows 4 samplen 1 right top inside font",15"
 set title "Python MPKI for all branch predictors"
 set key autotitle columnhead
@@ -31,4 +32,5 @@ set ytics auto
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 1
 set grid xtics lc rgb "#bbbbbb" lw 1 lt 1
 plot'compareResults/inputs/pythonAllRes.csv' using 2:xtic(1) ti col ls 5, '' u 3 ti col ls 2, '' u 4 ti col ls 3, '' u 5 ti col ls 4
+
 
