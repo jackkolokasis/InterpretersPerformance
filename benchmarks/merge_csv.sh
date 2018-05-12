@@ -17,7 +17,8 @@
 ###################################################
 
 echo -n "" >.tmp.csv
-declare -a archs=("amd" "core2" "haswell" "ivy_bridge" "nehalem") 
+declare -a archs=("core2" "nehalem" "ivy_bridge" "haswell" "amd") 
+declare -a names=("Core2" "Nehalem" "Ivy_Bridge" "Haswell" "Amd") 
 declare -a inter=("python" "java" "javascript")
 
 # Iterate all interpreters and merge all results to one
@@ -31,9 +32,9 @@ do
 
     echo -ne "Bench " > compareResults/inputs/${j}_allArchs_tmp.csv
 
-    for i in "${archs[@]}"
+    for i in "${names[@]}"
     do
-        echo -ne "MPKI_${i} MPKB_${i} " >> compareResults/inputs/${j}_allArchs_tmp.csv
+        echo -ne "${i} ${i} " >> compareResults/inputs/${j}_allArchs_tmp.csv
     done
 
     echo "" >> compareResults/inputs/${j}_allArchs_tmp.csv
