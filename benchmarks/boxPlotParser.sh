@@ -2,26 +2,24 @@
 
 ###################################################
 #
-# file: parseResutls.sh
+# file: boxPlotParser.sh
 #
 # @Author   Iacovos G. Kolokasis
 #           Manos Pavlidakis
-# @Version  28-04-2018
+# @Version  12-05-2018
 # @email    kolokasis@ics.forth.gr
 #           manospavl@ics.forth.gr
 #
-# @brief  This script parse all the outputs metrics from the
-# benchmarks
+# @brief  This script parse the results for the boxplot
 # Usage 
-#      ./parseResults.sh
+#      ./boxPlotParser.sh
 # 
 ###################################################
-
 
 iterationNum=10     # Number of iterations
 
 declare -a archs=("amd" "core2" "haswell" "ivy_bridge" "nehalem") 
-
+mkdir -p compareResults/tmp
 # Parse all the results to csv
 parser () {
     
@@ -29,17 +27,7 @@ parser () {
     RESULTDIR="updateRes/$3/$1"
 
     # Create csv output file
-    OUTPUTFILE="updateRes/$3/$2"
-    echo -n "" > ${OUTPUTFILE}
-
-    # Print Header row for csv files. 
-    # Different header row for the state of AMD
-    echo -ne "Benchmark;" >> ${OUTPUTFILE}
-
-    echo -ne "MPKI;MPKB;" >> ${OUTPUTFILE}
-
-    # Change line
-    echo " " >> ${OUTPUTFILE}
+    OUTPUTFILE="compareResults/tmp/$2"
 
     # Iterate all the results in python directory
     for f in ${RESULTDIR}/*\:0.txt
@@ -51,13 +39,10 @@ parser () {
         fnameNoIter=`echo ${extension} | awk -F ':' '{print ($1)}'`
         benchName=`echo ${fnameNoIter} | awk -F 'out_' '{print ($2)}'`
 
-        # Iterate all benchmarks and get brach predictions metrics
-        total_MPKI=0
-        total_MPKB=0
         for ((i=0; i<${iterationNum}; i++))
         do
             if [ ${i} -eq 0 ]; then
-                echo -ne ${benchName} ";" >> ${OUTPUTFILE}
+                echo ${benchName} > ${OUTPUTFILE}_${benchName}.csv
             fi
 
             # Grep the line which contains the string "% time counted" and then
@@ -91,13 +76,7 @@ parser () {
                 # Calculation of MPKI. 
                 thousand_Instr=$(echo "scale=4; ${total_instr} / 1000" | bc)
                 mpki=$(echo "scale=4; ${miss_indirect_br} / ${thousand_Instr}" | bc)
-                total_MPKI=$(echo "scale=4;  ${total_MPKI} + ${mpki}" | bc)
                 
-                # Calculation of MPKB. 
-                thousand_Br=$(echo "scale=4; ${total_branches} / 1000" | bc)
-                mpkb=$(echo "scale=4; ${miss_indirect_br} / ${thousand_Br}" | bc)
-                total_MPKB=$(echo "scale=4;  ${total_MPKB} + ${mpkb}" | bc)
-
             else
                 grepLines=$(cat ${RESULTDIR}/${fnameNoIter}\:${i}.txt \
                     | grep -A 4 "% time counted" \
@@ -111,41 +90,28 @@ parser () {
                 # Calculation of MPKI. 
                 thousand_Instr=$(echo "scale=4; ${total_instr} / 1000" | bc)
                 mpki=$(echo "scale=4; ${miss_indirect_br} / ${thousand_Instr}" | bc)
-                total_MPKI=$(echo "scale=4;  ${total_MPKI} + ${mpki}" | bc)
-                
-                # Calculation of MPKB. 
-                thousand_Br=$(echo "scale=4; ${total_branches_retired} / 1000" | bc)
-                mpkb=$(echo "scale=4; ${miss_indirect_br} / ${thousand_Br}" | bc)
-                total_MPKB=$(echo "scale=4;  ${total_MPKB} + ${mpkb}" | bc)
-
             fi
+            # Print the average 
+            echo "${mpki}" >> ${OUTPUTFILE}_${benchName}.csv
         done
-
-        # Calculation of the average
-        avg_MPKI=$(echo "scale=4;  ${total_MPKI} / 10" | bc)
-        avg_MPKB=$(echo "scale=4;  ${total_MPKB} / 10" | bc)
-        
-        # Print the average 
-        echo -ne "${avg_MPKI};${avg_MPKB}" >> ${OUTPUTFILE}
-        echo " " >> ${OUTPUTFILE}
     done
 }
 
 for ar in "${archs[@]}"
 do
     # Python Results
-    parser pythonRes merge_pythonRes.csv ${ar}
+    parser pythonRes merge_pythonRes ${ar}
+    ./merge_csv.sh boxplot python ${ar}
+    rm -rf compareResults/tmp/*
 
     # Javascript Results
-    parser javascriptRes merge_javascriptRes.csv ${ar}
+    parser javascriptRes merge_javascriptRes ${ar}
+    ./merge_csv.sh boxplot javascript ${ar}
+    rm -rf compareResults/tmp/*
 
     # Java Results
-    parser javaRes merge_javaRes.csv ${ar}
+    parser javaRes merge_javaRes ${ar}
+    ./merge_csv.sh boxplot java ${ar}
+    rm -rf compareResults/tmp/*
 done
-
-# Merge results
-./merge_csv.sh other
-
-# Parse boxplot results
-./boxPlotParser.sh
-exit
+rm -rf compareResults/tmp
