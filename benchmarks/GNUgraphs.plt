@@ -32,7 +32,7 @@ set xtics noenhanced
 set ytics auto
 set grid ytics lc rgb "#bbbbbb" lw 1 lt 1
 set grid xtics lc rgb "#bbbbbb" lw 1 lt 1
-plot'compareResults/inputs/python_allArchs_rmd.csv' using 2:xtic(1) ti col ls 5, '' u 4 ti col ls 2, '' u 6 ti col ls 3, '' u 8 ti col ls 4, '' u 10 ti col ls 1
+plot'compareResults/inputs/python_allArchs.csv' using 2:xtic(1) ti col ls 5, '' u 4 ti col ls 2, '' u 6 ti col ls 3, '' u 8 ti col ls 4, '' u 10 ti col ls 1
 
 ######################## histogramm for java ##############################
 set key vertical maxrows 4 samplen 1 right top inside font",15"
