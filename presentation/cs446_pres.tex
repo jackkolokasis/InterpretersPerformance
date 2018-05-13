@@ -1,0 +1,103 @@
+%--------------------------------------------------------------------
+%
+% file: cs446_pres.tex
+%
+% @Author  Iacovos G. Kolokasis
+% @Version 13-05-2018
+% @email   kolokasis@ics.forth.gr
+% 
+% @brief   Tutorial for the course needed CS240 - Data Stractures
+%          taught by Prof. Panayiota Fatourou, in the Computer Science
+%          Department of the University of Crete.
+%
+% The theme itself is licensed under a Creative Commons
+% Attribution-ShareAlike 4.0 International License. This means that if
+% you change the theme and re-distribute it, you must retain the
+% copyright notice header and license it under the same CC-BY-SA
+% license. This does not affect the presentation that you create with
+% the theme.
+%
+% Downloaded from : https://github.com/matze/mtheme
+%
+%--------------------------------------------------------------------
+
+\documentclass[handout,....]{beamer} 
+%\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+
+%--------------------------------------------------------------------
+% PACKAGES
+%--------------------------------------------------------------------
+\usepackage{appendixnumberbeamer}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{xspace}
+
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \begin{beamercolorbox}[left,wd=.4\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm, rightskip=.3cm plus1fil]{footline}%
+        \href{https://www.csd.uoc.gr/~hy446}{CS446 - Managed RunTime Systems}%
+    \end{beamercolorbox}
+    %
+    \begin{beamercolorbox}[center,wd=.2\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{footline}%
+        \centering
+        \insertframenumber~\textlatin{of}~\inserttotalframenumber%
+    \end{beamercolorbox}%
+    %
+    \begin{beamercolorbox}[right,wd=.4\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{footline}%
+        \hskip2ex plus1fill%
+        \href{mailto:manospavl@ics.forth.gr}{\textlatin{$[$ manospavl, }}%
+        \href{mailto:kolokasis@csd.uoc.gr}{\textlatin{kolokasis $]$@ics.forth.gr}}
+    \end{beamercolorbox}%
+}%
+
+%--------------------------------------------------------------------
+% TITLE
+%--------------------------------------------------------------------
+\title{\textlatin{Efficient Interpreters}}
+\subtitle{CS-446 -- Managed Runtime Systems}
+\date{\today}
+\author{Emmanouil Pavlidakis \& Iacovos G. Kolokasis}
+\institute{Computer Science Department \\ University Of Crete}
+\titlegraphic{\hfill\includegraphics[height=2.0cm]{figures/UoC_logo.png}}
+
+%--------------------------------------------------------------------
+% PRESENTATION SLIDES
+%--------------------------------------------------------------------
+\begin{document}
+
+{
+\maketitle
+}
+
+%--------------------------------------------------------------------
+% TABLE OF CONTENTS
+%--------------------------------------------------------------------
+{
+\begin{frame}{Contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+}
+
+%--------------------------------------------------------------------
+% INTRODUCTION
+%--------------------------------------------------------------------
+
+\section{Problem State}
+\begin{frame}{Problem}
+\end{frame}
+
+%--------------------------------------------------------------------
+% LAST SLIDE
+%--------------------------------------------------------------------
+\begin{frame}[standout] 
+    \huge \textlatin{Thanks!}
+\end{frame}
+\end{document}
