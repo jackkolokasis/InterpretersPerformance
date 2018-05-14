@@ -3,13 +3,14 @@
 % file: cs446_pres.tex
 %
 % @Author  Iacovos G. Kolokasis
+%          Emmanouil Pavlidakis
 % @Version 13-05-2018
 % @email   kolokasis@ics.forth.gr
+%          manospavl@ics.forth.gr
 % 
-% @brief   Tutorial for the course needed CS240 - Data Stractures
-%          taught by Prof. Panayiota Fatourou, in the Computer Science
-%          Department of the University of Crete.
-%
+% @brief   Presentatin for the project needed of CS-445 Managed
+% Runtime Systems project 
+
 % The theme itself is licensed under a Creative Commons
 % Attribution-ShareAlike 4.0 International License. This means that if
 % you change the theme and re-distribute it, you must retain the
@@ -21,8 +22,8 @@
 %
 %--------------------------------------------------------------------
 
-\documentclass[handout,....]{beamer} 
-%\documentclass[10pt]{beamer}
+%\documentclass[handout,....]{beamer}   % Disable beamer pause
+\documentclass[10pt]{beamer}
 
 \usetheme{metropolis}
 
@@ -60,12 +61,12 @@
 %--------------------------------------------------------------------
 % TITLE
 %--------------------------------------------------------------------
-\title{\textlatin{Efficient Interpreters}}
+\title{\textlatin{Branch Prediction \& \\ The Performacne Of Interpreters}}
 \subtitle{CS-446 -- Managed Runtime Systems}
 \date{\today}
 \author{Emmanouil Pavlidakis \& Iacovos G. Kolokasis}
 \institute{Computer Science Department \\ University Of Crete}
-\titlegraphic{\hfill\includegraphics[height=2.0cm]{figures/UoC_logo.png}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{figures/UoC_logo.png}}
 
 %--------------------------------------------------------------------
 % PRESENTATION SLIDES
@@ -89,13 +90,47 @@
 %--------------------------------------------------------------------
 % INTRODUCTION
 %--------------------------------------------------------------------
+\section{Motivation and Background}
 
-\section{Problem State}
-\begin{frame}{Problem}
+\begin{frame}{Interpreters}
+    \begin{itemize}
+        \item{Interpreters provide ease of implementation, and
+            portability, at the expense of speed}
+        \item{Easier to develop, maintain and port applications in new
+            architectures}
+        \item{Core of interpreter is an infinite loop that reads the
+            next bytecode, decodes it and perform the appropriate
+            action}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Problem state}
+    \begin{itemize}
+        \item{Overheads due to indirect branches}
+
+        \item{We study the properties of current interpreters and
+            state-of-the-art branch prediction on bare metal
+            architectures}
+    \end{itemize}
 \end{frame}
 
 %--------------------------------------------------------------------
-% LAST SLIDE
+% Experimental Methodolodgy
+%--------------------------------------------------------------------
+\section{Experimental Methodolodgy}
+
+%--------------------------------------------------------------------
+% Evaluation
+%--------------------------------------------------------------------
+\section{Evaluation}
+
+%--------------------------------------------------------------------
+% Conclusions
+%--------------------------------------------------------------------
+\section{Conclusions}
+
+%--------------------------------------------------------------------
+% Last Slide
 %--------------------------------------------------------------------
 \begin{frame}[standout] 
     \huge \textlatin{Thanks!}
