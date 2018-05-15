@@ -38,9 +38,14 @@
 \usepgfplotslibrary{dateplot}
 \usepackage{xspace}
 \usepackage{listings}
+\usepackage{adjustbox}      
 \usepackage{textpos}
+<<<<<<< Updated upstream
  \usepackage{adjustbox} 
  \usepackage{svg}
+=======
+\usepackage{graphicx}
+>>>>>>> Stashed changes
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \setbeamertemplate{footline}{
@@ -197,6 +202,7 @@ while(1){
 	\footnotetext[2]{https://github.com/python/performance}
 \end{frame}
 
+<<<<<<< Updated upstream
 \begin{frame}{Experimental Setup 2/2}
 	\begin{itemize}
 		\item {Hardware counters of CPUs collected by OProfile 1.2.0}
@@ -217,7 +223,101 @@ while(1){
 % Evaluation
 %--------------------------------------------------------------------
 \section{Results}
+=======
+\begin{frame}{Experimental Methodolodgy}
+    \begin{table}
+        \centering
+        \begin{adjustbox}{width=1\textwidth}
+            \begin{tabular}{|c|c|c|c|c|c|} 
+                \hline
+                &Core2 Duo  &Nehalem  &Ivy Bridge   &Haswell  &AMD64 family15h \\
+                \hline 
+                Python3.6   &\multicolumn{5}{c|}{Python Benchmark Suite} \\ 
+                \hline
+                Javascript  &\multicolumn{5}{c|}{Octane Benchamrk Suite}\\ 
+                \hline
+                Python      &\multicolumn{5}{c|}{Da Capo Benchmark Suite} \\ 
+                \hline
+            \end{tabular}
+        \end{adjustbox}
+    \end{table}
 
+    \begin{itemize}
+        \item{Average of 10 runs}
+    \end{itemize}
+\end{frame}
+
+%--------------------------------------------------------------------
+% Evaluation
+%--------------------------------------------------------------------
+\section{Experimental Results}
+\begin{frame}{Python}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=11cm, height=7cm]{figures/python_MPKI.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Javascript}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=11cm, height=7cm]{figures/javascript_MPKI.pdf}
+    \end{figure}
+\end{frame}
+>>>>>>> Stashed changes
+
+\begin{frame}{Java}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=11cm, height=7cm]{figures/java_MPKI.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Python}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=11cm, height=7cm]{figures/python_MPKI.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Python}
+	\begin{minipage}{\textwidth}
+		\begin{figure}
+        \includegraphics[width=10cm, height=5cm]{figures/python_box_ivy_bridge.pdf}
+		\end{figure}
+	\end{minipage}
+		\begin{minipage}{\textwidth}
+			\begin{figure}
+				\includegraphics[width=10cm, height=5cm]{figures/python_box_amd.pdf}
+			\end{figure}
+		\end{minipage}
+\end{frame}
+
+\begin{frame}{Javascript}
+	\begin{minipage}{\textwidth}
+		\begin{figure}
+        \includegraphics[width=10cm, height=5cm]{figures/javascript_box_ivy_bridge.pdf}
+		\end{figure}
+	\end{minipage}
+		\begin{minipage}{\textwidth}
+			\begin{figure}
+				\includegraphics[width=10cm, height=5cm]{figures/javascript_box_amd.pdf}
+			\end{figure}
+		\end{minipage}
+\end{frame}
+
+\begin{frame}{Java}
+	\begin{minipage}{\textwidth}
+		\begin{figure}
+        \includegraphics[width=10cm, height=5cm]{figures/java_box_ivy_bridge.pdf}
+		\end{figure}
+	\end{minipage}
+		\begin{minipage}{\textwidth}
+			\begin{figure}
+				\includegraphics[width=10cm, height=5cm]{figures/java_box_amd.pdf}
+			\end{figure}
+		\end{minipage}
+\end{frame}
 %--------------------------------------------------------------------
 % Conclusions
 %--------------------------------------------------------------------
