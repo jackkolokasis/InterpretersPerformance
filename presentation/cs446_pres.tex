@@ -68,7 +68,7 @@
 %--------------------------------------------------------------------
 % TITLE
 %--------------------------------------------------------------------
-\title{\textlatin{Evaluating the performance of Interpreters\\over various Branch predictors}}
+\title{\textlatin{Evaluating the Performance of Interpreters\\Over Various Branch Predictors}}
 \subtitle{CS-446 -- Managed Runtime Systems}
 \date{\today}
 \author{Emmanouil Pavlidakis \& Iacovos G. Kolokasis}
@@ -119,7 +119,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}[fragile]{Performance issues}
+\begin{frame}[fragile]{Performance Issues}
     \begin{columns}[T] % align columns
         \begin{column}{.65\textwidth}
             \begin{center}
@@ -162,7 +162,7 @@ while(1){
     \end{columns}
 \end{frame}
 
-\begin{frame}{Problem statement}
+\begin{frame}{Problem Statement}
     \begin{itemize}
     	\item{"\textit{Interpreters perform a large number of indirect branches}"} \footnotemark
         \item{"\textit{Performance of efficient interpreters is highly dependent on the indirect branch prediction accuracy }"} \footnotemark[1]
@@ -201,15 +201,17 @@ while(1){
 	\footnotetext[2]{https://github.com/python/performance}
 \end{frame}
 
-<<<<<<< Updated upstream
 \begin{frame}{Experimental Setup 2/2}
 	\begin{itemize}
 		\item {Hardware counters of CPUs collected by OProfile 1.2.0}
 			\begin{itemize}
 				\item {Total instructions}
-				\item {Mis-predicted indirect branches}
+				\item {Miss-predicted indirect branches}
 			\end{itemize}
-		\item {We calculate Mis-prediction Per Kilo Instructions (MPKI) by} $\frac{MissIndBr}{TotInstr/1000} $% 	
+		\item {We calculate Mis-prediction Per Kilo Instructions (MPKI) by} 
+            \begin{center}
+                $\frac{MissIndBr}{TotInstr/1000} $% 	
+            \end{center}
 		\item {We run each benchmark suite 10 times and calculate the AVG MPKI}
 		\begin{itemize}
 			\item {At every run we restart the virtual machine}
@@ -217,33 +219,6 @@ while(1){
 		\item {For all interpreters we disabled JIT and optimizations}
 		
 	\end{itemize}
-\end{frame}
-%--------------------------------------------------------------------
-% Evaluation
-%--------------------------------------------------------------------
-\section{Results}
-=======
-\begin{frame}{Experimental Methodolodgy}
-    \begin{table}
-        \centering
-        \begin{adjustbox}{width=1\textwidth}
-            \begin{tabular}{|c|c|c|c|c|c|} 
-                \hline
-                &Core2 Duo  &Nehalem  &Ivy Bridge   &Haswell  &AMD64 family15h \\
-                \hline 
-                Python3.6   &\multicolumn{5}{c|}{Python Benchmark Suite} \\ 
-                \hline
-                Javascript  &\multicolumn{5}{c|}{Octane Benchamrk Suite}\\ 
-                \hline
-                Python      &\multicolumn{5}{c|}{Da Capo Benchmark Suite} \\ 
-                \hline
-            \end{tabular}
-        \end{adjustbox}
-    \end{table}
-
-    \begin{itemize}
-        \item{Average of 10 runs}
-    \end{itemize}
 \end{frame}
 
 %--------------------------------------------------------------------
@@ -263,7 +238,6 @@ while(1){
         \includegraphics[width=11cm, height=7cm]{figures/javascript_MPKI.pdf}
     \end{figure}
 \end{frame}
->>>>>>> Stashed changes
 
 \begin{frame}{Java}
     \begin{figure}[t]
