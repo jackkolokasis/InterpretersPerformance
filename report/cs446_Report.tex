@@ -15,16 +15,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+\documentclass[parskip=full, paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
 
 \usepackage[T1]{fontenc} 
 \usepackage{fourier} 
 \usepackage[english]{babel} 
 \usepackage{amsmath,amsfonts,amsthm} 
-
+\usepackage{color}
 \usepackage{lipsum} 
 
 \usepackage{sectsty} 
@@ -65,7 +65,7 @@ Evaluating the Performance of Interpreters\\Over Various Branch Predictors
 
 \author{%
     Emmanouil Pavlidakis \\
-    Iacovos Kolokasis%
+    Iacovos G. Kolokasis%
     } 
 
 \date{\normalsize\today} 
@@ -74,6 +74,62 @@ Evaluating the Performance of Interpreters\\Over Various Branch Predictors
 
 \maketitle 
 
+%-------------------------------------------------------------------------------
+%   INTRODUCTION	
+%-------------------------------------------------------------------------------
 \section{Introduction}
 
+% What is an interpreter
+Programming languages are implemented in two ways: interpretation and
+compilation. Interpreters transform or interprets a high-level
+programming language (source code), into machine code or into an
+intermediate language that can be easily understood by the computer.
+Intermediate byte code can be generated before actual execution
+(statically) as in Java, or just before execution (dynamically) as in
+Python or at runtime (dynamically) as in JavaScript.  The interpreter
+reads each line of code and then converts or executes it directly. 
+
+%Write the advantage of interpreted languages
+When programmers use an interpreted programming language, they have
+not to make a compilation after every change they do in the source
+code.  The process of compilation takes several minutes. In the long
+run the production of a program increased, by using an interpreted
+programming language. 
+
+Another advantage of these languages is that you can run the program
+as you code (e.g. Python). For example when you run Python
+interpreter, provides you a window, like a command prompt where you
+can perform calculations to cross check with your program. This
+flexibility makes debugging easier. 
+
+Also the interpreters provide portability. If the interpreted
+implemented in a portable language, the interpreter and the virtual
+machine code can execute on independent platforms, for instance, the
+byte code in Java.
+
+%Performance issues
+The obvious disadvantage of the interpreters is the efficiency and
+performance. The interpreter consists of a dispatch infinite loop,
+that reads the next bytecode, decodes it, and perform the appropriate
+action. Their main overheads derives from the execution of this
+dispatch loop. Rohou et al {\color{red}{Citation here}} according
+their experiments argue that every bytecode needs ten instructions
+when compiled directly from standar C.
+
+Additional costs comes from the switch statement, which cause indirect
+jump instructions. These indirect branches are very difficult to
+predict as reported in previous research work as reported in
+{\color{red}{citation paper 3}}. Miss predicted branches is expensive.
+As a result, interpreters spend almost 20 cycles of their execution
+time to recover from miss predicted indirect branch.
+
+%Problem statement
+In this work we examine the performance of popular interpreters
+(Python, JavaScript, Java) on Intel and AMD architectures. We focus on
+the impact of indirect branches on state of the art branch predictors.
+
+%-------------------------------------------------------------------------------
+%   Experimental Methodology 
+%-------------------------------------------------------------------------------
+\section{Experimental Methodology}
 \end{document}
