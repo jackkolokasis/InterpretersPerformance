@@ -113,27 +113,47 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Performance issues}
-	\begin{itemize}
-		\item {Interpreters contain an infinite loop}
-			\begin{itemize}
-			\item {Fetches, Decodes, and Executes commands}
-			\end{itemize}
-		\item {Their main overhead derives from this dispatch loop}
-		\item {Additional costs come from the switch st.}
-				\begin{itemize}
-					\item {They causes indirect jump instructions}
-					\item {These indirect branches are very difficult to predict}
-					\item {Every miss prediction costs almost 20 cycles}
-				\end{itemize}
-				    \begin{figure}
-				    	\begin{textblock*}{3cm}(8.5cm,-2cm)
-				    		\includegraphics[height=4cm]{figures/dispatchloop.png}
-				    	\end{textblock*}
-				    	
-				    \end{figure}	
-	\end{itemize}
-
+\begin{frame}[fragile]{Performance issues}
+    \begin{columns}[T] % align columns
+        \begin{column}{.65\textwidth}
+            \begin{center}
+                \begin{itemize}
+                    \item {Interpreters contain an infinite loop}
+                        \begin{itemize}
+                            \item {Fetches, Decodes, and Executes commands}
+                        \end{itemize}
+                    \item {Their main overhead derives from this dispatch loop}
+                    \item {Additional costs come from the switch st.}
+                        \begin{itemize}
+                            \item {They causes indirect jump instructions}
+                            \item {These indirect branches are very difficult to predict}
+                            \item {Every miss prediction costs almost 20 cycles}
+                        \end{itemize}
+                \end{itemize}
+            \end{center}
+        \end{column}%
+            \hfill%
+            \begin{column}{.35\textwidth}
+                \metroset{block=fill}
+                \begin{alertblock}{Dispatch Loop}
+                    \begin{center}
+                        \begin{lstlisting}[basicstyle=\footnotesize , breaklines]
+while(1){
+    opc = * vpc++;
+    switch (opc) {
+        case ADD:
+        ....
+        break;
+        case  SUB:
+        ....				
+        break;
+    }	
+}
+                        \end{lstlisting}
+                    \end{center}
+                \end{alertblock}
+            \end{column}%
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Performance }
