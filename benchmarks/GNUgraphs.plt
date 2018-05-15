@@ -42,7 +42,7 @@ set key noenhanced
 set title noenhanced
 set terminal svg size 1100,600 enhanced font "Helvetica,20"
 set output "compareResults/graphs/java_MPKI.svg"
-set yrange [*:*]
+set yrange [0:40]
 set xrange [*:*]
 set auto x
 yellow = "#FFFF00"; purple = "#55505C"; blue = "#0000FF" ; ocean = "#7FC6A4"; teal ="#008080";
