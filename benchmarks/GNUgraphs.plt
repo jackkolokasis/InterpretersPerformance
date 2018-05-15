@@ -119,7 +119,7 @@ set output "compareResults/graphs/python_box_core2.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
-set xlabel "Benchmarks" offset 0,2,0
+set xlabel "Benchmarks" offset 0,1.5,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -143,7 +143,7 @@ set output "compareResults/graphs/python_box_nehalem.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
-set xlabel "Benchmarks" offset 0,2,0
+set xlabel "Benchmarks" offset 0,1.5,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -167,7 +167,7 @@ set output "compareResults/graphs/python_box_ivy_bridge.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
-set xlabel "Benchmarks" offset 0,2,0
+set xlabel "Benchmarks" offset 0,1.5,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -191,7 +191,7 @@ set output "compareResults/graphs/python_box_haswell.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
-set xlabel "Benchmarks" offset 0,2,0
+set xlabel "Benchmarks" offset 0,1.5,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -215,7 +215,7 @@ set output "compareResults/graphs/python_box_amd.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
-set xlabel "Benchmarks" offset 0,2,0
+set xlabel "Benchmarks" offset 0,1.5,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
