@@ -39,6 +39,8 @@
 \usepackage{xspace}
 \usepackage{listings}
 \usepackage{textpos}
+ \usepackage{adjustbox} 
+ \usepackage{svg}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \setbeamertemplate{footline}{
@@ -156,41 +158,65 @@ while(1){
     \end{columns}
 \end{frame}
 
-\begin{frame}{Performance }
+\begin{frame}{Problem statement}
     \begin{itemize}
-        \item{Overheads due to indirect branches}
-
-        \item{We study the properties of current interpreters and
-            state-of-the-art branch prediction on bare metal
-            architectures}
+    	\item{"\textit{Interpreters perform a large number of indirect branches}"} \footnotemark
+        \item{"\textit{Performance of efficient interpreters is highly dependent on the indirect branch prediction accuracy }"} \footnotemark[1]
+        \item{We examine the performance of popular interpreters on Intel and AMD architectures}
+	         \begin{itemize}
+	         	\item {Focus on the impact of indirect branches on state of the art branch predictors }
+	         \end{itemize}
     \end{itemize}
+    
+    \footnotetext[1]{M.Anont Ertl et. al., The Structure and Performance of Efficient Interpreters}
 \end{frame}
-%
-%\begin{frame}[fragile]
-%\begin{lstlisting}
-%while(1){
-%  opc = * vpc++;
-%  switch (opc){
-%    case ADD:
-%      ....
-%      break;
-%    case  SUB:
-%      ....				
-%      break;
-%  }	
-%}
-%\end{lstlisting}
-%\end{frame}
 
 %--------------------------------------------------------------------
 % Experimental Methodolodgy
 %--------------------------------------------------------------------
 \section{Experimental Methodolodgy}
+\begin{frame}{Experimental Setup 1/2}
+	We evaluate switch based interpreters:
+	\begin{itemize}
+		\item {For three \textbf{languages}}
+			\begin{itemize}
+				\item {Python: \textbf{Interpreter} \textit{Python3.6}, \textbf{Suite} \textit{Python benchmark suite\footnotemark[2]}} 
+				\item {Java: \textbf{Interpreter} \textit{Java 1.8.0\_151}, \textbf{Suite} \textit{Dacapo-9.12}} 
+				\item {Javascript: \textbf{Interpreter} \textit{Rhino 1.7R5}, \textbf{Suite} \textit{Chrome ocatane2.0}}
+			\end{itemize}
+		\item {On top of real Branch predictors}
+		\begin{itemize}
+			\item {Intel Core 2 Duo (2006): Xeon(R) CPU E5405 at 2.00GHz} 
+			\item {Intel Nehalem (2008): Xeon(R) CPU E5520 at 2.27GHz} 
+			\item {Intel Ivy Bridge (2012): Xeon(R) CPU E5-2620 v2 at 2.10GHz} 
+			\item {Intel Haswell (2013): Xeon(R) CPU E5-2630 v3 at 2.40GHz} 
+			\item {AMD Bulldozer family 15th (2011): AMD Opteron 6272 at 2.10GHz}
+		\end{itemize}
+		
+	\end{itemize}
+	\footnotetext[2]{https://github.com/python/performance}
+\end{frame}
 
+\begin{frame}{Experimental Setup 2/2}
+	\begin{itemize}
+		\item {Hardware counters of CPUs collected by OProfile 1.2.0}
+			\begin{itemize}
+				\item {Total instructions}
+				\item {Mis-predicted indirect branches}
+			\end{itemize}
+		\item {We calculate Mis-prediction Per Kilo Instructions (MPKI) by} $\frac{MissIndBr}{TotInstr/1000} $% 	
+		\item {We run each benchmark suite 10 times and calculate the AVG MPKI}
+		\begin{itemize}
+			\item {At every run we restart the virtual machine}
+		\end{itemize}
+		\item {For all interpreters we disabled JIT and optimizations}
+		
+	\end{itemize}
+\end{frame}
 %--------------------------------------------------------------------
 % Evaluation
 %--------------------------------------------------------------------
-\section{Evaluation}
+\section{Results}
 
 %--------------------------------------------------------------------
 % Conclusions

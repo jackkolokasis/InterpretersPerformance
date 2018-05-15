@@ -23,9 +23,9 @@ FIGFILES = $(shell ls figures/*.png)
 all: $(target).pdf
 
 $(target).pdf: $(TEXFILES) $(FIGFILES)
-	pdflatex $(TEXFILES)
-	pdflatex $(TEXFILES)
-	pdflatex $(TEXFILES)
+	pdflatex  -shell-escape $(TEXFILES)
+	pdflatex  -shell-escape $(TEXFILES)
+	pdflatex  -shell-escape $(TEXFILES)
 
 clean:
 	rm -f *.vrb *.aux *.log *.toc *.blg *.lof *.snm *.nav *.out 

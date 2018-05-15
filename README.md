@@ -9,8 +9,7 @@
 #  Interpreted Languages to be tested are (possibly):
   1. JavaScript : https://www.javascript.com/
   2. Java       : https://www.java.com/en/
-  3. Python     : https://www.python.org/	
-  4. CLI (Common Language Infrastructure [e.g C#]) : https://en.wikipedia.org/wiki/List_of_CLI_languages 
+  3. Python     : https://ww.python.org/	
 
 
 #  Graphs for our evaluation
@@ -21,10 +20,10 @@
 
 #  Architectures to be tested 
   1. Intel  : 
-  		0. Core 2 Duo (penguin4)
+  		0. Core 2 Duo (penguin4) -
 		1. Nehalem(2008) (piranha93), 
-		2. Ivy Bridge(2012) (jedi8), 
-		3. Haswell(2013) (sith8), 
+		2. Ivy Bridge(2012) (jedi8), -
+		3. Haswell(2013) (sith8), -
   2. AMD    : AMD64 family15h (hydra)
 
 ** piranha93 xray5
@@ -59,10 +58,10 @@ an 8elei kapoios na anaparagei auto pou kanate na einai sxetika eukolo
 an oxi plirws atomatopoiimeno.""
 
 # Experimental Methodolodgy:
-    for (i..30)
+    for (i..10)
 	1.JavaScript (Num_of_bench: 14)
 	2.Java       (Num_of_bench: 18)
-	3.Python     (Num_of_bench: 46)
+	3.Python     (Num_of_bench: 46), Working 30 out of 46 
 
 
 *Disable JIT in Java
