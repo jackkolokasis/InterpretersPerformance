@@ -12,15 +12,15 @@ set xrange [*:*]
 set auto x
 yellow = "#FFFF00"; purple = "#55505C"; blue = "#0000FF" ; ocean = "#7FC6A4"; teal ="#008080";
 red = "#B22222"; 
-set style line 1 dashtype 1 lw 1 linecolor rgb yellow
+set style line 1 dashtype 1 lw 1 linecolor rgb teal
 set style line 2 dashtype 1 lw 1 linecolor rgb purple
 set style line 3 dashtype 1 lw 1 linecolor rgb blue
 set style line 4 dashtype 1 lw 1 linecolor rgb ocean
 set style line 5 dashtype 1 lw 1 linecolor rgb red
-set ylabel "MPKI"
-set xlabel "Benchmarks"
-set xtics font ", 15"
-set ytics font ", 15"
+set ylabel "MPKI" offset 2,0,0
+set xlabel "Benchmarks" offset 0,3,0
+set xtics font ", 15" 
+set ytics font ", 15" 
 set style data histogram
 set style histogram cluster gap 1
 set style fill solid
@@ -47,13 +47,13 @@ set xrange [*:*]
 set auto x
 yellow = "#FFFF00"; purple = "#55505C"; blue = "#0000FF" ; ocean = "#7FC6A4"; teal ="#008080";
 red = "#B22222"; 
-set style line 1 dashtype 1 lw 1 linecolor rgb yellow
+set style line 1 dashtype 1 lw 1 linecolor rgb teal
 set style line 2 dashtype 1 lw 1 linecolor rgb purple
 set style line 3 dashtype 1 lw 1 linecolor rgb blue
 set style line 4 dashtype 1 lw 1 linecolor rgb ocean
 set style line 5 dashtype 1 lw 1 linecolor rgb red
-set ylabel "MPKI"
-set xlabel "Benchmarks"
+set ylabel "MPKI" offset 2,0,0
+set xlabel "Benchmarks" offset 0,3,0
 set xtics font ", 15"
 set ytics font ", 15"
 set style data histogram
@@ -82,13 +82,13 @@ set xrange [*:*]
 set auto x
 yellow = "#FFFF00"; purple = "#55505C"; blue = "#0000FF" ; ocean = "#7FC6A4"; teal ="#008080";
 red = "#B22222"; 
-set style line 1 dashtype 1 lw 1 linecolor rgb yellow
+set style line 1 dashtype 1 lw 1 linecolor rgb teal
 set style line 2 dashtype 1 lw 1 linecolor rgb purple
 set style line 3 dashtype 1 lw 1 linecolor rgb blue
 set style line 4 dashtype 1 lw 1 linecolor rgb ocean
 set style line 5 dashtype 1 lw 1 linecolor rgb red
-set ylabel "MPKI"
-set xlabel "Benchmarks"
+set ylabel "MPKI" offset 2,0,0
+set xlabel "Benchmarks" offset 0,3,0
 set xtics font ", 15"
 set ytics font ", 15"
 set style data histogram
@@ -119,6 +119,7 @@ set output "compareResults/graphs/python_box_core2.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -142,6 +143,7 @@ set output "compareResults/graphs/python_box_nehalem.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -165,6 +167,7 @@ set output "compareResults/graphs/python_box_ivy_bridge.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -188,6 +191,7 @@ set output "compareResults/graphs/python_box_haswell.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -211,6 +215,7 @@ set output "compareResults/graphs/python_box_amd.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("2to3" 1,"chaos" 1.2, "deltablue" 1.4, "fannkuch" 1.6, "float" 1.8, "go" 2.0, "hexiom" 2.2, "json_dumps" 2.4, "json_loads" 2.6, "logging" 2.8, "mdp" 3.0, "mc" 3.2, "nbody" 3.4, "nqueens" 3.6, "pathl" 3.8, "piddig" 4.0, "pyflate" 4.2,"pystart" 4.4, "raytrace" 4.6, "regcom" 4.8) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -235,6 +240,7 @@ set output "compareResults/graphs/java_box_core2.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("avrora" 1,"batik" 1.2, "eclipse" 1.4, "fop" 1.6, "h2" 1.8, "jython" 2.0, "luindex" 2.2, "lusearch" 2.4, "pmd" 2.6, "sunflow" 2.8, "tomcat" 3.0, "tradebeans" 3.2, "tradesoap" 3.4, "xalan" 3.6) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -258,6 +264,7 @@ set output "compareResults/graphs/java_box_nehalem.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("avrora" 1,"batik" 1.2, "eclipse" 1.4, "fop" 1.6, "h2" 1.8, "jython" 2.0, "luindex" 2.2, "lusearch" 2.4, "pmd" 2.6, "sunflow" 2.8, "tomcat" 3.0, "tradebeans" 3.2, "tradesoap" 3.4, "xalan" 3.6) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -281,6 +288,7 @@ set output "compareResults/graphs/java_box_ivy_bridge.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("avrora" 1,"batik" 1.2, "eclipse" 1.4, "fop" 1.6, "h2" 1.8, "jython" 2.0, "luindex" 2.2, "lusearch" 2.4, "pmd" 2.6, "sunflow" 2.8, "tomcat" 3.0, "tradebeans" 3.2, "tradesoap" 3.4, "xalan" 3.6) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -304,6 +312,7 @@ set output "compareResults/graphs/java_box_haswell.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("avrora" 1,"batik" 1.2, "eclipse" 1.4, "fop" 1.6, "h2" 1.8, "jython" 2.0, "luindex" 2.2, "lusearch" 2.4, "pmd" 2.6, "sunflow" 2.8, "tomcat" 3.0, "tradebeans" 3.2, "tradesoap" 3.4, "xalan" 3.6) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -327,6 +336,7 @@ set output "compareResults/graphs/java_box_amd.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("avrora" 1,"batik" 1.2, "eclipse" 1.4, "fop" 1.6, "h2" 1.8, "jython" 2.0, "luindex" 2.2, "lusearch" 2.4, "pmd" 2.6, "sunflow" 2.8, "tomcat" 3.0, "tradebeans" 3.2, "tradesoap" 3.4, "xalan" 3.6) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -351,6 +361,7 @@ set output "compareResults/graphs/javascript_box_core2.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("box2d" 1,"codeload" 1.2, "crypto" 1.4, "deltablue" 1.6, "earleyboyer" 1.8, "gbemu" 2.0, "navier-str" 2.2, "raytrace" 2.4, "regexp" 2.6, "richards" 2.8, "splay" 3.0, "typescript" 3.2, "zlib" 3.4) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -374,6 +385,7 @@ set output "compareResults/graphs/javascript_box_nehalem.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("box2d" 1,"codeload" 1.2, "crypto" 1.4, "deltablue" 1.6, "earleyboyer" 1.8, "gbemu" 2.0, "navier-str" 2.2, "raytrace" 2.4, "regexp" 2.6, "richards" 2.8, "splay" 3.0, "typescript" 3.2, "zlib" 3.4) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -397,6 +409,7 @@ set output "compareResults/graphs/javascript_box_ivy_bridge.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("box2d" 1,"codeload" 1.2, "crypto" 1.4, "deltablue" 1.6, "earleyboyer" 1.8, "gbemu" 2.0, "navier-str" 2.2, "raytrace" 2.4, "regexp" 2.6, "richards" 2.8, "splay" 3.0, "typescript" 3.2, "zlib" 3.4) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -420,6 +433,7 @@ set output "compareResults/graphs/javascript_box_haswell.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("box2d" 1,"codeload" 1.2, "crypto" 1.4, "deltablue" 1.6, "earleyboyer" 1.8, "gbemu" 2.0, "navier-str" 2.2, "raytrace" 2.4, "regexp" 2.6, "richards" 2.8, "splay" 3.0, "typescript" 3.2, "zlib" 3.4) 
 set ytics border in scale 1,0.5 nomirror autojustify
@@ -444,6 +458,7 @@ set output "compareResults/graphs/javascript_box_amd.svg"
 set style fill solid 0.25 border lt -1
 unset key
 set pointsize 0.2
+set xlabel "Benchmarks" offset 0,2,0
 set style data boxplot
 set xtics   ("box2d" 1,"codeload" 1.2, "crypto" 1.4, "deltablue" 1.6, "earleyboyer" 1.8, "gbemu" 2.0, "navier-str" 2.2, "raytrace" 2.4, "regexp" 2.6, "richards" 2.8, "splay" 3.0, "typescript" 3.2, "zlib" 3.4) 
 set ytics border in scale 1,0.5 nomirror autojustify
