@@ -1,0 +1,3 @@
+we were not able to calculate MPKB because oprof for nehalem provides BR_INST_EXEC:0x30-> Counts all near call branches executed, but not necessarily retire
+
+which is different from all other intel generations. For instance BR_INST_EXEC:0xff for ivy-bridge-> counts all branch instructions executed. 
