@@ -109,19 +109,19 @@ byte code in Java.
 
 %Performance issues
 The obvious disadvantage of the interpreters is the efficiency and
-performance. The interpreter consists of a dispatch infinite loop,
+performance.  The interpreter consists of a dispatch infinite loop,
 that reads the next bytecode, decodes it, and perform the appropriate
 action. Their main overheads derives from the execution of this
-dispatch loop. Rohou et al {\color{red}{Citation here}} according
-their experiments argue that every bytecode needs ten instructions
-when compiled directly from standar C.
+dispatch loop. Rohou et al \cite{performance_of_interpreters}
+according their experiments argue that every bytecode needs ten
+instructions when compiled directly from standar C.
 
 Additional costs comes from the switch statement, which cause indirect
 jump instructions. These indirect branches are very difficult to
 predict as reported in previous research work as reported in
-{\color{red}{citation paper 3}}. Miss predicted branches is expensive.
-As a result, interpreters spend almost 20 cycles of their execution
-time to recover from miss predicted indirect branch.
+\cite{performance_of_interpreters}. Miss predicted branches is
+expensive.  As a result, interpreters spend almost 20 cycles of their
+execution time to recover from miss predicted indirect branch.
 
 %Problem statement
 In this work we examine the performance of popular interpreters
@@ -132,4 +132,95 @@ the impact of indirect branches on state of the art branch predictors.
 %   Experimental Methodology 
 %-------------------------------------------------------------------------------
 \section{Experimental Methodology}
+% General description
+This section describes the experimental setup we follow to execute all
+the experiments. It discuss the interpreters and the benchmark we use
+and how we collect the metrics from actual (not emulated) hardware.
+
+% Interpreters and Benchmarks
+\subsection{Interpreters and Benchmarks} From the GitHub Year in
+Review~\footnote{https://stackify.com/popular-programming-languages-2018/}
+we found the statistics from the top 15 pull requests from their
+community. Pull requests are an indicator of the amount of code being
+written. The top three switch based interpreted languages are
+JavaScript, Python and Java.
+
+We experimented with JavaScript, Python and Java interpreted
+languages. For Python we use the interpreter Pyhton3.6 and as input
+the Python Benchmark
+suite~\footnote{https://github.com/python/performance} For Javasctip,
+we use Java 1.8.0\_151 interpreter and as input the Dacapo-9.12
+suite~\footnote{http://dacapobench.org/}.  Finally for Java we use
+Rhino 1.7R5 interpreter and as input Chrome Octane 2.0
+suite~\footnote{http://github.com/chromium/octane}.
+Table~\ref{tab:benchmarks} lists all the benchmarks for every suite.
+We run each benchmark suite for 10 times. At every run we restart the
+virtual machine and disable JIT and other optimizations.
+
+\begin{table}
+\centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Python}         &\textbf{JavaScript}        &\textbf{Java} \\
+        \hline
+        bm\_2to3.py             &run\_box2d.js              &avrora     \\
+        bm\_chaos.py            &run\_code\_load.js         &batik      \\
+        bm\_deltablue.py        &run\_crypto.js             &eclipse    \\
+        bm\_fankuch.py          &run\_deltablue.js          &fop        \\
+        bm\_float.py            &run\_early\_boyer.js       &h2         \\
+        bm\_go.py               &run\_gbemu.js              &jython     \\
+        bm\_hexiom.py           &run\_navier-strokes.js     &luindex    \\
+        bm\_json\_dumps.py      &run\_raytrace.js           &lusearch   \\
+        bm\_json\_loads.py      &run\_regexp.js             &pmd        \\
+        bm\_logging.py          &run\_richards.js           &sunflow    \\
+        bm\_mdp.py              &run\_splay.js              &tradebeans \\
+        bm\_meteor\_contest.py  &run\_typescript.js         &tradesoap  \\
+        bm\_nbody.py            &run\_zlib.js               &xalan      \\
+        bm\_nqueens.py          &                           &           \\
+        bm\_pathlib.py          &                           &           \\
+        bm\_piddigits.py        &                           &           \\
+        bm\_pyflate.py          &                           &           \\
+        bm\_python\_startup.py  &                           &           \\
+        bm\_raytrace.py         &                           &           \\
+        bm\_regex\_compile.py   &                           &           \\
+        \hline
+    \end{tabular}
+    \caption{Benchmarks for JavaScript, Python and Java interpreters}
+    \label{tab:benchmarks}
+\end{table}
+
+% Architectures
+\subsection{Hardware and Hardware Counters}
+The evaluation of switch based interpreters, implemented on top of
+actual (not emulated) branch predictors. Hardware counters are
+collected by OProfile
+1.2.0~\footnote{http://oprofile.sourceforge.net/news/}, an open source
+statistical profiler for Linux systems, on actual Intel Core 2 Duo
+(Xeon(R) CPU E5404 at 2.00GHz), Intel Nehalem (Xeon(R) CPU E5520 at
+2.27GHz), Intel Ivy Bridge (Xeon(R) CPU E5-2620 v2 at 2.10GHz), Intel
+Haswell (Xeon(R) CPU E5-2630 v3 at 2.40GHz and AMD Bulldozer family
+15th (AMD Opteron 6272 at 2.10GHz). All architectures provide counters
+for total instructions and miss predicted indirect branches.These
+metrics are common to all architecture in order to be comparable.
+
+% Write something here about speculative and retired branches
+
+After, hardware counter data collection finished, we calculate the
+Miss Prediction Per Kilo Instructions (MPKI) rate. MPKI recommended
+generally, as a quite illustrative metric for branch predictors. Its
+the rate of total miss indirect branch predicted branches over the
+total instructions divided by 1000.
+\begin{center}
+   $ MPKI = \frac{Miss Indirect Brach Predictions * 1000}{Total Instructions} $
+\end{center}
+
+%-------------------------------------------------------------------------------
+%   EXPERIMENTAL RESULTS
+%-------------------------------------------------------------------------------
+\section{Experimental Results}
+
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{cs446_Report}
 \end{document}
