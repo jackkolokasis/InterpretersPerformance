@@ -22,6 +22,7 @@ inkscape compareResults/graphs/python_box_ivy_bridge.svg --export-pdf=python_box
 inkscape compareResults/graphs/python_box_nehalem.svg --export-pdf=python_box_nehalem.pdf
 inkscape compareResults/graphs/python_MPKI.svg --export-pdf=python_MPKI.pdf
 
-mv *.pdf  ../presentation/figures/
-
+cp -rf *.pdf  ../presentation/figures/
+cp -rf *.pdf  ../report/figures/
+rm -rf *.pdf
 firefox graphs.html
