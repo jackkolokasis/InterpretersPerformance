@@ -1,90 +1,93 @@
-#   Project hy446                            
-  Problem statement: Interpreters introduce a high number of indirect
-  branches.  According to [1] branch predictors at around 2000, were
-  not able to predict accurately those type of branches. In our
-  project we are going to examine if this statement holds also for
-  today's branch predictors.  [1]  M. Anton Ertl , David Gregg, The
-  Structure and Performance of Efficient Interpreters.
+# Evaluating the Performance of Interpreters Over Various Branch Predictors 
 
-#  Interpreted Languages to be tested are (possibly):
-  1. JavaScript : https://www.javascript.com/
-  2. Java       : https://www.java.com/en/
-  3. Python     : https://ww.python.org/	
+Interpreters introduced a high number of indirect branches. In this
+project we analyze the performance of three popular interpreters
+(Python, Java, JavaScript) over various branch predictors. All the
+hardware counters data collected using OProfile, an open source
+project that includes a statistical profiler for Linux systems,
+capable of profiling all running code at low overhead.
+(http://oprofile.sourceforge.net/news/)
+
+## Getting Started
+These instructions will get you a copy of the project up and running
+on your local machine for development and testing purposes. See
+deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+You need to install:
+
+OProfile (Ubuntu 16.10)
+```
+    $ sudo apt-get install oprofile
+```
+OProfile (Centos 7)
+```
+    $ sudo yum install oprofile
+```
+Install Python3.6 (Ubuntu 16.10)
+```
+    $ sudo apt-get update
+    $ sudo apt-get install python3.6
+```
+
+Install Python3.6 (Centos 7)
+```
+    $ sudo yum -y install python36u
+```
+
+Install python-pip 
+```
+	$ wget https://bootstrap.pypa.io/get-pip.py
+	$ sudo python3.6 get-pip.py
+```
+
+Operf
+```
+    $ sudo python3.6 -m pip install perf	
+```
+Install Rhino (Ubuntu 16.10)
+```
+    $ sudo apt-get install rhino
+```
+Install Rhino (Centos 7)
+```
+    $ yum install rhino
+```
+
+## Running the tests
+All the tests must run inside bechmarks directory
+```
+    $ cd benchmarks/
+```
+Run the benchmarks
+```
+    $ ./1.runNTimes.sh
+```
+Parse the results
+```
+    $ ./2.parseResutls.sh
+```
+Plot the results
+```
+    $ cd benchmarks/
+    $ ./3.runGNUGraphs.sh
+```
+
+##  Interpreted Languages :
+    1. JavaScript : https://www.javascript.com/
+    2. Java       : https://www.java.com/en/
+    3. Python     : https://ww.python.org/	
 
 
-#  Graphs for our evaluation
-  1. Prediction Accuracy: Miss Predict rate of different interpreters
-     over branch predictors
-  2. Effect on execution time : Execution time of different
-     interpreters over branch predictors
+## Hardware Architectures 
+    1. Intel Core 2 Duo
+    2. Intel Nehalem(2008)
+    3. Intel Ivy Bridge(2012)
+    4. Intel Haswell(2013)
+    5. AMD64 family15h
 
-#  Architectures to be tested 
-  1. Intel  : 
-  		0. Core 2 Duo (penguin4) -
-		1. Nehalem(2008) (piranha93), 
-		2. Ivy Bridge(2012) (jedi8), -
-		3. Haswell(2013) (sith8), -
-  2. AMD    : AMD64 family15h (hydra)
+## Benchmarks
+    1. JavaScript    : https://github.com/chromium/octane
+    2. Java          : https://www.spec.org/jvm2008/
+    3. Python        : https://github.com/python/performance
 
-** piranha93 xray5
-CPU generations : https://en.wikipedia.org/wiki/List_of_Intel_CPU_microarchitectures
-
-#  HW counters 
-## OProfile
-  OProfile is an open source project that includes a statistical
-  profiler for Linux systems, capable of profiling all running code at
-  low overhead. In version 0.9.9, an event counting tool, ocount, was
-  added to the project. OProfile is released under the GNU GPL. It has
-  proven stable over a large number of differing configurations; it is
-  being used on machines ranging from laptops to 16-way NUMA-Q boxes.
-  As always, there is no warranty.
-  http://oprofile.sourceforge.net/news/
-
-# Benchmarks
-   1. JavaScript    : https://github.com/chromium/octane
-                      https://github.com/mozilla/arewefastyet
-                      https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Optimization
-   2. Java*          : https://www.spec.org/jvm2008/
-		      https://www.spec.org/download.html (to download) 
-   3. Python        : https://github.com/python/performance
-   4. CLI (C#)      : https://github.com/dotnet/BenchmarkDotNet 
-   
-Benchmarks of different languages : https://github.com/kostya/benchmarks
-
-# TODO
-"Tha prepei sto telos na exei ena readme pou e3igei oti
-xreiazete, ta noumera, kai ta scriptakia pou paragoun ta noumera, wste
-an 8elei kapoios na anaparagei auto pou kanate na einai sxetika eukolo
-an oxi plirws atomatopoiimeno.""
-
-# Experimental Methodolodgy:
-    for (i..10)
-	1.JavaScript (Num_of_bench: 14)
-	2.Java       (Num_of_bench: 18)
-	3.Python     (Num_of_bench: 46), Working 30 out of 46 
-
-
-*Disable JIT in Java
-https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.lnx.80.doc/diag/tools/jitpd_disable.html#jitpd_disable     
-# Dependencies
-	1. install python3.6 
-		CentOS: sudo yum -y install python36u
-	2. install python-pip
-		wget https://bootstrap.pypa.io/get-pip.py
-        	sudo python3.6 get-pip.py
-	3. install pip perf
-		sudo python3.6 -m pip install perf	
-	4. install rhino (for javascript)     
-# Python troubleshouting
-ERROR:
-	Traceback (most recent call last):
-  		File "bm_2to3.py", line 6, in <module>
-    		import perf
-	ImportError: No module named perf (see steps 2-3 above)         
-SOLUTION:
-	sudo apt-get install python-pip
-	sudo python -m pip install perf
- 
-/bin/python3.6: No module named pip:	
-	wget https://bootstrap.pypa.io/get-pip.py
-	sudo python3.6 get-pip.py
