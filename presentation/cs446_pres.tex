@@ -306,9 +306,23 @@ while(1){
 	\end{itemize}
 \end{frame}
 \begin{frame}{Summary}
-	\begin{itemize}
-	\item{}
-	\end{itemize}
+	According to \textit{M.Anton Ertl\footnotemark[1]} Interpreters:
+		\begin{itemize}
+			\item{Perform a large number of indirect branches}
+			\item{Their bad performance depends in the inaccurate branch prediction (indirect branches)}
+		\end{itemize}
+		\textbf{How switch based interpreters perform with cutting edge branch predictors?}
+		\begin{itemize}
+			\item{Interpreters: Python, Java, Javascript}
+			\item{Branch predictors: Core2, Nehalem, Ivy Bridge, Haswell, AMD family15h}
+		\end{itemize}
+		\textbf{We show that:}
+		\begin{itemize}
+			\item{\textit{The accuracy of indirect branch prediction is \textbf{improved}}}
+			\item{\textit{Branch predictors \textbf{are not} an obstacle for interpreters performance}}
+		\end{itemize}
+		
+		\footnotetext[1]{M.Anont Ertl et. al., The Structure and Performance of Efficient Interpreters}
 \end{frame}
 %--------------------------------------------------------------------
 % Last Slide
