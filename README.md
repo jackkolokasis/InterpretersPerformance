@@ -69,7 +69,6 @@ Parse the results
 ```
 Plot the results
 ```
-    $ cd benchmarks/
     $ ./3.runGNUGraphs.sh
 ```
 
