@@ -185,19 +185,33 @@ while(1){
 	We evaluate switch based interpreters:
 	\begin{itemize}
 		\item {For three \textbf{languages}}
-			\begin{itemize}
-				\item {Python: \textbf{Interpreter} \textit{Python3.6}, \textbf{Suite} \textit{Python benchmark suite\footnotemark[2]}} 
-				\item {Java: \textbf{Interpreter} \textit{Java 1.8.0\_151}, \textbf{Suite} \textit{Dacapo-9.12}} 
-				\item {Javascript: \textbf{Interpreter} \textit{Rhino 1.7R5}, \textbf{Suite} \textit{Chrome ocatane2.0}}
-			\end{itemize}
+\begin{table}[]
+	\centering
+	\resizebox{6cm}{!}{
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{}           & \textbf{Interpreter} & \textbf{Suite}      \\ \hline
+		\textbf{Python}     & Python 3.6           & Python bench. suite \\ \hline
+		\textbf{Java}       & Java 1.8.0           & Dacapo-9.12         \\ \hline
+		\textbf{Javascript} & Rhino 1.7R5          & Chrome octane 2.0   \\ \hline
+	\end{tabular}
+}
+\end{table}
 		\item {On top of actual (not emulated) Branch predictors}
-		\begin{itemize}
-			\item {Intel Core 2 Duo (2006): Xeon(R) CPU E5405 at 2.00GHz} 
-			\item {Intel Nehalem (2008): Xeon(R) CPU E5520 at 2.27GHz} 
-			\item {Intel Ivy Bridge (2012): Xeon(R) CPU E5-2620 v2 at 2.10GHz} 
-			\item {Intel Haswell (2013): Xeon(R) CPU E5-2630 v3 at 2.40GHz} 
-			\item {AMD Bulldozer family 15th (2011): AMD Opteron 6272 at 2.10GHz}
-		\end{itemize}
+\begin{table}[]
+	\centering
+		\resizebox{8cm}{!}{
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{}                   & \textbf{Description}                    \\ \hline
+		\textbf{Core 2 Duo (2006)}  & Intel Xeon(R) CPU E5405 at 2.00GHz      \\ \hline
+		\textbf{Nehalem (2008)}     & Intel Xeon(R) CPU E5520 at 2.27GHz      \\ \hline
+		\textbf{Ivy Bridge (2012)}  & Intel Xeon(R) CPU E5-2620 v2 at 2.10GHz \\ \hline
+		\textbf{Haswell (2013)}     & Intel Xeon(R) CPU E5-2630 v3 at 2.40GHz \\ \hline
+		\textbf{Buldoza family15th (2011)} & AMD Opteron 6272 at 2.10GHz             \\ \hline
+	\end{tabular}
+	}
+\end{table}
 		
 	\end{itemize}
 	\footnotetext[2]{https://github.com/python/performance}
@@ -314,16 +328,25 @@ while(1){
 		\end{itemize}
 		\textbf{How switch based interpreters perform with cutting edge branch predictors?}
 		\begin{itemize}
-			\item{Interpreters: Python, Java, Javascript}
-			\item{Branch predictors: Core2, Nehalem, Ivy Bridge, Haswell, AMD family15h}
-		\end{itemize}
-		\textbf{We show that:}
-		\begin{itemize}
 			\item{\textit{The accuracy of indirect branch prediction is \textbf{improved}}}
+			
+			\begin{table}[]
+				\captionsetup{font=small}
+				\centering
+				\resizebox{4cm}{!}{
+\begin{tabular}{@{}|c|c|c|@{}}
+	\toprule
+	\textbf{}           & \textbf{Core2 Duo} & \textbf{Haswell} \\ \midrule
+	\textbf{Python}     & 2.7                & 0.7              \\ \midrule
+	\textbf{Java}       & 19.4               & 8.9              \\ \midrule
+	\textbf{Javascript} & 2.9                & 0.65             \\ \bottomrule
+\end{tabular}
+			}
+			\caption{AVG MPKI of all benchmarks}
+			\end{table}
 			\item{\textit{Branch predictors \textbf{are not} an obstacle for interpreters performance}}
 		\end{itemize}
-		
-		\footnotetext[1]{M.Anont Ertl et. al., The Structure and Performance of Efficient Interpreters}
+%		\vspace{-0.5in}
 \end{frame}
 %--------------------------------------------------------------------
 % Last Slide
