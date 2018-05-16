@@ -18,7 +18,8 @@
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[parskip=full, paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
+% A4 paper and 12pt font size separate paragraph
+\documentclass[parskip=full, paper=a4, fontsize=12pt]{scrartcl} 
 
 \usepackage[T1]{fontenc} 
 \usepackage{fourier} 
@@ -26,9 +27,10 @@
 \usepackage{amsmath,amsfonts,amsthm} 
 \usepackage{color}
 \usepackage{lipsum} 
+\usepackage{hyperref}
 
 \usepackage{sectsty} 
-\allsectionsfont{\centering \normalfont\scshape} 
+\allsectionsfont{\normalfont\scshape} 
 
 \usepackage{fancyhdr} 
 \pagestyle{fancyplain} 
@@ -52,7 +54,7 @@
 
 \newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 
 
-\title{	
+\title{%	
 \normalfont \normalsize 
 \textsc{University of Crete\\
 Computer Science Department \\
@@ -112,16 +114,17 @@ The obvious disadvantage of the interpreters is the efficiency and
 performance.  The interpreter consists of a dispatch infinite loop,
 that reads the next bytecode, decodes it, and perform the appropriate
 action. Their main overheads derives from the execution of this
-dispatch loop. Rohou et al \cite{performance_of_interpreters}
+dispatch loop. Rohou et al~\cite{performance_of_interpreters}
 according their experiments argue that every bytecode needs ten
 instructions when compiled directly from standar C.
 
 Additional costs comes from the switch statement, which cause indirect
 jump instructions. These indirect branches are very difficult to
-predict as reported in previous research work as reported in
-\cite{performance_of_interpreters}. Miss predicted branches is
-expensive.  As a result, interpreters spend almost 20 cycles of their
-execution time to recover from miss predicted indirect branch.
+predict as reported in previous research work as reported
+in~\cite{performance_of_interpreters}. Miss predicted branches due
+overhead to the processor. As a result, interpreters spend almost 20
+cycles of their execution time to recover from miss predicted indirect
+branch.
 
 %Problem statement
 In this work we examine the performance of popular interpreters
@@ -148,7 +151,7 @@ JavaScript, Python and Java.
 We experimented with JavaScript, Python and Java interpreted
 languages. For Python we use the interpreter Pyhton3.6 and as input
 the Python Benchmark
-suite~\footnote{https://github.com/python/performance} For Javasctip,
+suite~\footnote{https://github.com/python/performance} For Javascript,
 we use Java 1.8.0\_151 interpreter and as input the Dacapo-9.12
 suite~\footnote{http://dacapobench.org/}.  Finally for Java we use
 Rhino 1.7R5 interpreter and as input Chrome Octane 2.0
@@ -218,7 +221,43 @@ total instructions divided by 1000.
 %   EXPERIMENTAL RESULTS
 %-------------------------------------------------------------------------------
 \section{Experimental Results}
+\subsection{JavaScript}
 
+\subsection{Python}
+
+\subsection{Java}
+
+%-------------------------------------------------------------------------------
+%   CONCLUSIONS
+%-------------------------------------------------------------------------------
+\section{Conclusions}
+
+
+
+%-------------------------------------------------------------------------------
+%   Future Work
+%-------------------------------------------------------------------------------
+\section{Future Work}
+VM's inside create miss-predictions at the start and at the end of the
+VM operation.  We suggest to isolate these miss-prediction created by
+VMs. Then the numbers of interpreter's miss-predictions will be more
+acurate. Also, it will be usefull to study the number of
+miss-predictions created by VM and the miss-predictions of the
+application to find the overheads created.
+
+Furthermore, it will be interesting to study the different version of
+implementations of interpreters (e.g Python2.7, Python3, Python3.6).
+This will provide the knowledge of how the different implementations
+of interpreters improve the miss-prediction accurancy. Also determine
+if miss-prediction accurancy corellated with the improvement of
+interpreters version or by the branch prediction accurancy provided by
+the architecture.
+
+\section{Aknowledgement}
+We thank Nikos Papakostantinou for his valuable help to provide us
+access to the CARV cluster and Stelios Mavridis for his unlimited
+knowledge. At the end we would thank mr. Foivos Zakkak for his support
+and advices.
 
 \newpage
 \bibliographystyle{abbrv}
