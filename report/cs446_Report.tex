@@ -82,37 +82,46 @@ Evaluating the Performance of Interpreters\\Over Various Branch Predictors
 \section{Introduction}
 
 % What is an interpreter
-Interpreters are widely used, since they provide portability on different architectures,
-ease of implementation, and dynamic typing. They transform a high-level programming 
-language (source code), either into machine code or into an intermediate language (i.e. byte code). 
-This byte code can be generated before actual execution(statically) as in Java, or just 
-before execution as in Python, or at runtime as in JavaScript. The interpreter reads each 
-line of high level or byte code and then converts or executes it directly. 
+Interpreters are widely used, since they provide portability on
+different architectures, ease of implementation, and dynamic typing.
+They transform a high-level programming language (source code), either
+into machine code or into an intermediate language (i.e. byte code).
+This byte code can be generated before actual execution(statically) as
+in Java, or just before execution as in Python, or at runtime as in
+JavaScript. The interpreter reads each line of high level or byte code
+and then converts or executes it directly. 
 
-The interpreter consists of an infinite loop, that fetches, decodes and executes commands.
-According to ~\cite{ertl2003structure}, this dispatch loop create a large number of indirect
-branches. At that time (i.e. 2000), branch predictors were not efficient in predicting 
-accurately this type of branches. Consequently, the performance of interpreters were poor, 
-due to the large mis-prediction rate of indirect branches.  
+The interpreter consists of an infinite loop, that fetches, decodes
+and executes commands.  According to ~\cite{ertl2003structure}, this
+dispatch loop create a large number of indirect branches. At that time
+(i.e. 2000), branch predictors were not efficient in predicting
+accurately this type of branches. Consequently, the performance of
+interpreters were poor, due to the large miss-prediction rate of
+indirect branches.  
 
 %Problem statement
-In this project we examine the performance of switch based interpreters (Python, JavaScript, Java) 
-on Intel and AMD architectures. We focus on the impact of indirect branches, on state of the art 
-branch predictors, used by high end processors (Core2 duo, Nehalem, Ivy Bridge, Haswell, AMD Bulldozer).
+In this project we examine the performance of switch based
+interpreters (Python, JavaScript, Java) on Intel and AMD
+architectures. We focus on the impact of indirect branches, on state
+of the art branch predictors, used by high end processors (Core2 duo,
+Nehalem, Ivy Bridge, Haswell, AMD Bulldozer).
 
-Our results show that mis-predictions for indirect branches, decreased significantly from oldest to latest
-CPU generations (i.e. Core2 Duo to Haswell). The average Mis-predictions Per Kilo Instructions (MPKI) has
-been decreased 2 times for Java, and almost 4 times for Javascript and Python, when comparing Core2 Duo and Haswell.   
+Our results show that miss-predictions for indirect branches, decreased
+significantly from oldest to latest CPU generations (i.e. Core2 Duo to
+Haswell). The average miss-predictions Per Kilo Instructions (MPKI) has
+been decreased 2 times for Java, and almost 4 times for JavaScript and
+Python, when comparing Core2 Duo and Haswell.   
 
+%To be more specific, Python's Mis-predictions Per Kilo Instructions
+%(MPKI) for all benchmarks is on average 0.7, while for Core2 Duo is
+%2.7. In Java the average MPKI among all benchmarks is 8.9 for Haswell
+%and for Core2 Duo is 19.4. Finally, in JavaScript the average MPKI is
+%for Haswell 0.65, on the contrary for Core2 Duo is 2.9. As a result
+%branch prediction is not an obstacle for interpreter's performance.
 
-%To be more specific, Python's Mis-predictions Per Kilo Instructions 
-%(MPKI) for all benchmarks is on average 0.7, while for Core2 Duo is 2.7. In Java the average MPKI among all
-%benchmarks is 8.9 for Haswell and for Core2 Duo is 19.4. Finally, in Javascript the average MPKI is
-%for Haswell 0.65, on the contrary for Core2 Duo is 2.9. As a result branch prediction is not 
-%an obstacle for interpreter's performance.
-
-The rest of the paper is organized as follows; section2 describes the experimental methodology.
-Section 3 presents our results, while sections 4 and 5 provide some conclusions and future work, 
+The rest of the report is organized as follows; section 2 describes the
+experimental methodology.  Section 3 presents our results, while
+sections 4 and 5 provide some conclusions and future work,
 respectively.  
 
 %-------------------------------------------------------------------------------
@@ -120,29 +129,55 @@ respectively.
 %-------------------------------------------------------------------------------
 \section{Experimental Methodology}
 % General description
-This section describes the procedure that we follow, to collect the mis-prediction data from indirect branches. Moreover, it describes the hardware platforms and the interpreter versions and the benchmarks that we use for our evaluation. 
+This section describes the procedure that we follow, to collect the
+miss-prediction data from indirect branches. Moreover, it describes the
+hardware platforms and the interpreter versions and the benchmarks
+that we use for our evaluation. 
 
 % Interpreters and Benchmarks
 \subsection{Interpreters}
-We chose three switch based interpreted languages to evaluate; Python, Java, and Javascript. The selection of these particular languages derive from GitHub results. According to GitHub~\footnote{https://stackify.com/popular-programming-languages-2018/} Python, Java and Javascript are among the most popular runtime languages. For Python we use the interpreter Pyhton3.6, for Java the Java1.8.0, and for Javascript Rhino 1.7R5. For Java and Javascript we disable JIT and all optimizations. 
+We chose three switch based interpreted languages to evaluate; Python,
+Java, and JavaScript. The selection of these particular languages
+derive from GitHub results. According to
+GitHub~\footnote{https://stackify.com/popular-programming-languages-2018/}
+Python, Java and JavaScript are among the most popular runtime
+languages. For Python we use the interpreter Pyhton3.6, for Java the
+Java1.8.0, and for JavaScript Rhino 1.7R5. For Java and JavaScript we
+disable JIT and all optimizations. 
+
 \begin{table}[]
 	\centering
 	\caption{Interpreters and benchmark suites}
-	\label{inter_bench}
+	\label{tab:inter_bench}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{}           & \textbf{Interpreter} & \textbf{Suite}      \\ \hline
-		\textbf{Python}     & Python 3.6           & Python bench. suite \\ \hline
-		\textbf{Java}       & Java 1.8.0           & Dacapo-9.12         \\ \hline
-		\textbf{Javascript} & Rhino 1.7R5          & Chrome octane 2.0   \\ \hline
+		\textbf{}           & \textbf{Interpreter} & \textbf{Suite}      \\ 
+        \hline
+		\textbf{Python}     & Python 3.6           & Python bench. suite \\ 
+        \hline
+		\textbf{Java}       & Java 1.8.0           & Dacapo-9.12         \\ 
+        \hline
+		\textbf{JavaScript} & Rhino 1.7R5          & Chrome octane 2.0   \\ 
+        \hline
 	\end{tabular}
 \end{table}
 
 \subsection{Benchmarks} 
-To test Python's interpreter we run the Python Benchmark suite~\footnote{https://github.com/python/performance}. For Java,
-we utilize Dacapo-9.12 suite~\footnote{http://dacapobench.org/}, while for for Javascript we executeChrome Octane 2.0 suite~\footnote{http://github.com/chromium/octane}. Table~\ref{inter_bench} displays an overall picture of the interpreter versions and the benchmark suites used for the experiments.
+To test Python's interpreter we run the Python Benchmark
+suite~\footnote{https://github.com/python/performance}. For Java, we
+utilize Dacapo-9.12 suite~\footnote{http://dacapobench.org/}, while
+for for JavaScript we execute Chrome Octane 2.0
+suite~\footnote{http://github.com/chromium/octane}.
+Table~\ref{tab:inter_bench} displays an overall picture of the interpreter
+versions and the benchmark suites used for the experiments.
 
-Table~\ref{tab:benchmarks} lists all benchmarks for every suite. We run each benchmark suite for 10 times. At every run we restart the virtual machine. From Java and Javascript suites we run all their benchmarks (14, 13 respectively), on the contrary for Python we use twenty benchmarks out of forty six. Ten out of forty six did not work, from the remaining thirty six we exclude sixteen that do not have different behavior from the reported ones.
+Table~\ref{tab:benchmarks} lists all benchmarks for every suite. We
+run each benchmark suite for 10 times. At every run we restart the
+virtual machine. From Java and JavaScript suites we run all their
+benchmarks (14, 13 respectively), on the contrary for Python we use
+twenty benchmarks out of forty six. Ten out of forty six did not work,
+from the remaining thirty six we exclude sixteen that do not have
+different behavior from the reported ones.
 
 \begin{table}
 \centering
@@ -176,7 +211,9 @@ Table~\ref{tab:benchmarks} lists all benchmarks for every suite. We run each ben
     \label{tab:benchmarks}
 \end{table}
 \subsection{Hardware platforms}
-The evaluation of switch based interpreters, is performed on top of actual (not emulated) branch predictors. We run our experiments to Intel and AMD architectures, described in detail at Table~\ref{hw_p}.
+The evaluation of switch based interpreters, is performed on top of
+actual (not emulated) branch predictors. We run our experiments to
+Intel and AMD architectures, described in detail at Table~\ref{hw_p}.
 
 \begin{table}[]
 	\centering
@@ -184,22 +221,34 @@ The evaluation of switch based interpreters, is performed on top of actual (not 
 	\label{hw_p}
 	\begin{tabular}{|c|c|}
 		\hline
-		\textbf{}                   & \textbf{Description}                    \\ \hline
-		\textbf{Core 2 Duo (2006)}  & Intel Xeon(R) CPU E5405 at 2.00GHz      \\ \hline
-		\textbf{Nehalem (2008)}     & Intel Xeon(R) CPU E5520 at 2.27GHz      \\ \hline
-		\textbf{Ivy Bridge (2012)}  & Intel Xeon(R) CPU E5-2620 v2 at 2.10GHz \\ \hline
-		\textbf{Haswell (2013)}     & Intel Xeon(R) CPU E5-2630 v3 at 2.40GHz \\ \hline
-		\textbf{Buldoza family15th (2011)} & AMD Opteron 6272 at 2.10GHz             \\ \hline
+		\textbf{}                           & \textbf{Description}                      \\ 
+        \hline
+		\textbf{Core 2 Duo (2006)}          & Intel Xeon(R) CPU E5405 at 2.00GHz        \\ 
+        \hline
+		\textbf{Nehalem (2008)}             & Intel Xeon(R) CPU E5520 at 2.27GHz        \\
+        \hline
+		\textbf{Ivy Bridge (2012)}          & Intel Xeon(R) CPU E5-2620 v2 at 2.10GHz   \\ 
+        \hline
+		\textbf{Haswell (2013)}             & Intel Xeon(R) CPU E5-2630 v3 at 2.40GHz   \\ 
+        \hline
+		\textbf{Buldoza family15th (2011)}  & AMD Opteron 6272 at 2.10GHz               \\ 
+        \hline
 	\end{tabular}
 \end{table}
+
 % Architectures
 \subsection{Hardware Counters}
-Hardware counters are collected by OProfile 1.2.0~\footnote{http://oprofile.sourceforge.net/news/}, an open source
-statistical profiler for Linux systems. All architectures provide counters
-for total instructions and miss predicted indirect branches.These metrics should be common to all architecture in order to be comparable. We collect the total instructions executed, included retired (i.e. executed instructions not speculative). Moreover, we  
-store the mis-predicted indirect branches that are actually executed (i.e. retired).
+Hardware counters are collected by OProfile
+1.2.0~\footnote{http://oprofile.sourceforge.net/news/}, an open source
+statistical profiler for Linux systems. All architectures provide counters for
+total instructions and miss predicted indirect branches.These metrics should be
+common to all architecture in order to be comparable. We collect the total
+instructions executed, included retired (i.e. executed instructions not
+speculative). Moreover, we  store the miss-predicted indirect branches that are
+actually executed (i.e. retired).
 
-We calculate the Miss Prediction Per Kilo Instructions (MPKI) rate, which is an illustrative metric as described in ~\cite{performance_of_interpreters}. It is
+We calculate the Miss Prediction Per Kilo Instructions (MPKI) rate, which is an
+illustrative metric as described in~\cite{performance_of_interpreters}. It is
 calculated by the following formula:
 \begin{center}
    $ MPKI = \frac{Miss Indirect Brach Predictions * 1000}{Total Instructions} $
@@ -229,19 +278,19 @@ calculated by the following formula:
 VM's inside create miss-predictions at the start and at the end of the
 VM operation.  We suggest to isolate these miss-prediction created by
 VMs. Then the numbers of interpreter's miss-predictions will be more
-acurate. Also, it will be usefull to study the number of
+accurate. Also, it will be useful to study the number of
 miss-predictions created by VM and the miss-predictions of the
 application to find the overheads created.
 
 Furthermore, it will be interesting to study the different version of
 implementations of interpreters (e.g Python2.7, Python3, Python3.6).
 This will provide the knowledge of how the different implementations
-of interpreters improve the miss-prediction accurancy. Also determine
-if miss-prediction accurancy corellated with the improvement of
-interpreters version or by the branch prediction accurancy provided by
+of interpreters improve the miss-prediction accuracy. Also determine
+if miss-prediction accuracy correlated with the improvement of
+interpreters version or by the branch prediction accuracy provided by
 the architecture.
 
-\section{Aknowledgement}
+\section{Acknowledgement}
 We thank Nikos Papakostantinou for his valuable help to provide us
 access to the CARV cluster and Stelios Mavridis for his unlimited
 knowledge. At the end we would thank mr. Foivos Zakkak for his support
