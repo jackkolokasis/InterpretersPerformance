@@ -3,7 +3,6 @@ Python-3.0.1/
 *.log
 *.nav
 *.out
-*.pdf
 *.snm
 *.toc
 *.vrb
