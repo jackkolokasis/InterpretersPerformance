@@ -86,7 +86,7 @@ Plot the results
     5. AMD64 family15h
 
 ## Benchmarks
-    1. JavaScript    : https://github.com/chromium/octane
-    2. Java          : https://www.spec.org/jvm2008/
-    3. Python        : https://github.com/python/performance
+    1. JavaScript    : https://github.com/chromium/octane.git
+    2. Java          : https://github.com/dacapobench/dacapobench.git
+    3. Python        : https://github.com/python/performance.git
 
