@@ -28,8 +28,11 @@
 \usepackage{color}
 \usepackage{lipsum} 
 \usepackage{hyperref}
-
+\usepackage{subfigure}
 \usepackage{sectsty} 
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[toc,page]{appendix}
 \allsectionsfont{\normalfont\scshape} 
 
 \usepackage{fancyhdr} 
@@ -96,7 +99,7 @@ and executes commands.  According to ~\cite{ertl2003structure}, this
 dispatch loop create a large number of indirect branches. At that time
 (i.e. 2000), branch predictors were not efficient in predicting
 accurately this type of branches. Consequently, the performance of
-interpreters were poor, due to the large miss-prediction rate of
+interpreters were poor, due to the large mis-prediction rate of
 indirect branches.  
 
 %Problem statement
@@ -106,9 +109,9 @@ architectures. We focus on the impact of indirect branches, on state
 of the art branch predictors, used by high end processors (Core2 duo,
 Nehalem, Ivy Bridge, Haswell, AMD Bulldozer).
 
-Our results show that miss-predictions for indirect branches, decreased
+Our results show that mis-predictions for indirect branches, decreased
 significantly from oldest to latest CPU generations (i.e. Core2 Duo to
-Haswell). The average miss-predictions Per Kilo Instructions (MPKI) has
+Haswell). The average mis-predictions Per Kilo Instructions (MPKI) has
 been decreased 2 times for Java, and almost 4 times for JavaScript and
 Python, when comparing Core2 Duo and Haswell.   
 
@@ -130,7 +133,7 @@ respectively.
 \section{Experimental Methodology}
 % General description
 This section describes the procedure that we follow, to collect the
-miss-prediction data from indirect branches. Moreover, it describes the
+mis-prediction data from indirect branches. Moreover, it describes the
 hardware platforms and the interpreter versions and the benchmarks
 that we use for our evaluation. 
 
@@ -241,10 +244,10 @@ Intel and AMD architectures, described in detail at Table~\ref{hw_p}.
 Hardware counters are collected by OProfile
 1.2.0~\footnote{http://oprofile.sourceforge.net/news/}, an open source
 statistical profiler for Linux systems. All architectures provide counters for
-total instructions and miss predicted indirect branches.These metrics should be
+total instructions and mis-predicted indirect branches.These metrics should be
 common to all architecture in order to be comparable. We collect the total
 instructions executed, included retired (i.e. executed instructions not
-speculative). Moreover, we  store the miss-predicted indirect branches that are
+speculative). Moreover, we  store the mis-predicted indirect branches that are
 actually executed (i.e. retired).
 
 We calculate the Miss Prediction Per Kilo Instructions (MPKI) rate, which is an
@@ -258,45 +261,125 @@ calculated by the following formula:
 %   EXPERIMENTAL RESULTS
 %-------------------------------------------------------------------------------
 \section{Experimental Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PYTHON   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Python}
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/python_MPKI.pdf}
+	\caption{MPKI for Python 3.6 over all architectures}
+	\label{fig:pythonmpki}
+\end{figure*}
+Figure~\ref{fig:pythonmpki} describes MPKI for Python language, with the interpreter python3.6 for all architectures. As we can observe Haswell has the lowest mis-prediction rate (on average 0.7), while AMD family15th the highest (on average 2.7). If we focus only in Core 2, Nehalem, and Ivy Bridge, as the CPU's generation increases the MPKI decreases. However, in some benchmarks such as \textit{json loads}, \textit{mdp}, \textit{meteor contest}, and \textit{pyflate} as Core2 has better performance Nehalem. This happens because some generations probably have optimizations for specific cases which are not included from others.  
+
+Figure (Appendices)~\ref{res:pythonbox} shows the MPKI variation, of ten iterations, per benchmark. We can observe that there is no significant variation among iterations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  JAVA   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Java}
+
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/java_MPKI.pdf}
+	\caption{MPKI for Java 1.8.0 over all architectures}
+	\label{fig:javampki}
+\end{figure*}
+
+Figure~\ref{fig:javampki} describes MPKI for Java language, with the interpreter java 1.8.0 among all architectures. As in Python, Haswell has again the lowest mis-prediction rate (on average 8.9), and AMD family15th the highest (on average 19.4) in all benchmarks. If we focus only in Core 2, Nehalem, and Ivy Bridge, as the generation increases, the mis-prediction rate does not decrease in the majority of benchmarks. 
+
+Figure (Appendices)~\ref{res:javabox} shows the MPKI variation, of ten iterations, per benchmark. We can observe that there is no significant variation among iterations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  JAVASCRIPT   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{JavaScript}
 
-\subsection{Python}
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/javascript_MPKI.pdf}
+	\caption{Mis-predictions Per Kilo Instructions for Javascript (Rhino 1.7R5) over all architectures}
+	\label{fig:javascriptmpki}
+\end{figure*}
+Figure~\ref{fig:javascriptmpki} describes MPKI for Javascript language, with the interpreter Rhino1.7R5. It has the same behavior as Python Figure~\ref{fig:pythonmpki}. Again Haswell has the lowest mis-prediction rate (on average 0.65), while AMD family15th the highest (on average 2.9). For all benchmarks as the generation increases the MPKI decreases significantly.  
 
-\subsection{Java}
+Figure (Appendices)~\ref{res:pythonbox} shows the MPKI variation, of ten iterations, per benchmark. We can observe that there is variation for splay and delta blue in all architectures. The lowest variation is in Haswell (0.2 up to 0.8). This behavior derives from the implementation of that particular benchmark.    
+
 
 %-------------------------------------------------------------------------------
 %   CONCLUSIONS
 %-------------------------------------------------------------------------------
 \section{Conclusions}
+Interpreted languages are very important and useful, because they provide platform independence, dynamic typing and ease of debugging. Due to their implementation they produce a huge number of indirect branches~\cite{performance_of_interpreters}. At 2000 branch predictors were not accurate in predicting this type of branches, consequently interpreter's performance was poor~\cite{performance_of_interpreters}. 
 
+In this work we investigate how the mis-prediction rate, behaves across different CPU generations (i.e. different branch prediction policies) and if their accuracy in indirect branches has been improved. We show that in general as the generation increases the branch prediction rate for indirect branches decreases, sharply. The mis-predictions of Haswell, which is the newest generation that we evaluate, proves that indirect branches are not a performance obstacle for interpreters anymore. As displayed in Table~\ref{mpkiimprovement} the mis-prediction rate has been improved up to 4 times, when comparing Core 2 Duo (oldest generation) and Haswell (newest generation).    
 
-
+\begin{table}[]
+	\centering
+		\begin{tabular}{@{}|c|c|c|@{}}
+			\toprule
+			\textbf{}           & \textbf{Core2 Duo} & \textbf{Haswell} \\ \midrule
+			\textbf{Python}     & 2.7                & 0.7              \\ \midrule
+			\textbf{Java}       & 19.4               & 8.9              \\ \midrule
+			\textbf{Javascript} & 2.9                & 0.65             \\ \bottomrule
+		\end{tabular}
+	\caption{AVG MPKI improvement from oldest to newest generation}
+	\label{mpkiimprovement}
+\end{table}
 %-------------------------------------------------------------------------------
 %   Future Work
 %-------------------------------------------------------------------------------
 \section{Future Work}
-VM's inside create miss-predictions at the start and at the end of the
-VM operation.  We suggest to isolate these miss-prediction created by
-VMs. Then the numbers of interpreter's miss-predictions will be more
-accurate. Also, it will be useful to study the number of
-miss-predictions created by VM and the miss-predictions of the
-application to find the overheads created.
+We plan to execute more experiments to evaluate extensively our findings.
+Firstly we need to find the mis-predictions created from VMs. VM's code created mis-predictions at the start and at the end of the
+VM execution. We have to isolate these mis-prediction created by
+VMs. Then the numbers of interpreter's mis-predictions will be more
+accurate and will focus only to the indirect branches created by interpreters. 
 
-Furthermore, it will be interesting to study the different version of
-implementations of interpreters (e.g Python2.7, Python3, Python3.6).
-This will provide the knowledge of how the different implementations
-of interpreters improve the miss-prediction accuracy. Also determine
-if miss-prediction accuracy correlated with the improvement of
-interpreters version or by the branch prediction accuracy provided by
-the architecture.
-
-\section{Acknowledgement}
-We thank Nikos Papakostantinou for his valuable help to provide us
-access to the CARV cluster and Stelios Mavridis for his unlimited
-knowledge. At the end we would thank mr. Foivos Zakkak for his support
-and advices.
+It will be interesting to study different versions of interpreters, for instance Python2.7 versus Python3.6, or Rhino versus Spider Monkey. This will provide more details about the overhead created from interpreters and if their code has been improved. With this type of experiment, we will be able to determine
+if the performance improvement of interpreters, is correlated with improvements in interpreters code or with modifications in the branch prediction policy of CPUs.  
 
 \newpage
 \bibliographystyle{abbrv}
 \bibliography{cs446_Report}
+\begin{appendices}
+	\begin{figure*}[t]
+		\subfigure[Core 2 Duo]
+		{\includegraphics[width=0.5\textwidth]{figures/python_box_core2.pdf}}
+		\subfigure[Nehalem]%
+		{\includegraphics[width=0.5\textwidth]{figures/python_box_nehalem.pdf}}
+		\subfigure[Ivy Bridge]
+		{\includegraphics[width=0.5\textwidth]{figures/python_box_ivy_bridge.pdf}}
+		\subfigure[Haswell]
+		{\includegraphics[width=0.5\textwidth]{figures/python_box_haswell.pdf}}
+		\subfigure[AMD family15th]
+		{\includegraphics[width=0.5\textwidth]{figures/python_box_amd.pdf}}
+		
+		\caption{Python: Variation of MPKI for 10 iterations per benchmark for all architectures}
+		\label{res:pythonbox}
+	\end{figure*}
+	\begin{figure*}[t]
+		\subfigure[Core 2 Duo]
+		{\includegraphics[width=0.5\textwidth]{figures/java_box_core2.pdf}}
+		\subfigure[Nehalem]%
+		{\includegraphics[width=0.5\textwidth]{figures/java_box_nehalem.pdf}}
+		\subfigure[Ivy Bridge]
+		{\includegraphics[width=0.5\textwidth]{figures/java_box_ivy_bridge.pdf}}	\subfigure[Haswell]
+		{\includegraphics[width=0.5\textwidth]{figures/java_box_haswell.pdf}}
+		\subfigure[AMD family15th]
+		{\includegraphics[width=0.5\textwidth]{figures/java_box_amd.pdf}}
+		
+		\caption{Java: Variation of MPKI for 10 iterations per benchmark for all architectures}
+		\label{res:javabox}
+	\end{figure*}
+	\begin{figure*}[t]
+		\subfigure[Core 2 Duo]
+		{\includegraphics[width=0.5\textwidth]{figures/javascript_box_core2.pdf}}
+		\subfigure[Nehalem]%
+		{\includegraphics[width=0.5\textwidth]{figures/javascript_box_nehalem.pdf}}
+		\subfigure[Ivy Bridge]
+		{\includegraphics[width=0.5\textwidth]{figures/javascript_box_ivy_bridge.pdf}}	\subfigure[Haswell]
+		{\includegraphics[width=0.5\textwidth]{figures/javascript_box_haswell.pdf}}
+		\subfigure[AMD family15th]
+		{\includegraphics[width=0.5\textwidth]{figures/javascript_box_amd.pdf}}
+		
+		\caption{Javascript: Variation of MPKI for 10 iterations per benchmark for all architectures}
+		\label{res:javascriptbox}
+	\end{figure*}
+\end{appendices}
 \end{document}
