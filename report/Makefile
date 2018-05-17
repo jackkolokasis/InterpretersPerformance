@@ -14,24 +14,17 @@
 #
 ###################################################################
 
-TARGET   = cs446_Report
-TEXFILES = $(shell ls *.tex)
-#FIGFILES = $(shell ls figures/*.png)
-BIBFILES = $(shell ls *.bib)
+LATEX=pdflatex
+TARGET=cs446_Report
 
-.PHONY: clean all distclean
-	
-all: $(TARGET).pdf
 
-$(TARGET).pdf: $(TEXFILES) $(BIBFILES) 
-	pdflatex $(TARGET)
-	bibtex $(TARGET)
-	pdflatex $(TARGET)
-	pdflatex $(TARGET)
+$(TARGET): $(TARGET).tex $(TARGET).bib
+	$(LATEX) $<
+	bibtex $(<:.tex=)
+	$(LATEX) $<
+	$(LATEX) $<
+
 
 clean:
-	rm -f *.vrb *.bbl *.aux *.log *.toc *.blg *.lof *.snm *.nav *.out 
-
-distclean:
-	rm -f $(TARGET).pdf
+	@rm -f *.aux *.bbl *.gz *.dvi *.log *.blg *~ $(TARGET).ps $(TARGET).pdf
 
