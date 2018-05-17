@@ -131,8 +131,7 @@
                     \item {Their main overhead derives from this dispatch loop}
                     \item {Additional costs come from the switch st.}
                         \begin{itemize}
-                            \item {They causes indirect jump instructions}
-                            \item {These indirect branches are very difficult to predict}
+                            \item {Cause large number of indirect branches}
                             \item {Every miss prediction costs almost 20 cycles}
                         \end{itemize}
                 \end{itemize}
@@ -171,7 +170,7 @@ while(1){
      \end{itemize}
      We examine the performance of popular interpreters on Intel and AMD architectures
 		 \begin{itemize}
-		     \item {Focus on the impact of indirect branches on state of the art branch predictors }
+		     \item {Focus on the impact of indirect branches on state-of-the-art branch predictors }
 	     \end{itemize}
 
     \footnotetext[1]{M.Anont Ertl et. al., The Structure and Performance of Efficient Interpreters}
@@ -224,7 +223,7 @@ while(1){
 				\item {Total instructions}
 				\item {Miss-predicted indirect branches}
 			\end{itemize}
-		\item {We calculate Mis-prediction Per Kilo Instructions (MPKI) by} 
+		\item {We calculate Mis-prediction Per Kilo Instructions (MPKI) by: } 
             \begin{center}
                 $\frac{MissIndBr}{TotInstr/1000} $% 	
             \end{center}
@@ -309,6 +308,7 @@ while(1){
 		\item {Isolate the mis-predictions created by VMs}
 		\begin{itemize}
 			\item{More accurate numbers of interpreter's mis-predictions}
+			\item{Will focus only to the indirect branches created by interpreters}
 		\end{itemize}
 		\item {Run different versions/implementations of interpreters\\\small (i.e. python2.7 vs python3.6 or rhino vs spidermonkey)}
 			\begin{itemize}
@@ -324,7 +324,7 @@ while(1){
 	According to \textit{M.Anton Ertl\footnotemark[1]} Interpreters:
 		\begin{itemize}
 			\item{Perform a large number of indirect branches}
-			\item{Their poor performance depends on the inaccurate branch prediction (indirect branches)}
+			\item{Their poor performance depends on the inaccurate branch prediction for indirect branches}
 		\end{itemize}
 		\textbf{How switch based interpreters perform with cutting edge branch predictors?}
 		\begin{itemize}
