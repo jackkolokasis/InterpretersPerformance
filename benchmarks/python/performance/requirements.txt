@@ -61,7 +61,7 @@ Chameleon==3.2                            # bm_chameleon
 # https://mail.python.org/pipermail/speed/2018-January/000619.html
 Django==1.11.9                            # bm_django_template
 Genshi==0.7                               # bm_genshi
-Mako==1.0.7                               # bm_mako
+Mako==1.2.2                               # bm_mako
 SQLAlchemy==1.2.0                         # bm_sqlalchemy_declarative
 dulwich==0.18.6                           # dulwich_log
 mercurial==4.4.2; python_version < '3.0'  # bm_hg_startup
