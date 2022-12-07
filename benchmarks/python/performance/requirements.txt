@@ -22,7 +22,7 @@ wheel
 # tornado 4.4.1 dependencies
 backports-abc==0.5
 singledispatch==3.4.0.3
-certifi==2017.11.5
+certifi==2022.12.7
 
 # spambayes 1.1b2 dependencies
 lockfile==0.12.2; python_version < '3.0'
